@@ -1,7 +1,7 @@
 // src/components/homepage/homepageContent.tsx
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./homepage.css"; // Import the CSS file
+import "../homepage/homepage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons"; 
 import { useRouter } from 'next/navigation'; 
