@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+  }
+  
+  .modal-close {
+    position: absolute; /* Positioning it in the top-right */
+  top: 10px;
+  right: 10px;
+  background-color: transparent; /* Make sure there's no unnecessary background */
+  border: none; /* Remove any borders */
+  font-size: 18px; /* Adjust size of the X */
+  cursor: pointer;
+  padding: 5px;
+  color: #333;
+  width: 30px; /* Adjust the size */
+  height: 30px; /* Adjust the size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .modal-close:hover {
+    transition: 0.4s ease-in;
+    background-color: rgba(0, 0, 0, 0.1); /* Add a subtle hover effect */
+  }
+  
+  .connector-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    color: #333;
+    font-weight: 500;
+  }
+  
