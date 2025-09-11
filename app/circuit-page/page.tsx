@@ -1,5 +1,3 @@
-
-"use client";
 import CircuitPageContent from "@/src/components/circuitpage/circuitPage";
 import React from "react";
 
