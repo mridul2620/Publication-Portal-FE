@@ -67,7 +67,7 @@ const LoginPage: React.FC = () => {
         const result = await response.json();
         console.log(result);
         localStorage.setItem("loginResponse", JSON.stringify(result));
-        window.location.replace('https://publication-portal-be.onrender.com/home-page');
+        window.location.replace('https://publication-portal-fe.vercel.app/home-page');
       } else if (response.status === 401) {
         setErrorMessage("Invalid credentials. Please try again.");
       } else {
