@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./homePage.css"; // Import the CSS file
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons"; 
-import { useRouter } from 'next/navigation'; 
+import { LogOut } from 'lucide-react';
 
 interface VehicleData {
   _id: string;
@@ -91,7 +88,7 @@ const HomepageContent: React.FC = () => {
   };
 
   const handleLogout = () => {
-    window.location.replace('http://localhost:3000/');
+    window.location.href = '/';
   };
 
   return (
