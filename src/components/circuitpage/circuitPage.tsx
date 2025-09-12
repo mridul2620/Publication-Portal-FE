@@ -108,7 +108,7 @@ const CircuitPageContent: React.FC = () => {
   const svg2Ref = useRef<SVGSVGElement>(null);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/api/connectors')
+    axios.get('https://publication-portal-be.onrender.com/api/connectors')
       .then(response => {
         setConnectors(response.data.connectors);
       })

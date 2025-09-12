@@ -18,7 +18,7 @@ const LoginPage: React.FC = () => {
   const [usernameError, setUsernameError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const url = `http://localhost:3001/api/login`;
+  const url = `https://publication-portal-be.onrender.com/api/login`;
   const router = useRouter(); 
 
   const usernameRegex = /^[a-zA-Z0-9]+$/;
