@@ -18,7 +18,7 @@ const LoginPage: React.FC = () => {
   const [usernameError, setUsernameError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const url = `http://localhost:3001/api/login`;
+  const url = `https://publication-portal-be.onrender.com/api/login`;
   const router = useRouter(); 
 
   const usernameRegex = /^[a-zA-Z0-9]+$/;
@@ -67,7 +67,7 @@ const LoginPage: React.FC = () => {
         const result = await response.json();
         console.log(result);
         localStorage.setItem("loginResponse", JSON.stringify(result));
-        window.location.replace('http://localhost:3000/home-page');
+        window.location.replace('https://publication-portal-be.onrender.com/home-page');
       } else if (response.status === 401) {
         setErrorMessage("Invalid credentials. Please try again.");
       } else {
