@@ -100,7 +100,7 @@ const LoginPage: React.FC = () => {
       setLoginError('');
       
       try {
-        const response = await axios.post('http://localhost:3001/api/login', {
+        const response = await axios.post('https://publication-portal-be.onrender.com/api/login', {
           username: formData.username,
           password: formData.password
         });
