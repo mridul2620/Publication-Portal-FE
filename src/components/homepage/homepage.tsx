@@ -78,7 +78,7 @@ const HomepageContent: React.FC = () => {
       alert("Please select a brand, model, and year.");
       return;
     }
-    window.location.href = `/circuit-page?brand=${selectedBrand}&model=${selectedModel}&year=${selectedYear}`;
+    window.location.href = `/documents`;
   };
 
   const handleVinSubmit = (event: React.FormEvent) => {
