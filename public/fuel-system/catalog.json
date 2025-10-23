@@ -1,0 +1,134 @@
+{
+  "FuelSystemCatalog": {
+    "MainComponents": [
+      {
+        "partNumber": "CS9001",
+        "name": "Fuel Tank",
+        "description": "Stores fuel and supplies it to the engine via fuel lines.",
+        "material": "Steel or high-density plastic"
+      },
+      {
+        "partNumber": "CS9002",
+        "name": "Fuel Pump",
+        "description": "Pumps fuel from the tank to the engine under pressure.",
+        "material": "Aluminum housing with electric motor"
+      },
+      {
+        "partNumber": "CS9003",
+        "name": "Fuel Filter",
+        "description": "Removes dirt and impurities from the fuel before injection.",
+        "material": "Steel canister with paper element"
+      },
+      {
+        "partNumber": "CS9004",
+        "name": "Fuel Lines",
+        "description": "Carries fuel from the tank to the engine and return flow.",
+        "material": "Steel or reinforced rubber hoses"
+      },
+      {
+        "partNumber": "CS9005",
+        "name": "Fuel Rail",
+        "description": "Distributes pressurized fuel evenly to each injector.",
+        "material": "Aluminum or stainless steel"
+      }
+    ],
+    "FuelDeliveryAndInjection": [
+      {
+        "partNumber": "CS9101",
+        "name": "Fuel Injector",
+        "description": "Sprays atomized fuel into the combustion chamber or intake port.",
+        "material": "Stainless steel and plastic"
+      },
+      {
+        "partNumber": "CS9102",
+        "name": "Fuel Pressure Regulator",
+        "description": "Maintains constant fuel pressure in the system.",
+        "material": "Steel housing with diaphragm"
+      },
+      {
+        "partNumber": "CS9103",
+        "name": "Fuel Return Line",
+        "description": "Returns excess fuel from the rail back to the tank.",
+        "material": "Rubber or steel tubing"
+      },
+      {
+        "partNumber": "CS9104",
+        "name": "Fuel Pressure Sensor",
+        "description": "Measures fuel pressure and sends data to the ECU.",
+        "material": "Electronic pressure sensor"
+      }
+    ],
+    "EvaporationAndEmissionControl": [
+      {
+        "partNumber": "CS9201",
+        "name": "Charcoal Canister",
+        "description": "Traps fuel vapors from the tank to prevent emissions.",
+        "material": "Plastic housing with activated carbon"
+      },
+      {
+        "partNumber": "CS9202",
+        "name": "Purge Valve (EVAP Valve)",
+        "description": "Controls flow of fuel vapors from canister to intake manifold.",
+        "material": "Plastic with solenoid actuator"
+      },
+      {
+        "partNumber": "CS9203",
+        "name": "Vent Valve",
+        "description": "Regulates vapor pressure in the fuel tank.",
+        "material": "Plastic and rubber components"
+      },
+      {
+        "partNumber": "CS9204",
+        "name": "Fuel Tank Pressure Sensor",
+        "description": "Monitors fuel vapor pressure for emission control system.",
+        "material": "MEMS pressure sensor"
+      }
+    ],
+    "FuelManagementElectronics": [
+      {
+        "partNumber": "CS9301",
+        "name": "Fuel Pump Control Module",
+        "description": "Regulates voltage and operation of the electric fuel pump.",
+        "material": "Electronic control module"
+      },
+      {
+        "partNumber": "CS9302",
+        "name": "Fuel Injector Driver",
+        "description": "Controls timing and duration of injector pulses.",
+        "material": "Semiconductor driver circuit"
+      },
+      {
+        "partNumber": "CS9303",
+        "name": "ECU Fuel Map",
+        "description": "Software algorithm managing air-fuel mixture and injection timing.",
+        "material": "Digital program within ECU"
+      }
+    ],
+    "SupportingHardware": [
+      {
+        "partNumber": "CS9401",
+        "name": "Fuel Tank Cap",
+        "description": "Seals the tank and prevents fuel evaporation.",
+        "material": "Plastic with rubber gasket"
+      },
+      {
+        "partNumber": "CS9402",
+        "name": "Fuel Pump Relay",
+        "description": "Switches electrical power to the fuel pump.",
+        "material": "Electromechanical relay"
+      },
+      {
+        "partNumber": "CS9403",
+        "name": "Fuel Hose Clamps",
+        "description": "Secures fuel lines to fittings and components.",
+        "material": "Stainless steel"
+      },
+      {
+        "partNumber": "CS9404",
+        "name": "Fuel Level Sensor",
+        "description": "Measures fuel level in the tank and sends data to gauge.",
+        "material": "Resistive float sensor"
+      }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "CabinHarnessSystem": {
+    "DTCs": [
+      {
+        "code": "CH2001",
+        "name": "Main Wiring Harness Open Circuit",
+        "description": "Detected an open circuit in the main cabin wiring harness.",
+        "possibleCauses": [
+          "Broken wire in harness",
+          "Disconnected connector",
+          "Corroded contact points"
+        ]
+      },
+      {
+        "code": "CH2002",
+        "name": "Main Wiring Harness Short Circuit",
+        "description": "Detected a short circuit in the cabin wiring harness.",
+        "possibleCauses": [
+          "Pinched or damaged wire insulation",
+          "Water ingress in connector",
+          "Damaged component connected to harness"
+        ]
+      },
+      {
+        "code": "CH2003",
+        "name": "Fuse Box Circuit Fault",
+        "description": "Electrical fault detected at fuse box or associated circuits.",
+        "possibleCauses": [
+          "Blown fuse",
+          "Loose or corroded terminal",
+          "Faulty relay"
+        ]
+      },
+      {
+        "code": "CH2004",
+        "name": "Connector Pin Failure",
+        "description": "Electrical connector pins not transmitting signals correctly.",
+        "possibleCauses": [
+          "Bent or broken pins",
+          "Poor mating of connector",
+          "Corrosion on contacts"
+        ]
+      },
+      {
+        "code": "CH2005",
+        "name": "Grounding Fault",
+        "description": "Insufficient grounding detected in cabin electrical circuits.",
+        "possibleCauses": [
+          "Loose ground strap",
+          "Corroded ground point",
+          "Broken wire to ground"
+        ]
+      },
+      {
+        "code": "CH2006",
+        "name": "Power Window Circuit Fault",
+        "description": "Fault detected in power window wiring or switches.",
+        "possibleCauses": [
+          "Broken harness wire to window motor",
+          "Failed window switch",
+          "Connector issue"
+        ]
+      },
+      {
+        "code": "CH2007",
+        "name": "Door Module Communication Error",
+        "description": "Door module not communicating with cabin control network.",
+        "possibleCauses": [
+          "Faulty CAN bus wiring",
+          "Defective door module",
+          "Loose connectors"
+        ]
+      },
+      {
+        "code": "CH2008",
+        "name": "Interior Lighting Circuit Fault",
+        "description": "Malfunction in cabin lighting circuits.",
+        "possibleCauses": [
+          "Blown bulb or fuse",
+          "Damaged wiring harness",
+          "Faulty lighting module"
+        ]
+      },
+      {
+        "code": "CH2009",
+        "name": "Audio/Infotainment Wiring Fault",
+        "description": "Detected fault in wiring to cabin audio or infotainment components.",
+        "possibleCauses": [
+          "Damaged speaker wires",
+          "Loose head unit connector",
+          "Shorted harness wire"
+        ]
+      },
+      {
+        "code": "CH2010",
+        "name": "Seat Sensor Circuit Fault",
+        "description": "Detected malfunction in seat occupancy sensor wiring.",
+        "possibleCauses": [
+          "Disconnected sensor harness",
+          "Broken sensor wiring",
+          "Defective seat module"
+        ]
+      }
+    ]
+  }
+}

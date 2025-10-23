@@ -1,0 +1,106 @@
+{
+  "FuelSystem": {
+    "DTCs": [
+      {
+        "code": "CS1001",
+        "name": "Fuel Pump Circuit Malfunction",
+        "description": "Fuel pump is not receiving proper voltage or is not operating correctly.",
+        "possibleCauses": [
+          "Failed fuel pump",
+          "Blown fuse or faulty relay",
+          "Wiring or connector issue"
+        ]
+      },
+      {
+        "code": "CS1002",
+        "name": "Fuel Pressure Too Low",
+        "description": "Detected fuel rail pressure below specified range.",
+        "possibleCauses": [
+          "Weak fuel pump",
+          "Clogged fuel filter",
+          "Leaking fuel lines"
+        ]
+      },
+      {
+        "code": "CS1003",
+        "name": "Fuel Pressure Too High",
+        "description": "Detected fuel rail pressure above specified range.",
+        "possibleCauses": [
+          "Faulty fuel pressure regulator",
+          "Blocked return line",
+          "Fuel pump over-pressurizing"
+        ]
+      },
+      {
+        "code": "CS1004",
+        "name": "Fuel Injector Circuit Malfunction",
+        "description": "One or more fuel injectors not receiving proper signal or voltage.",
+        "possibleCauses": [
+          "Faulty injector",
+          "Damaged wiring harness",
+          "ECU injector driver issue"
+        ]
+      },
+      {
+        "code": "CS1005",
+        "name": "Fuel Temperature Sensor Fault",
+        "description": "Fuel temperature reading missing or out of range.",
+        "possibleCauses": [
+          "Failed fuel temperature sensor",
+          "Wiring or connector issue",
+          "ECU misreading"
+        ]
+      },
+      {
+        "code": "CS1006",
+        "name": "Fuel Level Sensor Fault",
+        "description": "Fuel level sensor signal not detected or inconsistent.",
+        "possibleCauses": [
+          "Faulty fuel level sensor",
+          "Broken wiring",
+          "Fuel sender module issue"
+        ]
+      },
+      {
+        "code": "CS1007",
+        "name": "Fuel Tank Pressure Sensor Fault",
+        "description": "Fuel tank pressure sensor signal out of range or missing.",
+        "possibleCauses": [
+          "Faulty tank pressure sensor",
+          "Vacuum or vent line leak",
+          "ECU fault"
+        ]
+      },
+      {
+        "code": "CS1008",
+        "name": "EVAP Canister Purge Valve Fault",
+        "description": "Purge valve not operating correctly or signal missing.",
+        "possibleCauses": [
+          "Stuck or failed purge valve",
+          "Wiring harness issue",
+          "Faulty ECU control"
+        ]
+      },
+      {
+        "code": "CS1009",
+        "name": "Fuel Rail Pressure Sensor Fault",
+        "description": "Fuel rail pressure sensor signal missing or out of range.",
+        "possibleCauses": [
+          "Failed sensor",
+          "Clogged or leaking fuel line",
+          "Wiring or connector issue"
+        ]
+      },
+      {
+        "code": "CS1010",
+        "name": "Fuel Pump Control Module Fault",
+        "description": "Fuel pump control module not operating correctly.",
+        "possibleCauses": [
+          "Failed control module",
+          "Wiring or connector problem",
+          "Blown fuse or relay"
+        ]
+      }
+    ]
+  }
+}

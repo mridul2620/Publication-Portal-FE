@@ -1,0 +1,196 @@
+{
+  "TransmissionSystemCatalog": {
+    "MainComponents": [
+      {
+        "partNumber": "CS11001",
+        "name": "Transmission Housing",
+        "description": "Main casing that encloses and protects all transmission components.",
+        "material": "Aluminum or cast iron"
+      },
+      {
+        "partNumber": "CS11002",
+        "name": "Input Shaft",
+        "description": "Transfers engine power into the transmission assembly.",
+        "material": "Hardened steel"
+      },
+      {
+        "partNumber": "CS11003",
+        "name": "Output Shaft",
+        "description": "Delivers rotational power from transmission to the driveshaft.",
+        "material": "Alloy steel"
+      },
+      {
+        "partNumber": "CS11004",
+        "name": "Gear Set",
+        "description": "Collection of gears used to change speed and torque ratios.",
+        "material": "Case-hardened steel"
+      },
+      {
+        "partNumber": "CS11005",
+        "name": "Synchronizer Assembly",
+        "description": "Allows smooth gear shifting by matching gear speeds.",
+        "material": "Brass and steel"
+      }
+    ],
+    "ClutchAndTorqueConverter": [
+      {
+        "partNumber": "CS11101",
+        "name": "Clutch Disc",
+        "description": "Engages and disengages engine power to the transmission input shaft.",
+        "material": "Steel plate with friction lining"
+      },
+      {
+        "partNumber": "CS11102",
+        "name": "Clutch Pressure Plate",
+        "description": "Applies pressure to the clutch disc against the flywheel.",
+        "material": "Cast iron or steel"
+      },
+      {
+        "partNumber": "CS11103",
+        "name": "Release Bearing",
+        "description": "Reduces friction and assists clutch pedal actuation.",
+        "material": "Steel with sealed ball bearings"
+      },
+      {
+        "partNumber": "CS11104",
+        "name": "Flywheel",
+        "description": "Connects engine to clutch, storing rotational energy.",
+        "material": "Cast iron or forged steel"
+      },
+      {
+        "partNumber": "CS11105",
+        "name": "Torque Converter",
+        "description": "Fluid coupling transmitting power in automatic transmissions.",
+        "material": "Steel casing with turbine and stator blades"
+      }
+    ],
+    "HydraulicAndLubricationSystem": [
+      {
+        "partNumber": "CS11201",
+        "name": "Oil Pump",
+        "description": "Circulates transmission fluid through valves and clutch packs.",
+        "material": "Aluminum housing with steel gears"
+      },
+      {
+        "partNumber": "CS11202",
+        "name": "Valve Body",
+        "description": "Controls fluid flow to different transmission components.",
+        "material": "Aluminum casting with hydraulic channels"
+      },
+      {
+        "partNumber": "CS11203",
+        "name": "Transmission Fluid Filter",
+        "description": "Removes debris and contaminants from transmission fluid.",
+        "material": "Steel casing with mesh filter element"
+      },
+      {
+        "partNumber": "CS11204",
+        "name": "Transmission Pan",
+        "description": "Reservoir that holds and collects transmission fluid.",
+        "material": "Stamped steel or aluminum"
+      },
+      {
+        "partNumber": "CS11205",
+        "name": "Cooler Lines",
+        "description": "Carries transmission fluid to and from the cooler.",
+        "material": "Steel or reinforced rubber hoses"
+      }
+    ],
+    "ControlAndShiftMechanisms": [
+      {
+        "partNumber": "CS11301",
+        "name": "Gear Shift Lever",
+        "description": "Manual or electronic lever used to select transmission gears.",
+        "material": "Steel rod with plastic handle"
+      },
+      {
+        "partNumber": "CS11302",
+        "name": "Shift Cable",
+        "description": "Transmits motion from the gear lever to the transmission.",
+        "material": "Steel cable with plastic sheath"
+      },
+      {
+        "partNumber": "CS11303",
+        "name": "Shift Fork",
+        "description": "Engages and moves gears along the shaft during shifting.",
+        "material": "Forged steel"
+      },
+      {
+        "partNumber": "CS11304",
+        "name": "Detent Mechanism",
+        "description": "Holds the shift lever in selected gear positions.",
+        "material": "Steel and spring assembly"
+      },
+      {
+        "partNumber": "CS11305",
+        "name": "Selector Shaft",
+        "description": "Rotates to engage different gear selectors.",
+        "material": "Hardened alloy steel"
+      }
+    ],
+    "SensorsAndControlModules": [
+      {
+        "partNumber": "CS11401",
+        "name": "Transmission Control Module (TCM)",
+        "description": "Electronic unit that manages gear shifts and pressure control.",
+        "material": "Microprocessor-based electronic module"
+      },
+      {
+        "partNumber": "CS11402",
+        "name": "Speed Sensor",
+        "description": "Monitors input and output shaft speed for gear ratio control.",
+        "material": "Magnetic or Hall effect sensor"
+      },
+      {
+        "partNumber": "CS11403",
+        "name": "Temperature Sensor",
+        "description": "Monitors transmission fluid temperature for protection and efficiency.",
+        "material": "Thermistor-type sensor"
+      },
+      {
+        "partNumber": "CS11404",
+        "name": "Pressure Sensor",
+        "description": "Measures hydraulic pressure within transmission circuits.",
+        "material": "Electronic diaphragm sensor"
+      },
+      {
+        "partNumber": "CS11405",
+        "name": "Range Sensor (PRNDL Sensor)",
+        "description": "Detects the selected gear position in automatic transmissions.",
+        "material": "Plastic housing with magnetic sensors"
+      }
+    ],
+    "SupportingHardware": [
+      {
+        "partNumber": "CS11501",
+        "name": "Mounting Brackets",
+        "description": "Secures transmission assembly to the vehicle frame.",
+        "material": "Steel or aluminum"
+      },
+      {
+        "partNumber": "CS11502",
+        "name": "Seals and Gaskets",
+        "description": "Prevents fluid leaks between transmission components.",
+        "material": "Rubber or composite material"
+      },
+      {
+        "partNumber": "CS11503",
+        "name": "Bearings",
+        "description": "Supports rotating shafts and reduces friction.",
+        "material": "Hardened steel"
+      },
+      {
+        "partNumber": "CS11504",
+        "name": "Snap Rings and Retainers",
+        "description": "Holds gears and bearings in place on shafts.",
+        "material": "Spring steel"
+      },
+      {
+        "partNumber": "CS11505",
+        "name": "Transmission Mount",
+        "description": "Absorbs vibration and stabilizes the transmission assembly.",
+        "material": "Steel with rubber bushing"
+      }
+    ]
+  }
+}

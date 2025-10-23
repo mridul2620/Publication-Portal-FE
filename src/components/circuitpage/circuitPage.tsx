@@ -200,7 +200,7 @@ const CircuitPageContent: React.FC = () => {
   return (
     <div className="circuit-page-container">
       <div className="vehicle-info-bar">
-        <h1>{brand}-{model} {year}MY Schematics</h1>
+        <h1>Circuit Schematics</h1>
       </div>
       <div className="panels-container">
         {/* Left Panel */}

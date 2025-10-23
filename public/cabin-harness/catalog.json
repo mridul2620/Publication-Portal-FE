@@ -1,0 +1,178 @@
+{
+  "CabinHarnessSystemCatalog": {
+    "MainHarnessComponents": [
+      {
+        "partNumber": "CS10001",
+        "name": "Main Cabin Wiring Harness",
+        "description": "Primary harness distributing power and signals throughout the cabin.",
+        "material": "Copper wires with PVC insulation"
+      },
+      {
+        "partNumber": "CS10002",
+        "name": "Dashboard Harness",
+        "description": "Connects instrument cluster, infotainment, and control switches.",
+        "material": "Copper wire bundle with protective sheathing"
+      },
+      {
+        "partNumber": "CS10003",
+        "name": "Roof Harness",
+        "description": "Routes power and signals for overhead lights, sensors, and airbags.",
+        "material": "Copper conductors with heat-resistant insulation"
+      },
+      {
+        "partNumber": "CS10004",
+        "name": "Floor Harness",
+        "description": "Runs under the carpet to connect seat modules and floor sensors.",
+        "material": "Shielded copper cables with flexible conduit"
+      },
+      {
+        "partNumber": "CS10005",
+        "name": "Door Harness",
+        "description": "Connects door locks, window motors, and mirror controls.",
+        "material": "Flexible copper wiring with moisture-resistant jacket"
+      }
+    ],
+    "ConnectorsAndTerminals": [
+      {
+        "partNumber": "CS10101",
+        "name": "Multi-Pin Connectors",
+        "description": "Used for quick connection between harness segments.",
+        "material": "Nylon housing with tin-plated terminals"
+      },
+      {
+        "partNumber": "CS10102",
+        "name": "Ground Terminals",
+        "description": "Provide grounding connection for cabin electrical circuits.",
+        "material": "Copper with nickel plating"
+      },
+      {
+        "partNumber": "CS10103",
+        "name": "Inline Connectors",
+        "description": "Connect intermediate harness sections within the cabin.",
+        "material": "Plastic body with metal pins"
+      },
+      {
+        "partNumber": "CS10104",
+        "name": "Fuse Box Connectors",
+        "description": "Interfaces the harness with cabin fuse and relay panel.",
+        "material": "Plastic connector with brass terminals"
+      }
+    ],
+    "ModulesAndControlUnits": [
+      {
+        "partNumber": "CS10201",
+        "name": "Body Control Module (BCM)",
+        "description": "Controls cabin electrical functions like lighting and locks.",
+        "material": "Electronic control unit with microprocessor"
+      },
+      {
+        "partNumber": "CS10202",
+        "name": "Airbag Control Module",
+        "description": "Monitors crash sensors and deploys airbags during impact.",
+        "material": "Aluminum ECU with accelerometers"
+      },
+      {
+        "partNumber": "CS10203",
+        "name": "Seat Control Module",
+        "description": "Manages power seat adjustments, memory, and heating.",
+        "material": "Electronic module with motor relays"
+      },
+      {
+        "partNumber": "CS10204",
+        "name": "Lighting Control Module",
+        "description": "Regulates interior and ambient lighting systems.",
+        "material": "Plastic module with MOSFET circuitry"
+      },
+      {
+        "partNumber": "CS10205",
+        "name": "HVAC Control Module",
+        "description": "Controls cabin temperature, fan speed, and airflow direction.",
+        "material": "Electronic control unit"
+      }
+    ],
+    "SensorAndSwitchConnections": [
+      {
+        "partNumber": "CS10301",
+        "name": "Steering Wheel Switch Harness",
+        "description": "Connects steering controls for audio, cruise, and airbag systems.",
+        "material": "Spiral cable (clock spring) with copper tracks"
+      },
+      {
+        "partNumber": "CS10302",
+        "name": "Seat Occupancy Sensor Connector",
+        "description": "Provides signal path from seat sensors to airbag module.",
+        "material": "Plastic connector with gold-plated contacts"
+      },
+      {
+        "partNumber": "CS10303",
+        "name": "Door Switch Wiring",
+        "description": "Links door open/close switches to the body control system.",
+        "material": "Thin copper wiring with insulation sleeves"
+      },
+      {
+        "partNumber": "CS10304",
+        "name": "Ignition Switch Connector",
+        "description": "Connects ignition switch to start circuit and power distribution.",
+        "material": "Plastic connector with copper pins"
+      }
+    ],
+    "SafetyAndProtectionComponents": [
+      {
+        "partNumber": "CS10401",
+        "name": "Fuse Box Assembly",
+        "description": "Houses cabin fuses and relays for circuit protection.",
+        "material": "Plastic housing with metal fuse terminals"
+      },
+      {
+        "partNumber": "CS10402",
+        "name": "Relay Block",
+        "description": "Contains relays controlling lighting, HVAC, and accessories.",
+        "material": "Plastic enclosure with copper busbars"
+      },
+      {
+        "partNumber": "CS10403",
+        "name": "Cable Grommets",
+        "description": "Protect wiring where it passes through panels and metal edges.",
+        "material": "Rubber or silicone"
+      },
+      {
+        "partNumber": "CS10404",
+        "name": "Harness Tapes and Clips",
+        "description": "Secures wiring bundles and prevents vibration wear.",
+        "material": "PVC tape and nylon clips"
+      },
+      {
+        "partNumber": "CS10405",
+        "name": "Ground Distribution Point",
+        "description": "Central grounding node for multiple cabin circuits.",
+        "material": "Brass or copper block"
+      }
+    ],
+    "InfotainmentAndCommunication": [
+      {
+        "partNumber": "CS10501",
+        "name": "Infotainment Harness",
+        "description": "Connects head unit, amplifier, and speakers.",
+        "material": "Shielded copper cables"
+      },
+      {
+        "partNumber": "CS10502",
+        "name": "Antenna Cable",
+        "description": "Transmits radio and GPS signals to the infotainment system.",
+        "material": "Coaxial cable with copper core"
+      },
+      {
+        "partNumber": "CS10503",
+        "name": "USB and Data Interface Harness",
+        "description": "Provides data connectivity to infotainment and diagnostic ports.",
+        "material": "Shielded twisted pair cables"
+      },
+      {
+        "partNumber": "CS10504",
+        "name": "Instrument Cluster Connector",
+        "description": "Connects dashboard display and gauges to the vehicle network.",
+        "material": "Plastic connector with gold-plated pins"
+      }
+    ]
+  }
+}

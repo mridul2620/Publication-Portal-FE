@@ -1,0 +1,106 @@
+{
+  "BrakeSystem": {
+    "DTCs": [
+      {
+        "code": "C1001",
+        "name": "Wheel Speed Sensor Fault",
+        "description": "Detected malfunction in the wheel speed sensor circuit.",
+        "possibleCauses": [
+          "Damaged wheel speed sensor",
+          "Wiring harness issues",
+          "Faulty ABS module"
+        ]
+      },
+      {
+        "code": "C1010",
+        "name": "ABS Pump Motor Malfunction",
+        "description": "ABS pump motor is not operating correctly.",
+        "possibleCauses": [
+          "Failed ABS pump motor",
+          "Blown fuse or relay",
+          "Hydraulic issues in brake lines"
+        ]
+      },
+      {
+        "code": "C1020",
+        "name": "Brake Fluid Level Low",
+        "description": "Brake fluid level is below the minimum threshold.",
+        "possibleCauses": [
+          "Leaking brake lines or calipers",
+          "Worn brake pads",
+          "Faulty master cylinder"
+        ]
+      },
+      {
+        "code": "C1030",
+        "name": "Brake Pedal Switch Failure",
+        "description": "Brake pedal switch signal is not detected by ECU.",
+        "possibleCauses": [
+          "Faulty brake light switch",
+          "Wiring issues",
+          "ECU input malfunction"
+        ]
+      },
+      {
+        "code": "C1040",
+        "name": "ABS Hydraulic Pressure Sensor Fault",
+        "description": "Pressure sensor in ABS hydraulic system is not within range.",
+        "possibleCauses": [
+          "Faulty ABS hydraulic sensor",
+          "Air in brake lines",
+          "ABS module failure"
+        ]
+      },
+      {
+        "code": "C1050",
+        "name": "Electronic Parking Brake Fault",
+        "description": "Electronic parking brake did not engage or release correctly.",
+        "possibleCauses": [
+          "Stuck brake caliper",
+          "Faulty parking brake motor",
+          "Wiring or sensor failure"
+        ]
+      },
+      {
+        "code": "C1060",
+        "name": "Brake Booster Vacuum Leak",
+        "description": "Vacuum level in brake booster is below operating specification.",
+        "possibleCauses": [
+          "Leaking vacuum hose",
+          "Failed brake booster",
+          "Intake manifold leak"
+        ]
+      },
+      {
+        "code": "C1070",
+        "name": "Brake Pad Wear Sensor Activated",
+        "description": "Brake pad wear sensor triggered due to low pad thickness.",
+        "possibleCauses": [
+          "Worn brake pads",
+          "Incorrect sensor installation",
+          "Faulty wear sensor"
+        ]
+      },
+      {
+        "code": "C1080",
+        "name": "ABS Relay Failure",
+        "description": "ABS relay did not switch properly or is faulty.",
+        "possibleCauses": [
+          "Blown or stuck relay",
+          "Wiring or connector issues",
+          "ABS module malfunction"
+        ]
+      },
+      {
+        "code": "C1090",
+        "name": "Brake Line Pressure Imbalance",
+        "description": "Uneven hydraulic pressure detected between left and right brakes.",
+        "possibleCauses": [
+          "Blocked brake line",
+          "Sticking caliper",
+          "Faulty ABS modulator"
+        ]
+      }
+    ]
+  }
+}

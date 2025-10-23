@@ -100,7 +100,7 @@ const LoginPage: React.FC = () => {
       setLoginError('');
       
       try {
-        const response = await axios.post('https://publication-portal-be.onrender.com/api/login', {
+        const response = await axios.post('http://localhost:3001/api/login', {
           username: formData.username,
           password: formData.password
         });
@@ -111,7 +111,7 @@ const LoginPage: React.FC = () => {
             localStorage.setItem('authToken', response.data.token);
           }
           // Navigate to homepage
-          window.location.href = 'https://publication-portal-fe.vercel.app/home-page';
+          window.location.href = '/home-page';
         }
       } catch (error) {
         console.error('Login failed:', error);
@@ -187,18 +187,18 @@ const LoginPage: React.FC = () => {
             
             {/* Tagline */}
             <p className="text-xl text-blue-100 mb-8 font-light">
-              Automotive Industry Publication Portal
+              Chartsign Industry Publication Portal
             </p>
             
             {/* Features */}
             <div className="space-y-4 text-left">
               <div className="flex items-center space-x-3 text-blue-100">
                 <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
-                <span>Industry-leading automotive insights</span>
+                <span>Industry-leading insights</span>
               </div>
               <div className="flex items-center space-x-3 text-blue-100">
                 <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />
-                <span>Comprehensive vehicle database</span>
+                <span>Comprehensive database</span>
               </div>
               <div className="flex items-center space-x-3 text-blue-100">
                 <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0" />

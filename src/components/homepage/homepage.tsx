@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { LogOut } from 'lucide-react';
+import { LogOut, Search, Car, Hash } from "lucide-react";
 
 interface VehicleData {
   _id: string;
@@ -26,11 +26,12 @@ const HomepageContent: React.FC = () => {
   const [vinNumber, setVinNumber] = useState<string>("");
   const [lastVinNumber, setLastVinNumber] = useState<string>("");
 
-  // Your existing useEffect hooks - keeping all functionality intact
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
-        const response = await axios.get("https://publication-portal-be.onrender.com/api/vehicles/getVehicles");
+        const response = await axios.get(
+          "https://publication-portal-be.onrender.com/api/vehicles/getVehicles"
+        );
         setVehicles(response.data.data);
       } catch (error) {
         console.error("Error fetching vehicle data:", error);
@@ -41,312 +42,293 @@ const HomepageContent: React.FC = () => {
 
   useEffect(() => {
     const models = vehicles
-      .filter(vehicle => vehicle.brand === selectedBrand)
-      .map(vehicle => vehicle.model.name);
+      .filter((vehicle) => vehicle.brand === selectedBrand)
+      .map((vehicle) => vehicle.model.name);
     setAvailableModels([...new Set(models)]);
     setSelectedModel("");
   }, [selectedBrand, vehicles]);
 
   useEffect(() => {
     const years = vehicles
-      .filter(vehicle => vehicle.brand === selectedBrand && vehicle.model.name === selectedModel)
-      .map(vehicle => vehicle.model.year);
+      .filter(
+        (vehicle) =>
+          vehicle.brand === selectedBrand &&
+          vehicle.model.name === selectedModel
+      )
+      .map((vehicle) => vehicle.model.year);
     setAvailableYears([...new Set(years)]);
     setSelectedYear(null);
   }, [selectedModel, selectedBrand, vehicles]);
 
   useEffect(() => {
     const engines = vehicles
-      .filter(vehicle =>
-        vehicle.brand === selectedBrand &&
-        vehicle.model.name === selectedModel &&
-        vehicle.model.year === selectedYear
+      .filter(
+        (vehicle) =>
+          vehicle.brand === selectedBrand &&
+          vehicle.model.name === selectedModel &&
+          vehicle.model.year === selectedYear
       )
-      .map(vehicle => vehicle.model.engine);
+      .map((vehicle) => vehicle.model.engine);
     setAvailableEngines([...new Set(engines)]);
   }, [selectedYear, selectedModel, selectedBrand, vehicles]);
 
-  // Your existing handlers - keeping all functionality intact
   const handleVehicleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
     if (!selectedBrand || !selectedModel || !selectedYear) {
       alert("Please select a brand, model, and year.");
       return;
     }
-    // Using window.location instead of router for compatibility
     window.location.href = `/circuit-page?brand=${selectedBrand}&model=${selectedModel}&year=${selectedYear}`;
   };
 
   const handleVinSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    if ((vinNumber.length !== 17) && (lastVinNumber.length !== 8)){
+    if (vinNumber.length !== 17 && lastVinNumber.length !== 8) {
       alert("Please enter a valid VIN number.");
       return;
     }
-    // Navigate to the same circuit page with VIN parameter
     window.location.href = `/documents`;
   };
 
   const handleLogout = () => {
-    window.location.href = '/';
+    window.location.href = "/";
   };
 
+  const brandOptions = [...new Set(vehicles.map((vehicle) => vehicle.brand))];
+
   return (
-    <div className="h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50 flex flex-col overflow-hidden">
-      <header className="bg-white shadow-sm border-b flex-shrink-0">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-14">
-            <div className="flex items-center space-x-3">
-              <div className="h-8 w-8 flex items-center justify-center bg-gray-800 rounded">
-              <img src="/logo.png" alt="Company Logo" className="h-6 w-6" />
-             </div>
-              <h1 className="text-xl font-bold text-gray-900">Chartsign</h1>
+    <div className="h-screen bg-gradient-to-br from-blue-30 via-white to-blue-30 flex flex-col overflow-hidden">
+      {/* Header */}
+      <header className="border-b border-slate-200 dark:border-slate-700 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex h-16 items-center justify-between">
+            <div className="flex items-center gap-3 cursor-pointer"
+             onClick={() => window.location.href = '/home-page'}>
+              <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-md">
+                <img src="/logo.png" alt="Company Logo" className="h-10 w-10" />
+              </div>
+              <div>
+                <h1 className="text-xl font-bold text-slate-900 dark:text-white">Chartsign</h1>
+                <p className="text-xs text-slate-600 dark:text-slate-400">
+                  Industry Publication Portal
+                </p>
+              </div>
             </div>
-            <button 
+            <button
               onClick={handleLogout}
-              className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-gray-100"
+              className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium rounded-md border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-700 transition-all duration-200"
             >
               <LogOut className="h-4 w-4" />
-              <span className="hidden sm:inline text-sm">Logout</span>
+              <span className="hidden sm:inline">Logout</span>
             </button>
           </div>
         </div>
       </header>
 
-      {/* Main Content - Flex container to fill remaining space */}
-      <main className="flex-1 flex items-center justify-center px-4 py-6 min-h-0">
-        <div className="w-full max-w-6xl">
-          {/* Title */}
-          <div className="text-center mb-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">
-              Vehicle Search
+      {/* Main Content */}
+      <main className="flex-1 overflow-y-auto">
+        <div className="container mx-auto px-4 py-6 sm:px-6 lg:px-8 h-full flex flex-col justify-center">
+          <div className="mb-6 text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-2">
+              Vehicle Documentation Search
             </h2>
-            <p className="text-gray-600">
-              Find your vehicle using model selection or VIN number
+            <p className="text-slate-600 dark:text-slate-400">
+              Find technical documentation using VIN or vehicle specifications
             </p>
           </div>
 
-          {/* Search Methods Container */}
-          <div className="grid lg:grid-cols-3 gap-6 items-start">
-
-            {/* VIN Search Card */}
-            <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
-              <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-4 py-3">
-                <h3 className="text-lg font-semibold text-white text-center">VIN Search</h3>
-              </div>
-              
-              <form onSubmit={handleVinSubmit} className="p-4 space-y-4">
-                <div>
-                  <label htmlFor="vin" className="block text-xs font-medium text-gray-700 mb-1">
-                    Vehicle Identification Number
-                  </label>
-                  <input
-                    id="vin"
-                    type="text"
-                    value={vinNumber}
-                    onChange={(e) => setVinNumber(e.target.value.toUpperCase())}
-                    placeholder="Enter 17-character VIN"
-                    maxLength={17}
-                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200 bg-white text-gray-900 font-mono"
-                    
-                  />
-                  <div className="mt-1 text-xs text-gray-500">
-                    {vinNumber.length}/17 characters
+          <div className="relative max-w-6xl mx-auto w-full">
+            <div className="grid gap-6 lg:grid-cols-2">
+              {/* VIN Search Card */}
+              <div className="rounded-lg border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-sm hover:border-blue-500/50 dark:hover:border-blue-400/50 transition-all duration-200">
+                <div className="bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900 p-6 border-b border-slate-200 dark:border-slate-700">
+                  <div className="flex items-center gap-2 mb-1">
+                    <Hash className="h-5 w-5 text-blue-500 dark:text-blue-400" />
+                    <h3 className="text-2xl font-semibold leading-none tracking-tight text-slate-900 dark:text-white">VIN Search</h3>
                   </div>
-                </div>
-
-                <div>
-                  <label htmlFor="lastVin" className="block text-xs font-medium text-gray-700 mb-1">
-                    Vehicle Identification Number
-                  </label>
-                  <input
-                    id="lastVin"
-                    type="text"
-                    value={lastVinNumber}
-                    onChange={(e) => setLastVinNumber(e.target.value.toUpperCase())}
-                    placeholder="Or enter the last 8-characters"
-                    maxLength={8}
-                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200 bg-white text-gray-900 font-mono"
-                    
-                  />
-                  <div className="mt-1 text-xs text-gray-500">
-                    {lastVinNumber.length}/8 characters
-                  </div>
-                </div>
-
-                <div className="bg-blue-50 rounded-lg p-3 border border-blue-100">
-                  <h4 className="text-sm font-semibold text-green-900 mb-1">
-                    Quick & Accurate
-                  </h4>
-                  <p className="text-xs text-black-300">
-                    Enter your VIN for instant vehicle identification and detailed specifications.
+                  <p className="text-sm text-slate-600 dark:text-slate-400">
+                    Quick search using Vehicle Identification Number
                   </p>
                 </div>
+                <div className="p-6">
+                  <form onSubmit={handleVinSubmit} className="space-y-4">
+                    <div className="space-y-2">
+                      <label htmlFor="vin" className="text-sm font-medium leading-none text-slate-900 dark:text-white">
+                        Full VIN Number
+                      </label>
+                      <input
+                        id="vin"
+                        type="text"
+                        value={vinNumber}
+                        onChange={(e) => setVinNumber(e.target.value.toUpperCase())}
+                        placeholder="Enter 17-character VIN"
+                        maxLength={17}
+                        className="flex h-10 w-full rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 px-3 py-2 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent disabled:cursor-not-allowed disabled:opacity-50 font-mono transition-all duration-200"
+                      />
+                      <p className="text-xs text-slate-600 dark:text-slate-400">
+                        {vinNumber.length}/17 characters
+                      </p>
+                    </div>
 
-                <div className="pt-2">
-                  <button
-                    type="submit"
-                    className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-green-700 focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-200 text-sm"
-                  >
-                    Search
-                  </button>
-                </div>
-              </form>
-            </div>
+                    <div className="relative">
+                      <div className="absolute inset-0 flex items-center">
+                        <div className="w-full border-t border-slate-200 dark:border-slate-700" />
+                      </div>
+                      <div className="relative flex justify-center text-xs uppercase">
+                        <span className="bg-white dark:bg-slate-800 px-2 text-slate-600 dark:text-slate-400">
+                          Or
+                        </span>
+                      </div>
+                    </div>
 
-            {/* OR Divider */}
-            <div className="flex items-center justify-center lg:flex-col lg:h-full">
-              <div className="flex items-center lg:flex-col lg:space-y-2 lg:space-x-0 space-x-4">
-                <div className="h-px lg:h-16 lg:w-px w-16 bg-gray-300"></div>
-                <div className="bg-white px-3 py-1 rounded-full border border-gray-300 text-gray-600 font-medium text-sm whitespace-nowrap">
-                  OR
+                    <div className="space-y-2">
+                      <label htmlFor="lastVin" className="text-sm font-medium leading-none text-slate-900 dark:text-white">
+                        Last 8 Characters
+                      </label>
+                      <input
+                        id="lastVin"
+                        type="text"
+                        value={lastVinNumber}
+                        onChange={(e) => setLastVinNumber(e.target.value.toUpperCase())}
+                        placeholder="Last 8 characters"
+                        maxLength={8}
+                        className="flex h-10 w-full rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 px-3 py-2 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent disabled:cursor-not-allowed disabled:opacity-50 font-mono transition-all duration-200"
+                      />
+                      <p className="text-xs text-slate-600 dark:text-slate-400">
+                        {lastVinNumber.length}/8 characters
+                      </p>
+                    </div>
+                    <div className="rounded-lg bg-gradient-to-br from-white to-slate-50 p-4 border border-primary/10">
+                        <h4 className="text-sm font-semibold text-foreground mb-1">
+                        Fast & Accurate
+                        </h4>
+                        <p className="text-xs text-muted-foreground leading-relaxed">
+                        Enter your VIN for instant vehicle identification and
+                        detailed technical specifications.
+                        </p>
+                    </div>                                    
+                    <button
+                      type="submit"
+                      className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 w-full transition-all duration-200 shadow-md hover:shadow-lg"
+                    >
+                      <Search className="h-4 w-4" />
+                      Search by VIN
+                    </button>
+                  </form>
                 </div>
-                <div className="h-px lg:h-16 lg:w-px w-16 bg-gray-300"></div>
               </div>
-            </div>
-            
-            {/* Vehicle Selection Card */}
-            <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
-              <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-4 py-3">
-                <h3 className="text-lg font-semibold text-white text-center">Model Selection</h3>
-              </div>
-              
-              <form onSubmit={handleVehicleSubmit} className="p-4 space-y-3">
-                {/* Brand Selection */}
-                <div>
-                  <label htmlFor="brand" className="block text-xs font-medium text-gray-700 mb-1">
-                    Brand
-                  </label>
-                  <select
-                    id="brand"
-                    value={selectedBrand}
-                    onChange={(e) => setSelectedBrand(e.target.value)}
-                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white text-gray-900"
-                    required
-                  >
-                    <option value="">- Select brand -</option>
-                    {[...new Set(vehicles.map(vehicle => vehicle.brand))].map(brand => (
-                      <option key={brand} value={brand}>{brand}</option>
-                    ))}
-                  </select>
-                </div>
 
-                {/* Model Selection */}
-                <div>
-                  <label htmlFor="model" className="block text-xs font-medium text-gray-700 mb-1">
-                    Model
-                  </label>
-                  <select
-                    id="model"
-                    value={selectedModel}
-                    onChange={(e) => setSelectedModel(e.target.value)}
-                    disabled={!selectedBrand}
-                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white text-gray-900 disabled:bg-gray-50 disabled:text-gray-400"
-                    required
-                  >
-                    <option value="">- Select model -</option>
-                    {availableModels.map(model => (
-                      <option key={model} value={model}>{model}</option>
-                    ))}
-                  </select>
-                </div>
-
-                {/* Year Selection */}
-                <div>
-                  <label htmlFor="year" className="block text-xs font-medium text-gray-700 mb-1">
-                    Year
-                  </label>
-                  <select
-                    id="year"
-                    value={selectedYear?.toString() || ""}
-                    onChange={(e) => setSelectedYear(parseInt(e.target.value))}
-                    disabled={!selectedModel}
-                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white text-gray-900 disabled:bg-gray-50 disabled:text-gray-400"
-                    required
-                  >
-                    <option value="">- Select year -</option>
-                    {availableYears.map(year => (
-                      <option key={year} value={year}>{year}</option>
-                    ))}
-                  </select>
-                </div>
-
-                {/* Engine Selection */}
-                <div>
-                  <label htmlFor="engine" className="block text-xs font-medium text-gray-700 mb-1">
-                    Engine
-                  </label>
-                  <select
-                    id="engine"
-                    disabled={!selectedYear}
-                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white text-gray-900 disabled:bg-gray-50 disabled:text-gray-400"
-                  >
-                    <option value="">- Select engine -</option>
-                    {availableEngines.map(engine => (
-                      <option key={engine} value={engine}>{engine}</option>
-                    ))}
-                  </select>
-                </div>
-
-                {/* Submit Button */}
-                <div className="pt-2">
-                  <button
-                    type="submit"
-                    className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200 text-sm"
-                  >
-                    Find Vehicle
-                  </button>
-                </div>
-              </form>
-            </div>
-
-            
-
-            {/* VIN Search Card
-            <div className="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden">
-              <div className="bg-gradient-to-r from-green-600 to-green-700 px-4 py-3">
-                <h3 className="text-lg font-semibold text-white text-center">VIN Search</h3>
-              </div>
-              
-              <form onSubmit={handleVinSubmit} className="p-4 space-y-4">
-                <div>
-                  <label htmlFor="vin" className="block text-xs font-medium text-gray-700 mb-1">
-                    Vehicle Identification Number
-                  </label>
-                  <input
-                    id="vin"
-                    type="text"
-                    value={vinNumber}
-                    onChange={(e) => setVinNumber(e.target.value.toUpperCase())}
-                    placeholder="Enter 17-character VIN"
-                    maxLength={17}
-                    className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-200 bg-white text-gray-900 font-mono"
-                    
-                  />
-                  <div className="mt-1 text-xs text-gray-500">
-                    {vinNumber.length}/17 characters
+              {/* Model Selection Card */}
+              <div className="rounded-lg border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-sm hover:border-blue-500/50 dark:hover:border-blue-400/50 transition-all duration-200">
+                <div className="bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900 p-6 border-b border-slate-200 dark:border-slate-700">
+                  <div className="flex items-center gap-2 mb-1">
+                    <Car className="h-5 w-5 text-blue-500 dark:text-blue-400" />
+                    <h3 className="text-2xl font-semibold leading-none tracking-tight text-slate-900 dark:text-white">Model Selection</h3>
                   </div>
-                </div>
-
-                <div className="bg-green-50 rounded-lg p-3 border border-green-100">
-                  <h4 className="text-sm font-semibold text-green-900 mb-1">
-                    Quick & Accurate
-                  </h4>
-                  <p className="text-xs text-green-800">
-                    Enter your 17-character VIN for instant vehicle identification and detailed specifications.
+                  <p className="text-sm text-slate-600 dark:text-slate-400">
+                    Search by vehicle brand, model, and year
                   </p>
                 </div>
+                <div className="p-6">
+                  <form onSubmit={handleVehicleSubmit} className="space-y-4">
+                    <div className="space-y-2">
+                      <label htmlFor="brand" className="text-sm font-medium leading-none text-slate-900 dark:text-white">
+                        Brand
+                      </label>
+                      <select
+                        id="brand"
+                        value={selectedBrand}
+                        onChange={(e) => setSelectedBrand(e.target.value)}
+                        required
+                        className="flex h-10 w-full items-center justify-between rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 px-3 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200"
+                      >
+                        <option value="">Select brand</option>
+                        {brandOptions.map((brand) => (
+                          <option key={brand} value={brand}>
+                            {brand}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
 
-                <div className="pt-2">
-                  <button
-                    type="submit"
-                    className="w-full bg-green-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-green-700 focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-200 text-sm"
-                  >
-                    Search by VIN
-                  </button>
+                    <div className="space-y-2">
+                      <label htmlFor="model" className="text-sm font-medium leading-none text-slate-900 dark:text-white">
+                        Model
+                      </label>
+                      <select
+                        id="model"
+                        value={selectedModel}
+                        onChange={(e) => setSelectedModel(e.target.value)}
+                        disabled={!selectedBrand}
+                        required
+                        className="flex h-10 w-full items-center justify-between rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 px-3 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200"
+                      >
+                        <option value="">Select model</option>
+                        {availableModels.map((model) => (
+                          <option key={model} value={model}>
+                            {model}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div className="space-y-2">
+                      <label htmlFor="year" className="text-sm font-medium leading-none text-slate-900 dark:text-white">
+                        Year
+                      </label>
+                      <select
+                        id="year"
+                        value={selectedYear?.toString() || ""}
+                        onChange={(e) => setSelectedYear(parseInt(e.target.value))}
+                        disabled={!selectedModel}
+                        required
+                        className="flex h-10 w-full items-center justify-between rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 px-3 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200"
+                      >
+                        <option value="">Select year</option>
+                        {availableYears.map((year) => (
+                          <option key={year} value={year.toString()}>
+                            {year}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div className="space-y-2">
+                      <label htmlFor="engine" className="text-sm font-medium leading-none text-slate-900 dark:text-white">
+                        Engine
+                      </label>
+                      <select
+                        id="engine"
+                        disabled={!selectedYear}
+                        className="flex h-10 w-full items-center justify-between rounded-md border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 px-3 py-2 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200"
+                      >
+                        <option value="">Select engine</option>
+                        {availableEngines.map((engine) => (
+                          <option key={engine} value={engine}>
+                            {engine}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900 disabled:pointer-events-none disabled:opacity-50 h-11 px-8 w-full transition-all duration-200 shadow-md hover:shadow-lg"
+                    >
+                      <Search className="h-4 w-4" />
+                      Find Documentation
+                    </button>
+                  </form>
                 </div>
-              </form>
-            </div> */}
+              </div>
+            </div>
+
+            {/* OR Divider between cards */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 hidden lg:block">
+              <div className="bg-white dark:bg-slate-900 border-2 border-blue-500 dark:border-blue-400 rounded-full w-16 h-16 flex items-center justify-center shadow-lg">
+                <span className="text-blue-500 dark:text-blue-400 font-bold text-lg">OR</span>
+              </div>
+            </div>
           </div>
         </div>
       </main>

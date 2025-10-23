@@ -1,0 +1,106 @@
+{
+  "EngineClimateControlSystem": {
+    "DTCs": [
+      {
+        "code": "CS2001",
+        "name": "Blower Motor Circuit Fault",
+        "description": "Detected malfunction in the blower motor electrical circuit.",
+        "possibleCauses": [
+          "Blown fuse",
+          "Faulty blower motor",
+          "Wiring issues"
+        ]
+      },
+      {
+        "code": "CS2002",
+        "name": "Blower Motor Resistor Failure",
+        "description": "Blower motor does not respond correctly to speed settings.",
+        "possibleCauses": [
+          "Failed blower resistor",
+          "Open circuit wiring",
+          "Faulty HVAC control module"
+        ]
+      },
+      {
+        "code": "CS2003",
+        "name": "Air Mix Door Actuator Malfunction",
+        "description": "HVAC cannot properly mix hot and cold air.",
+        "possibleCauses": [
+          "Faulty air mix actuator",
+          "Damaged gears",
+          "Wiring or connector problem"
+        ]
+      },
+      {
+        "code": "CS2004",
+        "name": "Mode Door Actuator Fault",
+        "description": "Airflow direction cannot be switched between vents.",
+        "possibleCauses": [
+          "Failed mode door actuator",
+          "Broken actuator gears",
+          "Control module issue"
+        ]
+      },
+      {
+        "code": "CS2005",
+        "name": "Recirculation Door Actuator Fault",
+        "description": "Cannot switch between recirculated air and fresh air intake.",
+        "possibleCauses": [
+          "Faulty actuator",
+          "Wiring problem",
+          "Control module failure"
+        ]
+      },
+      {
+        "code": "CS2006",
+        "name": "Cabin Temperature Sensor Failure",
+        "description": "Cabin temperature reading is out of range or missing.",
+        "possibleCauses": [
+          "Defective sensor",
+          "Open or shorted wiring",
+          "HVAC control module error"
+        ]
+      },
+      {
+        "code": "CS2007",
+        "name": "Ambient Temperature Sensor Fault",
+        "description": "Outside air temperature sensor not providing valid data.",
+        "possibleCauses": [
+          "Sensor failure",
+          "Wiring harness damage",
+          "HVAC module communication issue"
+        ]
+      },
+      {
+        "code": "CS2008",
+        "name": "Evaporator Temperature Sensor Fault",
+        "description": "Evaporator coil temperature is not detected properly, risk of freeze-up.",
+        "possibleCauses": [
+          "Faulty thermistor",
+          "Wiring problem",
+          "Control module misreading"
+        ]
+      },
+      {
+        "code": "CS2009",
+        "name": "HVAC Control Module Communication Error",
+        "description": "Control module is not responding to inputs or commands.",
+        "possibleCauses": [
+          "Module failure",
+          "CAN bus communication problem",
+          "Power supply issue"
+        ]
+      },
+      {
+        "code": "CS2010",
+        "name": "Heater Core Flow Restriction",
+        "description": "Insufficient coolant flow through heater core detected.",
+        "possibleCauses": [
+          "Clogged heater core",
+          "Faulty heater control valve",
+          "Coolant system blockage"
+        ]
+      }
+    ]
+  }
+}

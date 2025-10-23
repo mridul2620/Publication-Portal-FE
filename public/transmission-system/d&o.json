@@ -1,0 +1,106 @@
+{
+  "TransmissionSystem": {
+    "DTCs": [
+      {
+        "code": "CS1001",
+        "name": "Transmission Fluid Temperature Sensor Fault",
+        "description": "Transmission fluid temperature reading is out of range or missing.",
+        "possibleCauses": [
+          "Failed temperature sensor",
+          "Wiring or connector issue",
+          "ECU misreading"
+        ]
+      },
+      {
+        "code": "CS1002",
+        "name": "Transmission Range Sensor Fault",
+        "description": "Incorrect signal from range selector sensor.",
+        "possibleCauses": [
+          "Faulty range sensor",
+          "Wiring or connector damage",
+          "ECU communication issue"
+        ]
+      },
+      {
+        "code": "CS1003",
+        "name": "Torque Converter Clutch (TCC) Solenoid Fault",
+        "description": "TCC solenoid not engaging or releasing properly.",
+        "possibleCauses": [
+          "Failed TCC solenoid",
+          "Wiring or connector issue",
+          "Valve body malfunction"
+        ]
+      },
+      {
+        "code": "CS1004",
+        "name": "Shift Solenoid A/B Fault",
+        "description": "Shift solenoid not operating correctly.",
+        "possibleCauses": [
+          "Faulty solenoid",
+          "Clogged hydraulic passage",
+          "Wiring or connector issue"
+        ]
+      },
+      {
+        "code": "CS1005",
+        "name": "Transmission Fluid Pressure Too Low",
+        "description": "Detected hydraulic pressure below specification.",
+        "possibleCauses": [
+          "Low fluid level",
+          "Faulty pump",
+          "Leaking hydraulic circuit"
+        ]
+      },
+      {
+        "code": "CS1006",
+        "name": "Transmission Fluid Pressure Too High",
+        "description": "Detected hydraulic pressure above specification.",
+        "possibleCauses": [
+          "Blocked fluid passage",
+          "Faulty pressure regulator",
+          "Faulty pump"
+        ]
+      },
+      {
+        "code": "CS1007",
+        "name": "Clutch Pressure Switch Fault",
+        "description": "Clutch switch signal not detected or inconsistent.",
+        "possibleCauses": [
+          "Failed switch",
+          "Wiring issue",
+          "ECU input problem"
+        ]
+      },
+      {
+        "code": "CS1008",
+        "name": "Transmission Control Module (TCM) Communication Fault",
+        "description": "TCM not responding or communication error detected.",
+        "possibleCauses": [
+          "Faulty TCM",
+          "CAN bus wiring issue",
+          "Power supply problem"
+        ]
+      },
+      {
+        "code": "CS1009",
+        "name": "Input/Output Speed Sensor Fault",
+        "description": "Input or output speed sensor signal missing or out of range.",
+        "possibleCauses": [
+          "Failed speed sensor",
+          "Damaged wiring harness",
+          "Faulty TCM"
+        ]
+      },
+      {
+        "code": "CS1010",
+        "name": "Gear Ratio Error",
+        "description": "Detected mismatch between input and output shaft speeds.",
+        "possibleCauses": [
+          "Faulty input/output sensors",
+          "Internal transmission mechanical issue",
+          "TCM miscalculation"
+        ]
+      }
+    ]
+  }
+}

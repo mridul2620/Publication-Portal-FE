@@ -1,0 +1,134 @@
+{
+  "EngineSensorsCatalog": {
+    "PositionAndSpeedSensors": [
+      {
+        "partNumber": "CS8001",
+        "name": "Crankshaft Position Sensor",
+        "description": "Detects crankshaft rotation speed and position for ignition timing.",
+        "material": "Magnetic or Hall effect sensor"
+      },
+      {
+        "partNumber": "CS8002",
+        "name": "Camshaft Position Sensor",
+        "description": "Monitors camshaft position to control valve timing and fuel injection.",
+        "material": "Magnetic or Hall effect sensor"
+      },
+      {
+        "partNumber": "CS8003",
+        "name": "Vehicle Speed Sensor",
+        "description": "Measures vehicle speed for ECU and transmission control.",
+        "material": "Magnetic sensor with gear wheel interface"
+      }
+    ],
+    "TemperatureSensors": [
+      {
+        "partNumber": "CS8101",
+        "name": "Coolant Temperature Sensor",
+        "description": "Monitors engine coolant temperature to regulate fan and fuel mixture.",
+        "material": "Thermistor type sensor"
+      },
+      {
+        "partNumber": "CS8102",
+        "name": "Intake Air Temperature Sensor",
+        "description": "Measures air temperature entering the engine for fuel-air adjustment.",
+        "material": "NTC thermistor"
+      },
+      {
+        "partNumber": "CS8103",
+        "name": "Exhaust Gas Temperature Sensor",
+        "description": "Monitors exhaust temperature to protect turbocharger and catalytic converter.",
+        "material": "Thermocouple sensor"
+      },
+      {
+        "partNumber": "CS8104",
+        "name": "Oil Temperature Sensor",
+        "description": "Measures engine oil temperature for lubrication and cooling control.",
+        "material": "Resistive temperature sensor"
+      }
+    ],
+    "PressureAndFlowSensors": [
+      {
+        "partNumber": "CS8201",
+        "name": "Manifold Absolute Pressure (MAP) Sensor",
+        "description": "Measures air pressure in intake manifold for load calculation.",
+        "material": "Silicon pressure transducer"
+      },
+      {
+        "partNumber": "CS8202",
+        "name": "Mass Air Flow (MAF) Sensor",
+        "description": "Measures the mass of air entering the engine for proper fuel ratio.",
+        "material": "Hot-wire sensor with plastic housing"
+      },
+      {
+        "partNumber": "CS8203",
+        "name": "Oil Pressure Sensor",
+        "description": "Monitors engine oil pressure and sends signal to ECU or gauge.",
+        "material": "Electronic pressure sensor"
+      },
+      {
+        "partNumber": "CS8204",
+        "name": "Fuel Pressure Sensor",
+        "description": "Measures fuel pressure in the rail for precise injection control.",
+        "material": "Piezoelectric pressure sensor"
+      },
+      {
+        "partNumber": "CS8205",
+        "name": "Boost Pressure Sensor",
+        "description": "Monitors turbocharger boost levels to avoid overpressure.",
+        "material": "Silicon diaphragm sensor"
+      }
+    ],
+    "EmissionAndCombustionSensors": [
+      {
+        "partNumber": "CS8301",
+        "name": "Oxygen Sensor (Lambda Sensor)",
+        "description": "Measures oxygen content in exhaust gases for air-fuel ratio control.",
+        "material": "Zirconia ceramic with platinum electrodes"
+      },
+      {
+        "partNumber": "CS8302",
+        "name": "Knock Sensor",
+        "description": "Detects engine knocking and sends signal to retard ignition timing.",
+        "material": "Piezoelectric crystal sensor"
+      },
+      {
+        "partNumber": "CS8303",
+        "name": "Detonation Sensor",
+        "description": "Senses combustion irregularities for engine protection.",
+        "material": "Piezoelectric element in metal housing"
+      },
+      {
+        "partNumber": "CS8304",
+        "name": "NOx Sensor",
+        "description": "Measures nitrogen oxide emissions for emission control systems.",
+        "material": "Ceramic electrochemical sensor"
+      }
+    ],
+    "AdditionalSensors": [
+      {
+        "partNumber": "CS8401",
+        "name": "Throttle Position Sensor",
+        "description": "Detects the position of the throttle valve for acceleration control.",
+        "material": "Potentiometer or Hall effect sensor"
+      },
+      {
+        "partNumber": "CS8402",
+        "name": "EGR Valve Position Sensor",
+        "description": "Monitors position of the exhaust gas recirculation valve.",
+        "material": "Linear potentiometer"
+      },
+      {
+        "partNumber": "CS8403",
+        "name": "Accelerator Pedal Position Sensor",
+        "description": "Measures pedal movement to control throttle electronically.",
+        "material": "Dual-channel Hall effect sensor"
+      },
+      {
+        "partNumber": "CS8404",
+        "name": "Ambient Air Pressure Sensor",
+        "description": "Measures atmospheric pressure for ECU altitude adjustment.",
+        "material": "MEMS barometric sensor"
+      }
+    ]
+  }
+}

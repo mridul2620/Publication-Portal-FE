@@ -1,0 +1,108 @@
+{
+  "EngineClimateControlSystem": {
+    "MainComponents": [
+      {
+        "partNumber": "CS1001",
+        "name": "HVAC Control Module",
+        "description": "Manages heating, ventilation, and air conditioning functions based on driver input and sensor data.",
+        "material": "Plastic housing with electronic circuits"
+      },
+      {
+        "partNumber": "CS1002",
+        "name": "Blower Motor",
+        "description": "Forces air through the HVAC system into the cabin.",
+        "material": "Plastic and metal motor assembly"
+      },
+      {
+        "partNumber": "CS1003",
+        "name": "Blower Motor Resistor / Control Module",
+        "description": "Controls blower motor speed.",
+        "material": "Resistor element in plastic housing or electronic control module"
+      },
+      {
+        "partNumber": "CS1004",
+        "name": "Heater Core",
+        "description": "Transfers heat from engine coolant to the cabin air.",
+        "material": "Aluminum core with plastic tanks"
+      },
+      {
+        "partNumber": "CS1005",
+        "name": "Evaporator Core",
+        "description": "Absorbs heat from cabin air to provide cooling.",
+        "material": "Aluminum with copper tubing"
+      }
+    ],
+    "AirDistributionComponents": [
+      {
+        "partNumber": "CS1101",
+        "name": "Air Mix Door Actuator",
+        "description": "Controls air temperature by blending hot and cold air.",
+        "material": "Plastic gear with electric motor"
+      },
+      {
+        "partNumber": "CS1102",
+        "name": "Mode Door Actuator",
+        "description": "Directs airflow to different vents (floor, dash, defrost).",
+        "material": "Plastic gear with electric motor"
+      },
+      {
+        "partNumber": "CS1103",
+        "name": "Recirculation Door Actuator",
+        "description": "Controls recirculation of cabin air versus outside air.",
+        "material": "Plastic and metal actuator"
+      }
+    ],
+    "Sensors": [
+      {
+        "partNumber": "CS1201",
+        "name": "Cabin Temperature Sensor",
+        "description": "Measures cabin temperature to adjust HVAC output.",
+        "material": "Electronic sensor"
+      },
+      {
+        "partNumber": "CS1202",
+        "name": "Ambient Temperature Sensor",
+        "description": "Detects outside air temperature for HVAC logic.",
+        "material": "Thermistor in plastic housing"
+      },
+      {
+        "partNumber": "CS1203",
+        "name": "Sunload Sensor",
+        "description": "Measures sunlight intensity to optimize climate control.",
+        "material": "Photodiode sensor in plastic housing"
+      },
+      {
+        "partNumber": "CS1204",
+        "name": "Evaporator Temperature Sensor",
+        "description": "Prevents evaporator freezing by monitoring coil temperature.",
+        "material": "Thermistor in plastic housing"
+      }
+    ],
+    "SupportingHardware": [
+      {
+        "partNumber": "CS1301",
+        "name": "Ducts and Vents",
+        "description": "Channels air from HVAC unit to cabin.",
+        "material": "Plastic"
+      },
+      {
+        "partNumber": "CS1302",
+        "name": "HVAC Mounting Brackets",
+        "description": "Secures HVAC components inside the dashboard or engine bay.",
+        "material": "Steel or aluminum"
+      },
+      {
+        "partNumber": "CS1303",
+        "name": "Hoses and Clamps",
+        "description": "Connects coolant and refrigerant lines to the HVAC system.",
+        "material": "Rubber hoses with metal clamps"
+      },
+      {
+        "partNumber": "CS1304",
+        "name": "Blower Motor Resistors Wiring",
+        "description": "Connects resistors and actuators to the HVAC control module.",
+        "material": "Copper wires with insulation"
+      }
+    ]
+  }
+}

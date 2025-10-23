@@ -1,0 +1,106 @@
+{
+  "EngineSensorSystem": {
+    "DTCs": [
+      {
+        "code": "CS1001",
+        "name": "Mass Air Flow (MAF) Sensor Fault",
+        "description": "MAF sensor signal is missing or out of range.",
+        "possibleCauses": [
+          "Dirty or failed MAF sensor",
+          "Wiring or connector issue",
+          "Intake air leaks"
+        ]
+      },
+      {
+        "code": "CS1002",
+        "name": "Oxygen Sensor (O2) Fault",
+        "description": "Oxygen sensor signal not detected or out of expected range.",
+        "possibleCauses": [
+          "Failed O2 sensor",
+          "Exhaust leak near sensor",
+          "Wiring or connector issue"
+        ]
+      },
+      {
+        "code": "CS1003",
+        "name": "Throttle Position Sensor (TPS) Fault",
+        "description": "TPS signal inconsistent or missing.",
+        "possibleCauses": [
+          "Faulty throttle position sensor",
+          "Dirty/sticking throttle plate",
+          "Wiring/connector issue"
+        ]
+      },
+      {
+        "code": "CS1004",
+        "name": "Coolant Temperature Sensor Fault",
+        "description": "Engine coolant temperature reading not detected or out of range.",
+        "possibleCauses": [
+          "Failed coolant sensor",
+          "Wiring or connector issue",
+          "ECU reading problem"
+        ]
+      },
+      {
+        "code": "CS1005",
+        "name": "Crankshaft Position Sensor Fault",
+        "description": "Crankshaft position signal is missing or intermittent.",
+        "possibleCauses": [
+          "Failed crankshaft sensor",
+          "Damaged wiring harness",
+          "Timing misalignment"
+        ]
+      },
+      {
+        "code": "CS1006",
+        "name": "Camshaft Position Sensor Fault",
+        "description": "Camshaft position signal is out of range or missing.",
+        "possibleCauses": [
+          "Faulty camshaft sensor",
+          "Timing chain/belt issue",
+          "Wiring/ECU problem"
+        ]
+      },
+      {
+        "code": "CS1007",
+        "name": "Knock Sensor Fault",
+        "description": "Knock sensor signal not detected or out of range.",
+        "possibleCauses": [
+          "Failed knock sensor",
+          "Wiring issue",
+          "Engine detonation"
+        ]
+      },
+      {
+        "code": "CS1008",
+        "name": "Intake Air Temperature (IAT) Sensor Fault",
+        "description": "IAT sensor signal missing or out of range.",
+        "possibleCauses": [
+          "Failed IAT sensor",
+          "Wiring/connector problem",
+          "Air intake leak"
+        ]
+      },
+      {
+        "code": "CS1009",
+        "name": "Manifold Absolute Pressure (MAP) Sensor Fault",
+        "description": "MAP sensor signal is missing or outside expected range.",
+        "possibleCauses": [
+          "Faulty MAP sensor",
+          "Vacuum leak",
+          "Wiring or connector issue"
+        ]
+      },
+      {
+        "code": "CS1010",
+        "name": "Fuel Pressure Sensor Fault",
+        "description": "Fuel rail pressure sensor signal out of range or missing.",
+        "possibleCauses": [
+          "Failed fuel pressure sensor",
+          "Fuel pump or regulator issue",
+          "Wiring harness problem"
+        ]
+      }
+    ]
+  }
+}

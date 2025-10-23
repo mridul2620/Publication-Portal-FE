@@ -1,0 +1,107 @@
+{
+  "EngineSystem": {
+    "DTCs": [
+      {
+        "code": "CS1001",
+        "name": "Engine Misfire Detected",
+        "description": "Misfire detected in one or more cylinders.",
+        "possibleCauses": [
+          "Faulty spark plug or coil",
+          "Fuel injector malfunction",
+          "Compression loss in cylinder"
+        ]
+      },
+      {
+        "code": "CS1002",
+        "name": "Crankshaft Position Sensor Fault",
+        "description": "Crankshaft position signal is not detected or out of range.",
+        "possibleCauses": [
+          "Failed crankshaft sensor",
+          "Wiring harness damage",
+          "ECU timing error"
+        ]
+      },
+      {
+        "code": "CS1003",
+        "name": "Camshaft Position Sensor Fault",
+        "description": "Camshaft position signal is missing or incorrect.",
+        "possibleCauses": [
+          "Failed camshaft sensor",
+          "Timing chain/belt issue",
+          "ECU control malfunction"
+        ]
+      },
+      {
+        "code": "CS1004",
+        "name": "Oil Pressure Low",
+        "description": "Engine oil pressure is below specification.",
+        "possibleCauses": [
+          "Low oil level",
+          "Faulty oil pump",
+          "Clogged oil passages"
+        ]
+      },
+      {
+        "code": "CS1005",
+        "name": "Coolant Temperature Sensor Fault",
+        "description": "Engine coolant temperature reading is out of range or missing.",
+        "possibleCauses": [
+          "Failed coolant temperature sensor",
+          "Wiring issues",
+          "ECU misreading"
+        ]
+      },
+      {
+        "code": "CS1006",
+        "name": "Fuel Injector Circuit Malfunction",
+        "description": "Fuel injector not operating correctly or signal missing.",
+        "possibleCauses": [
+          "Faulty fuel injector",
+          "Wiring or connector issue",
+          "ECU injector driver fault"
+        ]
+      },
+      {
+        "code": "CS1007",
+        "name": "Throttle Position Sensor Fault",
+        "description": "Throttle position sensor signal is missing or inconsistent.",
+        "possibleCauses": [
+          "Failed TPS sensor",
+          "Dirty or sticking throttle plate",
+          "Wiring/ECU issue"
+        ]
+      },
+      {
+        "code": "CS1008",
+        "name": "Intake Air Temperature Sensor Fault",
+        "description": "IAT sensor signal is out of range or missing.",
+        "possibleCauses": [
+          "Failed IAT sensor",
+          "Wiring damage",
+          "ECU misreading"
+        ]
+      },
+      {
+        "code": "CS1009",
+        "name": "Knock Sensor Malfunction",
+        "description": "Knock sensor signal not detected or out of range.",
+        "possibleCauses": [
+          "Failed knock sensor",
+          "Wiring issues",
+          "Engine detonation problem"
+        ]
+      },
+      {
+        "code": "CS1010",
+        "name": "Exhaust Gas Recirculation (EGR) Fault",
+        "description": "EGR system is not operating correctly.",
+        "possibleCauses": [
+          "Stuck EGR valve",
+          "Clogged EGR passages",
+          "EGR sensor or wiring fault"
+        ]
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,156 @@
+{
+  "BrakeSystem": {
+    "MainComponents": [
+      {
+        "partNumber": "CS1001",
+        "name": "Brake Pedal",
+        "description": "Driver-operated lever to apply braking force.",
+        "material": "Steel"
+      },
+      {
+        "partNumber": "CS1002",
+        "name": "Brake Booster (Servo)",
+        "description": "Uses vacuum assistance to reduce pedal effort.",
+        "material": "Aluminum & Rubber diaphragm"
+      },
+      {
+        "partNumber": "CS1003",
+        "name": "Master Cylinder",
+        "description": "Converts pedal pressure into hydraulic pressure.",
+        "material": "Aluminum alloy"
+      },
+      {
+        "partNumber": "CS1004",
+        "name": "Brake Lines / Hoses",
+        "description": "Carries brake fluid to wheel cylinders or calipers.",
+        "material": "Steel pipes / Reinforced rubber"
+      },
+      {
+        "partNumber": "CS1005",
+        "name": "Proportioning Valve",
+        "description": "Balances pressure between front and rear brakes.",
+        "material": "Steel / Aluminum"
+      },
+      {
+        "partNumber": "CS1006",
+        "name": "Brake Fluid Reservoir",
+        "description": "Stores brake fluid for the hydraulic circuit.",
+        "material": "Plastic"
+      }
+    ],
+    "WheelEndComponents": {
+      "DiscBrakeSystem": [
+        {
+          "partNumber": "CS2001",
+          "name": "Brake Disc (Rotor)",
+          "description": "Spinning disc squeezed by pads to create friction.",
+          "material": "Cast iron or carbon composite"
+        },
+        {
+          "partNumber": "CS2002",
+          "name": "Brake Caliper",
+          "description": "Holds brake pads and applies hydraulic force.",
+          "material": "Aluminum or steel"
+        },
+        {
+          "partNumber": "CS2003",
+          "name": "Brake Pads",
+          "description": "Friction elements pressed against rotor to slow the wheel.",
+          "material": "Ceramic, semi-metallic, or organic compounds"
+        },
+        {
+          "partNumber": "CS2004",
+          "name": "Caliper Pistons",
+          "description": "Push pads against the rotor under fluid pressure.",
+          "material": "Steel or phenolic resin"
+        }
+      ],
+      "DrumBrakeSystem": [
+        {
+          "partNumber": "CS3001",
+          "name": "Brake Drum",
+          "description": "Rotating drum used with brake shoes to produce braking force.",
+          "material": "Cast iron"
+        },
+        {
+          "partNumber": "CS3002",
+          "name": "Brake Shoes",
+          "description": "Friction linings that press against the drum interior.",
+          "material": "Steel with friction material"
+        },
+        {
+          "partNumber": "CS3003",
+          "name": "Wheel Cylinder",
+          "description": "Hydraulic cylinder that pushes brake shoes outward.",
+          "material": "Aluminum"
+        }
+      ]
+    },
+    "ParkingBrakeComponents": [
+      {
+        "partNumber": "CS4001",
+        "name": "Handbrake Lever",
+        "description": "Manual control for parking brake activation.",
+        "material": "Steel & plastic"
+      },
+      {
+        "partNumber": "CS4002",
+        "name": "Parking Brake Cable",
+        "description": "Transfers mechanical force from lever to brakes.",
+        "material": "Steel cable with plastic sheath"
+      },
+      {
+        "partNumber": "CS4003",
+        "name": "Parking Brake Actuator",
+        "description": "Electronic motor applies the brake automatically.",
+        "material": "Steel & electronic components"
+      }
+    ],
+    "ElectronicAndSensorComponents": [
+      {
+        "partNumber": "CS5001",
+        "name": "ABS Module",
+        "description": "Prevents wheel lock-up by modulating brake pressure.",
+        "material": "Electronic module"
+      },
+      {
+        "partNumber": "CS5002",
+        "name": "Wheel Speed Sensor",
+        "description": "Detects wheel rotation speed for ABS/ESC systems.",
+        "material": "Magnetic sensor"
+      },
+      {
+        "partNumber": "CS5003",
+        "name": "Brake Pressure Sensor",
+        "description": "Measures hydraulic pressure in brake lines.",
+        "material": "Electronic sensor"
+      },
+      {
+        "partNumber": "CS5004",
+        "name": "Electronic Brake Control Unit (ECU)",
+        "description": "Processes sensor data and controls braking functions.",
+        "material": "Microcontroller unit"
+      }
+    ],
+    "SupportingHardware": [
+      {
+        "partNumber": "CS6001",
+        "name": "Brake Mounting Brackets",
+        "description": "Holds caliper and other components in place.",
+        "material": "Steel"
+      },
+      {
+        "partNumber": "CS6002",
+        "name": "Brake Dust Shield",
+        "description": "Protects rotors from debris and heat.",
+        "material": "Aluminum or steel"
+      },
+      {
+        "partNumber": "CS6003",
+        "name": "Bleeder Screws",
+        "description": "Used to release air from brake lines during bleeding.",
+        "material": "Steel"
+      }
+    ]
+  }
+}

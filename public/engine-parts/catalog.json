@@ -1,0 +1,196 @@
+{
+  "EngineSystem": {
+    "MainComponents": [
+      {
+        "partNumber": "CS7001",
+        "name": "Engine Block",
+        "description": "Main housing containing cylinders and coolant passages.",
+        "material": "Cast iron or aluminum alloy"
+      },
+      {
+        "partNumber": "CS7002",
+        "name": "Cylinder Head",
+        "description": "Covers cylinders, housing valves and combustion chambers.",
+        "material": "Aluminum alloy"
+      },
+      {
+        "partNumber": "CS7003",
+        "name": "Crankshaft",
+        "description": "Converts piston linear motion into rotational power.",
+        "material": "Forged steel"
+      },
+      {
+        "partNumber": "CS7004",
+        "name": "Camshaft",
+        "description": "Controls valve timing by rotating in sync with crankshaft.",
+        "material": "Hardened steel"
+      },
+      {
+        "partNumber": "CS7005",
+        "name": "Timing Belt / Chain",
+        "description": "Synchronizes crankshaft and camshaft rotation.",
+        "material": "Rubber (belt) or steel (chain)"
+      }
+    ],
+    "CombustionComponents": [
+      {
+        "partNumber": "CS7101",
+        "name": "Piston",
+        "description": "Moves within cylinder to compress and expand gases.",
+        "material": "Aluminum alloy"
+      },
+      {
+        "partNumber": "CS7102",
+        "name": "Piston Rings",
+        "description": "Seals combustion chamber and controls oil consumption.",
+        "material": "Cast iron or steel"
+      },
+      {
+        "partNumber": "CS7103",
+        "name": "Connecting Rod",
+        "description": "Connects piston to crankshaft and transmits motion.",
+        "material": "Forged steel"
+      },
+      {
+        "partNumber": "CS7104",
+        "name": "Cylinder Liner",
+        "description": "Replaceable sleeve inside engine block for piston travel.",
+        "material": "Cast iron"
+      },
+      {
+        "partNumber": "CS7105",
+        "name": "Valve",
+        "description": "Controls air-fuel intake and exhaust gas release.",
+        "material": "Heat-resistant steel"
+      },
+      {
+        "partNumber": "CS7106",
+        "name": "Valve Spring",
+        "description": "Closes the valve after camshaft actuation.",
+        "material": "Hardened spring steel"
+      }
+    ],
+    "FuelAndAirComponents": [
+      {
+        "partNumber": "CS7201",
+        "name": "Fuel Injector",
+        "description": "Sprays atomized fuel into the combustion chamber.",
+        "material": "Steel and plastic"
+      },
+      {
+        "partNumber": "CS7202",
+        "name": "Fuel Pump",
+        "description": "Supplies fuel from the tank to the injectors.",
+        "material": "Aluminum housing with electric motor"
+      },
+      {
+        "partNumber": "CS7203",
+        "name": "Intake Manifold",
+        "description": "Distributes air to each cylinder evenly.",
+        "material": "Aluminum or plastic composite"
+      },
+      {
+        "partNumber": "CS7204",
+        "name": "Air Filter",
+        "description": "Removes dust and particles from incoming air.",
+        "material": "Paper filter with plastic housing"
+      },
+      {
+        "partNumber": "CS7205",
+        "name": "Throttle Body",
+        "description": "Controls airflow into the intake manifold.",
+        "material": "Aluminum alloy"
+      }
+    ],
+    "LubricationSystem": [
+      {
+        "partNumber": "CS7301",
+        "name": "Oil Pump",
+        "description": "Circulates engine oil to lubricate moving parts.",
+        "material": "Aluminum housing with steel gears"
+      },
+      {
+        "partNumber": "CS7302",
+        "name": "Oil Filter",
+        "description": "Removes impurities from circulating oil.",
+        "material": "Steel canister with paper element"
+      },
+      {
+        "partNumber": "CS7303",
+        "name": "Oil Pan",
+        "description": "Stores engine oil at the bottom of the engine.",
+        "material": "Stamped steel or aluminum"
+      },
+      {
+        "partNumber": "CS7304",
+        "name": "Oil Pressure Sensor",
+        "description": "Monitors oil pressure and sends signal to ECU.",
+        "material": "Electronic sensor"
+      }
+    ],
+    "CoolingSystem": [
+      {
+        "partNumber": "CS7401",
+        "name": "Radiator",
+        "description": "Transfers heat from coolant to surrounding air.",
+        "material": "Aluminum core with plastic tanks"
+      },
+      {
+        "partNumber": "CS7402",
+        "name": "Water Pump",
+        "description": "Circulates coolant through the engine and radiator.",
+        "material": "Aluminum housing with steel impeller"
+      },
+      {
+        "partNumber": "CS7403",
+        "name": "Thermostat",
+        "description": "Regulates coolant flow to maintain optimal temperature.",
+        "material": "Brass and wax element"
+      },
+      {
+        "partNumber": "CS7404",
+        "name": "Coolant Temperature Sensor",
+        "description": "Measures coolant temperature for ECU control.",
+        "material": "Electronic sensor"
+      },
+      {
+        "partNumber": "CS7405",
+        "name": "Cooling Fan",
+        "description": "Draws air through radiator to assist cooling.",
+        "material": "Plastic blades with electric motor"
+      }
+    ],
+    "ElectronicAndSensorComponents": [
+      {
+        "partNumber": "CS7501",
+        "name": "Engine Control Unit (ECU)",
+        "description": "Manages engine operations like fuel, ignition, and emissions.",
+        "material": "Electronic control module"
+      },
+      {
+        "partNumber": "CS7502",
+        "name": "Crankshaft Position Sensor",
+        "description": "Detects crankshaft position and speed for ECU timing.",
+        "material": "Magnetic sensor"
+      },
+      {
+        "partNumber": "CS7503",
+        "name": "Camshaft Position Sensor",
+        "description": "Monitors camshaft rotation to control valve timing.",
+        "material": "Magnetic or Hall effect sensor"
+      },
+      {
+        "partNumber": "CS7504",
+        "name": "Oxygen Sensor (Lambda Sensor)",
+        "description": "Monitors exhaust oxygen levels for fuel mixture control.",
+        "material": "Ceramic and metal sensor"
+      },
+      {
+        "partNumber": "CS7505",
+        "name": "Knock Sensor",
+        "description": "Detects engine knocking and sends data to ECU.",
+        "material": "Piezoelectric sensor"
+      }
+    ]
+  }
+}
