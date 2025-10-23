@@ -97,7 +97,7 @@ const HomepageContent: React.FC = () => {
   const brandOptions = [...new Set(vehicles.map((vehicle) => vehicle.brand))];
 
   return (
-    <div className="h-screen bg-gradient-to-br from-blue-30 via-white to-blue-30 flex flex-col overflow-hidden">
+    <div className="h-screen bg-white flex flex-col overflow-hidden">
       {/* Header */}
       <header className="border-b border-slate-200 dark:border-slate-700 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -154,7 +154,7 @@ const HomepageContent: React.FC = () => {
                   <form onSubmit={handleVinSubmit} className="space-y-4">
                     <div className="space-y-2">
                       <label htmlFor="vin" className="text-sm font-medium leading-none text-slate-900 dark:text-white">
-                        Full VIN Number
+                        Full VIN (17 characters)
                       </label>
                       <input
                         id="vin"
@@ -169,21 +169,12 @@ const HomepageContent: React.FC = () => {
                         {vinNumber.length}/17 characters
                       </p>
                     </div>
-
-                    <div className="relative">
-                      <div className="absolute inset-0 flex items-center">
-                        <div className="w-full border-t border-slate-200 dark:border-slate-700" />
-                      </div>
-                      <div className="relative flex justify-center text-xs uppercase">
-                        <span className="bg-white dark:bg-slate-800 px-2 text-slate-600 dark:text-slate-400">
-                          Or
-                        </span>
-                      </div>
+                    <div className="text-center text-sm text-slate-600 dark:text-slate-400 font-medium">
+                      OR
                     </div>
-
                     <div className="space-y-2">
                       <label htmlFor="lastVin" className="text-sm font-medium leading-none text-slate-900 dark:text-white">
-                        Last 8 Characters
+                        Last 8 Characters of VIN
                       </label>
                       <input
                         id="lastVin"
@@ -198,14 +189,14 @@ const HomepageContent: React.FC = () => {
                         {lastVinNumber.length}/8 characters
                       </p>
                     </div>
-                    <div className="rounded-lg bg-gradient-to-br from-white to-slate-50 p-4 border border-primary/10">
-                        <h4 className="text-sm font-semibold text-foreground mb-1">
+                    <div className="rounded-lg bg-gradient-to-br from-white to-slate-50 dark:from-slate-800 dark:to-slate-900 p-4 border border-slate-200 dark:border-slate-700">
+                      <h4 className="text-sm font-semibold text-slate-900 dark:text-white mb-1">
                         Fast & Accurate
-                        </h4>
-                        <p className="text-xs text-muted-foreground leading-relaxed">
+                      </h4>
+                      <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
                         Enter your VIN for instant vehicle identification and
                         detailed technical specifications.
-                        </p>
+                      </p>
                     </div>                                    
                     <button
                       type="submit"
