@@ -101,18 +101,10 @@ const HomepageContent: React.FC = () => {
       {/* Header */}
       <header className="border-b border-slate-200 bg-white/80 backdrop-blur-md shadow-sm">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between">
+          <div className="flex h-24 items-center justify-between">
             <div className="flex items-center gap-3 cursor-pointer"
              onClick={() => window.location.href = '/home-page'}>
-              <div className="h-10 w-10 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-md">
-                <img src="/logo.png" alt="Company Logo" className="h-10 w-10" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-slate-900">Chartsign</h1>
-                <p className="text-xs text-slate-600">
-                  Industry Publication Portal
-                </p>
-              </div>
+                <img src="/logo_inverted.png" alt="Company Logo" className="h-24 w-30" />
             </div>
             <button
               onClick={handleLogout}
@@ -208,7 +200,6 @@ const HomepageContent: React.FC = () => {
                   </form>
                 </div>
               </div>
-
               {/* Model Selection Card */}
               <div className="rounded-xl border border-slate-200 bg-white shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="bg-gradient-to-br from-slate-50 to-white p-6 border-b border-slate-100">

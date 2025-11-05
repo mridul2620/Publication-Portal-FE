@@ -712,30 +712,23 @@ const ConnectorReferencePage: React.FC = () => {
   return (
     <div className="h-screen bg-white flex flex-col overflow-hidden">
       {/* Header */}
-      <header className="border-b border-slate-200 bg-white shadow-sm sticky top-0 z-50">
-        <div className="container mx-auto px-6">
-          <div className="flex h-14 items-center justify-between">
-            <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.location.href = '/home-page'}>
-              <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center shadow-lg">
-                <img src="/logo.png" alt="Company Logo" className="h-10 w-10" />
+      <header className="border-b border-slate-200 bg-white/80 backdrop-blur-md shadow-sm">
+              <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex h-24 items-center justify-between">
+                  <div className="flex items-center gap-3 cursor-pointer"
+                   onClick={() => window.location.href = '/home-page'}>
+                      <img src="/logo_inverted.png" alt="Company Logo" className="h-24 w-30" />
+                  </div>
+                  <button
+                    onClick={handleLogout}
+                    className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium rounded-md border border-slate-200 bg-white text-slate-900 hover:bg-slate-50 transition-all duration-200 shadow-sm"
+                  >
+                    <LogOut className="h-4 w-4" />
+                    <span className="hidden sm:inline">Logout</span>
+                  </button>
+                </div>
               </div>
-              <div>
-                <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                  Chartsign
-                </h1>
-                <p className="text-xs text-slate-600">Industry Publication Portal</p>
-              </div>
-            </div>
-            <button
-              onClick={handleLogout}
-              className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium rounded-xl border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 hover:border-blue-300 transition-all duration-200 shadow-sm hover:shadow"
-            >
-              <LogOut className="h-4 w-4" />
-              <span className="hidden sm:inline">Logout</span>
-            </button>
-          </div>
-        </div>
-      </header>
+            </header>
 
       {/* Main Content */}
       <main className="flex-1 flex flex-col overflow-hidden relative pb-32">

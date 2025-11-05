@@ -173,18 +173,9 @@ const LoginPage: React.FC = () => {
             {/* Logo */}
             <div className="mb-8 flex justify-center">
               <div className="relative">
-                <div className="w-20 h-20 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4 shadow-2xl border border-white/20 p-3">
                   <img src="/logo.png" alt="Chartsign Logo" className="w-full h-full object-contain" />
-                </div>
-                <div className="absolute -top-2 -right-2 w-6 h-6 bg-blue-400 rounded-full animate-pulse"></div>
-              </div>
+                </div>              
             </div>
-            
-            {/* Company Name */}
-            <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent">
-              Chartsign
-            </h1>
-            
             {/* Tagline */}
             <p className="text-xl text-blue-100 mb-8 font-light">
               Chartsign Industry Publication Portal
