@@ -1,0 +1,3422 @@
+[
+  {
+    "code": "B3101-01",
+    "description": "Front Left Door Lock Actuator Circuit",
+    "possible_causes": [
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 152,
+        "trend": "down"
+      },
+      {
+        "cause": "Front left door actuator faulty",
+        "reportedBy": 56,
+        "trend": "up"
+      },
+      {
+        "cause": "Body control module internal fault",
+        "reportedBy": 194,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the front left door lock actuator and wiring for damage or loose connections",
+        "reportedBy": 65,
+        "trend": "down"
+      },
+      {
+        "step": "Verify actuator operation using diagnostic equipment",
+        "reportedBy": 156,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the actuator or BCM if readings remain abnormal",
+        "reportedBy": 100,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "B3102-02",
+    "description": "Front Right Door Lock Actuator Circuit",
+    "possible_causes": [
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 37,
+        "trend": "down"
+      },
+      {
+        "cause": "Front right door actuator faulty",
+        "reportedBy": 92,
+        "trend": "stable"
+      },
+      {
+        "cause": "Body control module communication error",
+        "reportedBy": 191,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the front right door lock actuator and wiring for damage or loose connections",
+        "reportedBy": 110,
+        "trend": "up"
+      },
+      {
+        "step": "Verify actuator operation using diagnostic tools",
+        "reportedBy": 77,
+        "trend": "up"
+      },
+      {
+        "step": "Replace the actuator or BCM if fault persists",
+        "reportedBy": 195,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "B3103-03",
+    "description": "Rear Left Door Latch Motor Circuit",
+    "possible_causes": [
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 197,
+        "trend": "up"
+      },
+      {
+        "cause": "Rear left door latch motor malfunction",
+        "reportedBy": 79,
+        "trend": "up"
+      },
+      {
+        "cause": "BCM internal fault",
+        "reportedBy": 70,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the rear left door latch motor and wiring for damage",
+        "reportedBy": 47,
+        "trend": "up"
+      },
+      {
+        "step": "Verify motor operation using diagnostic tools",
+        "reportedBy": 77,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the motor or BCM if readings remain abnormal",
+        "reportedBy": 84,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "B3104-04",
+    "description": "Rear Right Door Latch Motor Circuit",
+    "possible_causes": [
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 176,
+        "trend": "stable"
+      },
+      {
+        "cause": "Rear right door latch motor malfunction",
+        "reportedBy": 196,
+        "trend": "stable"
+      },
+      {
+        "cause": "Body control module fault",
+        "reportedBy": 70,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the rear right door latch motor and wiring",
+        "reportedBy": 76,
+        "trend": "down"
+      },
+      {
+        "step": "Verify motor operation using diagnostic equipment",
+        "reportedBy": 10,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the motor or BCM if fault persists",
+        "reportedBy": 134,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "B3105-05",
+    "description": "Door Lock Switch Circuit \u2013 Front Left",
+    "possible_causes": [
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 16,
+        "trend": "up"
+      },
+      {
+        "cause": "Door lock switch faulty",
+        "reportedBy": 133,
+        "trend": "up"
+      },
+      {
+        "cause": "Body control module communication error",
+        "reportedBy": 40,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the front left door lock switch and wiring",
+        "reportedBy": 115,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify switch operation using diagnostic equipment",
+        "reportedBy": 146,
+        "trend": "up"
+      },
+      {
+        "step": "Replace the switch or BCM if readings remain abnormal",
+        "reportedBy": 150,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "B3106-06",
+    "description": "Door Lock Switch Circuit \u2013 Front Right",
+    "possible_causes": [
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 119,
+        "trend": "up"
+      },
+      {
+        "cause": "Door lock switch malfunction",
+        "reportedBy": 169,
+        "trend": "down"
+      },
+      {
+        "cause": "Body control module internal fault",
+        "reportedBy": 47,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the front right door lock switch and wiring for damage",
+        "reportedBy": 195,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify switch operation using diagnostic tools",
+        "reportedBy": 101,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the switch or BCM if fault persists",
+        "reportedBy": 33,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "B3107-07",
+    "description": "Door Ajar Sensor Circuit \u2013 Rear Left",
+    "possible_causes": [
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 13,
+        "trend": "stable"
+      },
+      {
+        "cause": "Rear left door ajar sensor faulty",
+        "reportedBy": 92,
+        "trend": "down"
+      },
+      {
+        "cause": "Body control module fault affecting sensor",
+        "reportedBy": 165,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the rear left door ajar sensor and wiring for damage",
+        "reportedBy": 27,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify sensor output using diagnostic equipment",
+        "reportedBy": 190,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the sensor or BCM if readings remain abnormal",
+        "reportedBy": 166,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "B3108-08",
+    "description": "Door Ajar Sensor Circuit \u2013 Rear Right",
+    "possible_causes": [
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 30,
+        "trend": "down"
+      },
+      {
+        "cause": "Rear right door ajar sensor malfunction",
+        "reportedBy": 96,
+        "trend": "down"
+      },
+      {
+        "cause": "Body control module communication fault",
+        "reportedBy": 11,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the rear right door ajar sensor and wiring for damage",
+        "reportedBy": 69,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify sensor operation using diagnostic tools",
+        "reportedBy": 141,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the sensor or BCM if readings are abnormal",
+        "reportedBy": 69,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "B3109-09",
+    "description": "Child Lock Actuator Circuit",
+    "possible_causes": [
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 176,
+        "trend": "down"
+      },
+      {
+        "cause": "Child lock actuator faulty",
+        "reportedBy": 108,
+        "trend": "up"
+      },
+      {
+        "cause": "Body control module internal fault",
+        "reportedBy": 49,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the child lock actuator and wiring for damage or loose connections",
+        "reportedBy": 138,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify actuator operation using diagnostic equipment",
+        "reportedBy": 175,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the actuator or BCM if fault persists",
+        "reportedBy": 40,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "B3110-10",
+    "description": "Door Module Communication Error",
+    "possible_causes": [
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 66,
+        "trend": "up"
+      },
+      {
+        "cause": "Door control module internal fault",
+        "reportedBy": 91,
+        "trend": "up"
+      },
+      {
+        "cause": "Connector corrosion affecting communication",
+        "reportedBy": 125,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the door module wiring and connectors for damage or corrosion",
+        "reportedBy": 134,
+        "trend": "up"
+      },
+      {
+        "step": "Verify module communication using diagnostic tools",
+        "reportedBy": 194,
+        "trend": "up"
+      },
+      {
+        "step": "Replace the door module if communication cannot be restored",
+        "reportedBy": 152,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "P1001-01",
+    "description": "Turbocharger Boost Control Circuit",
+    "possible_causes": [
+      {
+        "cause": "Turbocharger actuator malfunction",
+        "reportedBy": 121,
+        "trend": "stable"
+      },
+      {
+        "cause": "Wiring harness open or short to ground in turbo circuit",
+        "reportedBy": 12,
+        "trend": "down"
+      },
+      {
+        "cause": "Powertrain control module internal fault affecting turbo",
+        "reportedBy": 174,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the wiring and connectors related to the Turbocharger Boost Control Circuit for damage, corrosion, or loose connections.",
+        "reportedBy": 53,
+        "trend": "stable"
+      },
+      {
+        "step": "Use approved diagnostic equipment to verify live data and compare with manufacturer specifications.",
+        "reportedBy": 197,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the actuator or powertrain control module if the issue persists after clearing codes and retesting.",
+        "reportedBy": 125,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "P1002-02",
+    "description": "Exhaust Gas Recirculation (EGR) Valve Position",
+    "possible_causes": [
+      {
+        "cause": "EGR valve stuck or faulty",
+        "reportedBy": 175,
+        "trend": "up"
+      },
+      {
+        "cause": "Open or short in EGR wiring harness",
+        "reportedBy": 128,
+        "trend": "down"
+      },
+      {
+        "cause": "Powertrain control module fault affecting EGR operation",
+        "reportedBy": 192,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the EGR valve for mechanical blockage or damage.",
+        "reportedBy": 131,
+        "trend": "stable"
+      },
+      {
+        "step": "Check EGR wiring and connectors for continuity and proper connection.",
+        "reportedBy": 56,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the EGR valve or control module if readings remain out of range.",
+        "reportedBy": 189,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "P1003-03",
+    "description": "Fuel Rail Pressure Sensor",
+    "possible_causes": [
+      {
+        "cause": "Fuel rail pressure sensor malfunction",
+        "reportedBy": 26,
+        "trend": "stable"
+      },
+      {
+        "cause": "Wiring harness open or short circuit",
+        "reportedBy": 85,
+        "trend": "stable"
+      },
+      {
+        "cause": "ECM internal fault affecting sensor readings",
+        "reportedBy": 177,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the fuel rail pressure sensor and its wiring for damage or loose connections.",
+        "reportedBy": 194,
+        "trend": "stable"
+      },
+      {
+        "step": "Use diagnostic tools to measure live fuel pressure sensor data.",
+        "reportedBy": 153,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the sensor or ECM if values remain abnormal after retesting.",
+        "reportedBy": 64,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "P1004-04",
+    "description": "Hybrid Battery Module Fault",
+    "possible_causes": [
+      {
+        "cause": "Battery module internal failure",
+        "reportedBy": 39,
+        "trend": "stable"
+      },
+      {
+        "cause": "High resistance or short in battery wiring harness",
+        "reportedBy": 11,
+        "trend": "down"
+      },
+      {
+        "cause": "Hybrid control module communication error",
+        "reportedBy": 89,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the battery module and interconnect wiring for damage or corrosion.",
+        "reportedBy": 197,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify module voltage and communication using diagnostic equipment.",
+        "reportedBy": 145,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the battery module or hybrid control module if fault persists.",
+        "reportedBy": 132,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "P1005-05",
+    "description": "Oxygen Sensor Heater Circuit",
+    "possible_causes": [
+      {
+        "cause": "O2 sensor heater open or short circuit",
+        "reportedBy": 140,
+        "trend": "stable"
+      },
+      {
+        "cause": "Connector corrosion or loose terminal",
+        "reportedBy": 158,
+        "trend": "up"
+      },
+      {
+        "cause": "Powertrain control module fault affecting heater operation",
+        "reportedBy": 156,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the oxygen sensor heater wiring and connector for damage or corrosion.",
+        "reportedBy": 200,
+        "trend": "up"
+      },
+      {
+        "step": "Measure heater resistance and compare to manufacturer specifications.",
+        "reportedBy": 102,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the oxygen sensor or ECM if readings are out of specification.",
+        "reportedBy": 156,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "P1006-06",
+    "description": "Camshaft Position Sensor Circuit",
+    "possible_causes": [
+      {
+        "cause": "Camshaft sensor malfunction",
+        "reportedBy": 157,
+        "trend": "up"
+      },
+      {
+        "cause": "Open or short in sensor wiring harness",
+        "reportedBy": 187,
+        "trend": "down"
+      },
+      {
+        "cause": "Powertrain control module internal fault",
+        "reportedBy": 11,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the camshaft position sensor and its wiring for damage or loose connections.",
+        "reportedBy": 35,
+        "trend": "stable"
+      },
+      {
+        "step": "Use diagnostic equipment to check sensor output.",
+        "reportedBy": 169,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the sensor or ECM if the issue persists after clearing codes.",
+        "reportedBy": 90,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "P1007-07",
+    "description": "Crankshaft Position Sensor Performance",
+    "possible_causes": [
+      {
+        "cause": "Crankshaft sensor malfunction",
+        "reportedBy": 103,
+        "trend": "down"
+      },
+      {
+        "cause": "Open or short circuit in wiring harness",
+        "reportedBy": 61,
+        "trend": "stable"
+      },
+      {
+        "cause": "ECM fault affecting crank sensor readings",
+        "reportedBy": 121,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the crankshaft sensor and wiring for damage or loose connections.",
+        "reportedBy": 58,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify sensor signal using diagnostic equipment.",
+        "reportedBy": 88,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the sensor or ECM if performance readings are abnormal.",
+        "reportedBy": 190,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "P1008-08",
+    "description": "Intake Air Temperature Sensor High Input",
+    "possible_causes": [
+      {
+        "cause": "IAT sensor faulty or contaminated",
+        "reportedBy": 111,
+        "trend": "stable"
+      },
+      {
+        "cause": "Wiring open or short to voltage",
+        "reportedBy": 140,
+        "trend": "stable"
+      },
+      {
+        "cause": "ECM input fault affecting IAT readings",
+        "reportedBy": 85,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the IAT sensor and wiring for damage or contamination.",
+        "reportedBy": 136,
+        "trend": "down"
+      },
+      {
+        "step": "Measure sensor resistance and voltage output against specifications.",
+        "reportedBy": 12,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the sensor or ECM if readings remain out of range.",
+        "reportedBy": 64,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "P1009-09",
+    "description": "Mass Air Flow Sensor Range/Performance",
+    "possible_causes": [
+      {
+        "cause": "MAF sensor contaminated or damaged",
+        "reportedBy": 136,
+        "trend": "stable"
+      },
+      {
+        "cause": "Air leaks in intake system",
+        "reportedBy": 156,
+        "trend": "up"
+      },
+      {
+        "cause": "ECM malfunction affecting sensor signal",
+        "reportedBy": 48,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the intake system for leaks or damage.",
+        "reportedBy": 52,
+        "trend": "up"
+      },
+      {
+        "step": "Clean or replace the MAF sensor as required.",
+        "reportedBy": 128,
+        "trend": "stable"
+      },
+      {
+        "step": "Use diagnostic equipment to verify sensor performance after repair.",
+        "reportedBy": 150,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "P1010-10",
+    "description": "Transmission Control Module Communication",
+    "possible_causes": [
+      {
+        "cause": "TCM internal failure",
+        "reportedBy": 151,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the CAN bus wiring circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 88,
+        "trend": "down"
+      },
+      {
+        "cause": "Connector corrosion at TCM or ECM",
+        "reportedBy": 192,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect TCM wiring and connectors for damage or corrosion.",
+        "reportedBy": 70,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify communication signals using diagnostic tools.",
+        "reportedBy": 13,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the TCM if communication errors persist.",
+        "reportedBy": 41,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "C2001-01",
+    "description": "ABS Wheel Speed Sensor Circuit \u2013 Front Left",
+    "possible_causes": [
+      {
+        "cause": "Wheel speed sensor damaged or misaligned",
+        "reportedBy": 185,
+        "trend": "stable"
+      },
+      {
+        "cause": "Open or short in wiring harness",
+        "reportedBy": 65,
+        "trend": "stable"
+      },
+      {
+        "cause": "ABS module internal fault",
+        "reportedBy": 32,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the front left wheel speed sensor and wiring for damage or loose connections.",
+        "reportedBy": 49,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify sensor signal with diagnostic equipment.",
+        "reportedBy": 169,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the sensor or ABS module if readings are abnormal.",
+        "reportedBy": 62,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "C2002-02",
+    "description": "Electronic Parking Brake Actuator Fault",
+    "possible_causes": [
+      {
+        "cause": "Actuator motor malfunction",
+        "reportedBy": 134,
+        "trend": "up"
+      },
+      {
+        "cause": "Wiring open or short to ground",
+        "reportedBy": 200,
+        "trend": "stable"
+      },
+      {
+        "cause": "Chassis control module fault",
+        "reportedBy": 56,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the electronic parking brake actuator and wiring for damage.",
+        "reportedBy": 60,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify actuator operation using diagnostic tools.",
+        "reportedBy": 100,
+        "trend": "up"
+      },
+      {
+        "step": "Replace the actuator or chassis control module if the fault persists.",
+        "reportedBy": 134,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "C2003-03",
+    "description": "Steering Angle Sensor Out of Range",
+    "possible_causes": [
+      {
+        "cause": "Steering angle sensor misaligned",
+        "reportedBy": 175,
+        "trend": "stable"
+      },
+      {
+        "cause": "Wiring harness open or shorted",
+        "reportedBy": 181,
+        "trend": "down"
+      },
+      {
+        "cause": "Chassis control module internal fault",
+        "reportedBy": 165,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Check the steering angle sensor and calibrate using diagnostic equipment.",
+        "reportedBy": 187,
+        "trend": "stable"
+      },
+      {
+        "step": "Inspect wiring and connectors for damage or corrosion.",
+        "reportedBy": 28,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the sensor or control module if calibration fails.",
+        "reportedBy": 173,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "C2004-04",
+    "description": "Adaptive Suspension Module Communication",
+    "possible_causes": [
+      {
+        "cause": "Suspension module fault",
+        "reportedBy": 168,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the CAN bus wiring circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 192,
+        "trend": "up"
+      },
+      {
+        "cause": "Power supply or ground issue to module",
+        "reportedBy": 17,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the adaptive suspension module and wiring for damage.",
+        "reportedBy": 118,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify communication signals using diagnostic tools.",
+        "reportedBy": 19,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the module if communication cannot be restored.",
+        "reportedBy": 153,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "C2005-05",
+    "description": "Yaw Rate Sensor Performance",
+    "possible_causes": [
+      {
+        "cause": "Yaw rate sensor misaligned or faulty",
+        "reportedBy": 43,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 55,
+        "trend": "up"
+      },
+      {
+        "cause": "Chassis control module fault",
+        "reportedBy": 33,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Check yaw rate sensor alignment and operation.",
+        "reportedBy": 45,
+        "trend": "up"
+      },
+      {
+        "step": "Inspect wiring and connectors for damage or corrosion.",
+        "reportedBy": 189,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the sensor or control module if readings are abnormal.",
+        "reportedBy": 158,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "C2006-06",
+    "description": "Traction Control Module Fault",
+    "possible_causes": [
+      {
+        "cause": "Traction control module internal failure",
+        "reportedBy": 108,
+        "trend": "stable"
+      },
+      {
+        "cause": "Wiring harness open or shorted",
+        "reportedBy": 122,
+        "trend": "stable"
+      },
+      {
+        "cause": "CAN bus communication fault",
+        "reportedBy": 122,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the traction control module and associated wiring for damage or loose connections.",
+        "reportedBy": 116,
+        "trend": "down"
+      },
+      {
+        "step": "Verify module communication using diagnostic equipment.",
+        "reportedBy": 119,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the module if faults persist after retesting.",
+        "reportedBy": 22,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "C2007-07",
+    "description": "Brake Pressure Sensor High",
+    "possible_causes": [
+      {
+        "cause": "Brake pressure sensor malfunction",
+        "reportedBy": 113,
+        "trend": "stable"
+      },
+      {
+        "cause": "Open or shorted wiring harness",
+        "reportedBy": 19,
+        "trend": "down"
+      },
+      {
+        "cause": "Chassis control module fault affecting brake sensor",
+        "reportedBy": 115,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the brake pressure sensor and wiring for damage or loose connections.",
+        "reportedBy": 33,
+        "trend": "down"
+      },
+      {
+        "step": "Measure sensor output using diagnostic equipment and compare to specifications.",
+        "reportedBy": 65,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the sensor or module if readings are out of range.",
+        "reportedBy": 27,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "C2008-08",
+    "description": "Stability Control Sensor Malfunction",
+    "possible_causes": [
+      {
+        "cause": "Stability control sensor fault",
+        "reportedBy": 162,
+        "trend": "stable"
+      },
+      {
+        "cause": "Wiring open or short to ground",
+        "reportedBy": 90,
+        "trend": "stable"
+      },
+      {
+        "cause": "Chassis control module internal error",
+        "reportedBy": 74,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the stability control sensor and wiring for damage or corrosion.",
+        "reportedBy": 17,
+        "trend": "down"
+      },
+      {
+        "step": "Verify sensor output and compare to manufacturer specifications.",
+        "reportedBy": 45,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the sensor or control module if readings remain abnormal.",
+        "reportedBy": 63,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "C2009-09",
+    "description": "Rear Wheel Speed Sensor Open Circuit",
+    "possible_causes": [
+      {
+        "cause": "Rear wheel speed sensor damaged",
+        "reportedBy": 68,
+        "trend": "down"
+      },
+      {
+        "cause": "Open or shorted wiring harness",
+        "reportedBy": 25,
+        "trend": "up"
+      },
+      {
+        "cause": "ABS module internal fault",
+        "reportedBy": 62,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the rear wheel speed sensor and wiring for damage or loose connections.",
+        "reportedBy": 71,
+        "trend": "up"
+      },
+      {
+        "step": "Measure sensor output using diagnostic equipment.",
+        "reportedBy": 38,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the sensor or ABS module if fault persists.",
+        "reportedBy": 31,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "C2010-10",
+    "description": "Electric Power Steering Torque Sensor",
+    "possible_causes": [
+      {
+        "cause": "Torque sensor malfunction",
+        "reportedBy": 66,
+        "trend": "up"
+      },
+      {
+        "cause": "Wiring harness open or short",
+        "reportedBy": 120,
+        "trend": "up"
+      },
+      {
+        "cause": "EPS control module fault",
+        "reportedBy": 30,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the torque sensor and wiring for damage or loose connections.",
+        "reportedBy": 190,
+        "trend": "down"
+      },
+      {
+        "step": "Verify sensor readings using diagnostic equipment.",
+        "reportedBy": 112,
+        "trend": "up"
+      },
+      {
+        "step": "Replace the sensor or EPS control module if readings are abnormal.",
+        "reportedBy": 148,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "B3001-01",
+    "description": "Brake Fluid Level Switch",
+    "possible_causes": [
+      {
+        "cause": "Switch stuck or faulty",
+        "reportedBy": 164,
+        "trend": "stable"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 83,
+        "trend": "stable"
+      },
+      {
+        "cause": "Body control module fault",
+        "reportedBy": 51,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the brake fluid level switch and wiring for damage or loose connections.",
+        "reportedBy": 194,
+        "trend": "down"
+      },
+      {
+        "step": "Verify switch operation using diagnostic equipment.",
+        "reportedBy": 48,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the switch or BCM if readings are abnormal.",
+        "reportedBy": 10,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "B3002-02",
+    "description": "Door Lock Actuator Circuit",
+    "possible_causes": [
+      {
+        "cause": "Actuator motor failure",
+        "reportedBy": 69,
+        "trend": "stable"
+      },
+      {
+        "cause": "Connector corrosion or wiring open/short",
+        "reportedBy": 22,
+        "trend": "stable"
+      },
+      {
+        "cause": "Body control module internal fault",
+        "reportedBy": 126,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the door lock actuator and wiring for damage or loose connections.",
+        "reportedBy": 150,
+        "trend": "down"
+      },
+      {
+        "step": "Verify actuator operation using diagnostic tools.",
+        "reportedBy": 132,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the actuator or BCM if fault persists.",
+        "reportedBy": 80,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "B3003-03",
+    "description": "Sunroof Motor Overload",
+    "possible_causes": [
+      {
+        "cause": "Sunroof motor jammed or faulty",
+        "reportedBy": 185,
+        "trend": "stable"
+      },
+      {
+        "cause": "Open or short in wiring harness",
+        "reportedBy": 107,
+        "trend": "up"
+      },
+      {
+        "cause": "Body control module overcurrent fault",
+        "reportedBy": 146,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the sunroof motor and wiring for damage or mechanical obstruction.",
+        "reportedBy": 128,
+        "trend": "down"
+      },
+      {
+        "step": "Verify motor operation using diagnostic equipment.",
+        "reportedBy": 118,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the motor or BCM if issue persists.",
+        "reportedBy": 81,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "B3004-04",
+    "description": "Seat Position Memory Module Fault",
+    "possible_causes": [
+      {
+        "cause": "Seat memory module failure",
+        "reportedBy": 64,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 17,
+        "trend": "up"
+      },
+      {
+        "cause": "Body control module communication error",
+        "reportedBy": 20,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the seat memory module and wiring for damage.",
+        "reportedBy": 159,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify module operation using diagnostic tools.",
+        "reportedBy": 39,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the module or BCM if fault persists.",
+        "reportedBy": 27,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "B3005-05",
+    "description": "Rain Sensor Circuit Open",
+    "possible_causes": [
+      {
+        "cause": "Rain sensor malfunction",
+        "reportedBy": 96,
+        "trend": "stable"
+      },
+      {
+        "cause": "Open or shorted wiring",
+        "reportedBy": 39,
+        "trend": "down"
+      },
+      {
+        "cause": "Body control module fault affecting sensor",
+        "reportedBy": 163,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the rain sensor and wiring for damage or loose connections.",
+        "reportedBy": 65,
+        "trend": "down"
+      },
+      {
+        "step": "Test sensor output using diagnostic equipment.",
+        "reportedBy": 83,
+        "trend": "up"
+      },
+      {
+        "step": "Replace the sensor or BCM if readings are abnormal.",
+        "reportedBy": 42,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "B3006-06",
+    "description": "Adaptive Headlamp Leveling Sensor",
+    "possible_causes": [
+      {
+        "cause": "Leveling sensor faulty or misaligned",
+        "reportedBy": 74,
+        "trend": "down"
+      },
+      {
+        "cause": "Wiring harness open or shorted",
+        "reportedBy": 35,
+        "trend": "up"
+      },
+      {
+        "cause": "Body control module fault affecting headlamp leveling",
+        "reportedBy": 81,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the headlamp leveling sensor and wiring for damage.",
+        "reportedBy": 189,
+        "trend": "up"
+      },
+      {
+        "step": "Check sensor alignment and operation using diagnostic tools.",
+        "reportedBy": 145,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the sensor or BCM if the issue persists.",
+        "reportedBy": 76,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "B3007-07",
+    "description": "Interior Ambient Lighting Module Fault",
+    "possible_causes": [
+      {
+        "cause": "Lighting module failure",
+        "reportedBy": 70,
+        "trend": "down"
+      },
+      {
+        "cause": "Open or shorted wiring",
+        "reportedBy": 13,
+        "trend": "down"
+      },
+      {
+        "cause": "Body control module internal fault",
+        "reportedBy": 121,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the ambient lighting module and wiring for damage or loose connections.",
+        "reportedBy": 179,
+        "trend": "down"
+      },
+      {
+        "step": "Verify module operation using diagnostic tools.",
+        "reportedBy": 152,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the module or BCM if fault persists.",
+        "reportedBy": 103,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "B3008-08",
+    "description": "Window Regulator Motor Failure",
+    "possible_causes": [
+      {
+        "cause": "Window motor malfunction",
+        "reportedBy": 55,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 157,
+        "trend": "up"
+      },
+      {
+        "cause": "Body control module communication fault",
+        "reportedBy": 198,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the window regulator motor and wiring for damage.",
+        "reportedBy": 133,
+        "trend": "up"
+      },
+      {
+        "step": "Test motor operation using diagnostic equipment.",
+        "reportedBy": 94,
+        "trend": "up"
+      },
+      {
+        "step": "Replace the motor or BCM if readings remain abnormal.",
+        "reportedBy": 157,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "B3009-09",
+    "description": "HVAC Blower Motor Control Circuit",
+    "possible_causes": [
+      {
+        "cause": "Blower motor or resistor faulty",
+        "reportedBy": 146,
+        "trend": "up"
+      },
+      {
+        "cause": "Wiring harness open or short",
+        "reportedBy": 52,
+        "trend": "down"
+      },
+      {
+        "cause": "BCM or HVAC module internal fault",
+        "reportedBy": 81,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the blower motor and control wiring for damage or loose connections.",
+        "reportedBy": 141,
+        "trend": "up"
+      },
+      {
+        "step": "Test blower motor operation with diagnostic equipment.",
+        "reportedBy": 139,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the motor or control module if issue persists.",
+        "reportedBy": 161,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "B3010-10",
+    "description": "Passenger Airbag Deactivation Sensor",
+    "possible_causes": [
+      {
+        "cause": "Sensor malfunction",
+        "reportedBy": 160,
+        "trend": "stable"
+      },
+      {
+        "cause": "Open or shorted wiring harness",
+        "reportedBy": 162,
+        "trend": "stable"
+      },
+      {
+        "cause": "Body control module internal fault",
+        "reportedBy": 150,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the passenger airbag sensor and wiring for damage or loose connections.",
+        "reportedBy": 157,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify sensor signal using diagnostic tools.",
+        "reportedBy": 147,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the sensor or BCM if fault persists after testing.",
+        "reportedBy": 41,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "U4001-01",
+    "description": "Lost Communication with Engine Control Module",
+    "possible_causes": [
+      {
+        "cause": "ECM internal failure",
+        "reportedBy": 41,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the CAN bus wiring circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 157,
+        "trend": "up"
+      },
+      {
+        "cause": "Connector corrosion or loose pins",
+        "reportedBy": 173,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect ECM wiring and connectors for damage or corrosion.",
+        "reportedBy": 78,
+        "trend": "down"
+      },
+      {
+        "step": "Verify CAN bus communication using diagnostic equipment.",
+        "reportedBy": 119,
+        "trend": "up"
+      },
+      {
+        "step": "Replace the ECM if communication cannot be restored.",
+        "reportedBy": 52,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "U4002-02",
+    "description": "Lost Communication with ABS Module",
+    "possible_causes": [
+      {
+        "cause": "ABS module internal fault",
+        "reportedBy": 186,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the CAN bus wiring circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 122,
+        "trend": "up"
+      },
+      {
+        "cause": "Connector corrosion or loose pins",
+        "reportedBy": 129,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect ABS module wiring and connectors for damage or corrosion.",
+        "reportedBy": 132,
+        "trend": "up"
+      },
+      {
+        "step": "Verify CAN bus communication with diagnostic tools.",
+        "reportedBy": 183,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the ABS module if communication cannot be restored.",
+        "reportedBy": 141,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "U4003-03",
+    "description": "Lost Communication with Body Control Module",
+    "possible_causes": [
+      {
+        "cause": "BCM internal fault",
+        "reportedBy": 111,
+        "trend": "stable"
+      },
+      {
+        "cause": "Open or shorted wiring harness",
+        "reportedBy": 39,
+        "trend": "down"
+      },
+      {
+        "cause": "CAN bus communication error",
+        "reportedBy": 58,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect BCM wiring and connectors for damage or loose pins.",
+        "reportedBy": 164,
+        "trend": "up"
+      },
+      {
+        "step": "Verify module communication using diagnostic equipment.",
+        "reportedBy": 132,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the BCM if communication cannot be restored.",
+        "reportedBy": 12,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "U4004-04",
+    "description": "CAN Bus High Voltage",
+    "possible_causes": [
+      {
+        "cause": "CAN bus short to battery voltage",
+        "reportedBy": 153,
+        "trend": "stable"
+      },
+      {
+        "cause": "Damaged wiring harness",
+        "reportedBy": 149,
+        "trend": "stable"
+      },
+      {
+        "cause": "Faulty control module affecting CAN voltage",
+        "reportedBy": 184,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect CAN bus wiring for shorts or damage.",
+        "reportedBy": 166,
+        "trend": "down"
+      },
+      {
+        "step": "Measure voltage levels using diagnostic tools.",
+        "reportedBy": 113,
+        "trend": "up"
+      },
+      {
+        "step": "Repair wiring or replace the module causing high voltage.",
+        "reportedBy": 58,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "U4005-05",
+    "description": "Infotainment Head Unit Communication",
+    "possible_causes": [
+      {
+        "cause": "Head unit internal fault",
+        "reportedBy": 193,
+        "trend": "stable"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 31,
+        "trend": "up"
+      },
+      {
+        "cause": "CAN bus communication error",
+        "reportedBy": 115,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect wiring and connectors to the infotainment head unit.",
+        "reportedBy": 193,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify communication using diagnostic tools.",
+        "reportedBy": 97,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the head unit if fault persists after testing.",
+        "reportedBy": 116,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "U4006-06",
+    "description": "Lane Keep Assist Module Fault",
+    "possible_causes": [
+      {
+        "cause": "Lane Keep Assist module malfunction",
+        "reportedBy": 54,
+        "trend": "up"
+      },
+      {
+        "cause": "Camera wiring open or shorted",
+        "reportedBy": 21,
+        "trend": "up"
+      },
+      {
+        "cause": "Control module internal fault affecting lane assist",
+        "reportedBy": 123,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the lane keep assist module and wiring for damage or loose connections.",
+        "reportedBy": 179,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify module operation using diagnostic equipment.",
+        "reportedBy": 24,
+        "trend": "up"
+      },
+      {
+        "step": "Replace the module if fault persists after testing.",
+        "reportedBy": 114,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "U4007-07",
+    "description": "Radar Sensor Module Communication Error",
+    "possible_causes": [
+      {
+        "cause": "Radar sensor internal fault",
+        "reportedBy": 20,
+        "trend": "stable"
+      },
+      {
+        "cause": "Check the CAN bus wiring circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 63,
+        "trend": "up"
+      },
+      {
+        "cause": "Control module communication error",
+        "reportedBy": 122,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the radar sensor and wiring for damage or loose connections.",
+        "reportedBy": 95,
+        "trend": "stable"
+      },
+      {
+        "step": "Check communication signals with diagnostic tools.",
+        "reportedBy": 91,
+        "trend": "up"
+      },
+      {
+        "step": "Replace the radar sensor or control module if issue persists.",
+        "reportedBy": 177,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "U4008-08",
+    "description": "Telematics Control Unit Fault",
+    "possible_causes": [
+      {
+        "cause": "Telematics module internal failure",
+        "reportedBy": 125,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 136,
+        "trend": "down"
+      },
+      {
+        "cause": "CAN bus communication fault",
+        "reportedBy": 187,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the telematics control unit and wiring for damage or loose connections.",
+        "reportedBy": 124,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify communication using diagnostic tools.",
+        "reportedBy": 17,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the telematics control unit if fault persists.",
+        "reportedBy": 64,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "U4009-09",
+    "description": "ADAS Camera Module Signal Out of Range",
+    "possible_causes": [
+      {
+        "cause": "ADAS camera misaligned or faulty",
+        "reportedBy": 53,
+        "trend": "stable"
+      },
+      {
+        "cause": "Open or shorted camera wiring",
+        "reportedBy": 45,
+        "trend": "stable"
+      },
+      {
+        "cause": "Control module fault affecting camera signal",
+        "reportedBy": 32,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the ADAS camera and wiring for damage or misalignment.",
+        "reportedBy": 185,
+        "trend": "up"
+      },
+      {
+        "step": "Verify camera signal with diagnostic equipment.",
+        "reportedBy": 174,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the camera or control module if readings remain out of range.",
+        "reportedBy": 118,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "U4010-10",
+    "description": "Parking Assist Sensor Communication",
+    "possible_causes": [
+      {
+        "cause": "Parking sensor faulty",
+        "reportedBy": 183,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 112,
+        "trend": "stable"
+      },
+      {
+        "cause": "Control module communication error",
+        "reportedBy": 46,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect parking sensors and wiring for damage or loose connections.",
+        "reportedBy": 146,
+        "trend": "up"
+      },
+      {
+        "step": "Verify communication using diagnostic tools.",
+        "reportedBy": 35,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the sensor or control module if fault persists.",
+        "reportedBy": 16,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "P1011-11",
+    "description": "Knock Sensor Circuit Malfunction",
+    "possible_causes": [
+      {
+        "cause": "Knock sensor faulty",
+        "reportedBy": 50,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 10,
+        "trend": "up"
+      },
+      {
+        "cause": "Powertrain control module internal fault",
+        "reportedBy": 193,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the knock sensor and wiring for damage or loose connections.",
+        "reportedBy": 32,
+        "trend": "up"
+      },
+      {
+        "step": "Verify sensor signal using diagnostic equipment.",
+        "reportedBy": 26,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the sensor or ECM if readings remain abnormal.",
+        "reportedBy": 197,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "P1012-12",
+    "description": "Throttle Actuator Control Circuit",
+    "possible_causes": [
+      {
+        "cause": "Throttle actuator malfunction",
+        "reportedBy": 36,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 163,
+        "trend": "up"
+      },
+      {
+        "cause": "ECM internal fault affecting actuator",
+        "reportedBy": 117,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the throttle actuator and wiring for damage or loose connections.",
+        "reportedBy": 142,
+        "trend": "up"
+      },
+      {
+        "step": "Verify actuator operation using diagnostic equipment.",
+        "reportedBy": 28,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the actuator or ECM if readings remain out of range.",
+        "reportedBy": 42,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "P1013-13",
+    "description": "Cylinder Deactivation System Fault",
+    "possible_causes": [
+      {
+        "cause": "Deactivation solenoid malfunction",
+        "reportedBy": 167,
+        "trend": "stable"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 66,
+        "trend": "down"
+      },
+      {
+        "cause": "Powertrain control module fault",
+        "reportedBy": 191,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect cylinder deactivation solenoids and wiring.",
+        "reportedBy": 106,
+        "trend": "up"
+      },
+      {
+        "step": "Verify system operation using diagnostic tools.",
+        "reportedBy": 89,
+        "trend": "down"
+      },
+      {
+        "step": "Replace solenoids or ECM if the fault persists.",
+        "reportedBy": 161,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "P1014-14",
+    "description": "Variable Valve Timing Solenoid Circuit",
+    "possible_causes": [
+      {
+        "cause": "VVT solenoid stuck or faulty",
+        "reportedBy": 189,
+        "trend": "stable"
+      },
+      {
+        "cause": "Open or shorted wiring",
+        "reportedBy": 160,
+        "trend": "up"
+      },
+      {
+        "cause": "ECM internal fault affecting VVT",
+        "reportedBy": 160,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the VVT solenoid and wiring for damage.",
+        "reportedBy": 156,
+        "trend": "down"
+      },
+      {
+        "step": "Test solenoid operation with diagnostic tools.",
+        "reportedBy": 147,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace solenoid or ECM if readings remain abnormal.",
+        "reportedBy": 78,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "P1015-15",
+    "description": "Engine Coolant Temperature Sensor Circuit",
+    "possible_causes": [
+      {
+        "cause": "Coolant sensor faulty",
+        "reportedBy": 117,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 21,
+        "trend": "up"
+      },
+      {
+        "cause": "ECM internal fault affecting sensor readings",
+        "reportedBy": 45,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the coolant temperature sensor and wiring.",
+        "reportedBy": 140,
+        "trend": "down"
+      },
+      {
+        "step": "Measure sensor output using diagnostic equipment.",
+        "reportedBy": 30,
+        "trend": "up"
+      },
+      {
+        "step": "Replace the sensor or ECM if readings are outside specifications.",
+        "reportedBy": 55,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "C2011-11",
+    "description": "Differential Lock Module Fault",
+    "possible_causes": [
+      {
+        "cause": "Differential module internal failure",
+        "reportedBy": 177,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 185,
+        "trend": "down"
+      },
+      {
+        "cause": "Chassis control module communication error",
+        "reportedBy": 135,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the differential lock module and wiring for damage.",
+        "reportedBy": 196,
+        "trend": "up"
+      },
+      {
+        "step": "Verify communication using diagnostic tools.",
+        "reportedBy": 185,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the module if fault persists after testing.",
+        "reportedBy": 185,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "C2012-12",
+    "description": "Brake Pedal Position Sensor Fault",
+    "possible_causes": [
+      {
+        "cause": "Brake pedal sensor malfunction",
+        "reportedBy": 65,
+        "trend": "stable"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 47,
+        "trend": "stable"
+      },
+      {
+        "cause": "Chassis control module internal fault",
+        "reportedBy": 176,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the brake pedal position sensor and wiring.",
+        "reportedBy": 65,
+        "trend": "up"
+      },
+      {
+        "step": "Verify sensor signal using diagnostic equipment.",
+        "reportedBy": 46,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the sensor or module if readings remain abnormal.",
+        "reportedBy": 12,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "C2013-13",
+    "description": "Steering Column Position Sensor Circuit",
+    "possible_causes": [
+      {
+        "cause": "Steering sensor faulty",
+        "reportedBy": 179,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 119,
+        "trend": "down"
+      },
+      {
+        "cause": "Chassis control module fault",
+        "reportedBy": 65,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect steering column sensor and wiring for damage.",
+        "reportedBy": 45,
+        "trend": "down"
+      },
+      {
+        "step": "Verify sensor operation using diagnostic tools.",
+        "reportedBy": 48,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the sensor or control module if the fault persists.",
+        "reportedBy": 154,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "C2014-14",
+    "description": "Active Roll Control Module Communication",
+    "possible_causes": [
+      {
+        "cause": "Active roll module internal fault",
+        "reportedBy": 48,
+        "trend": "stable"
+      },
+      {
+        "cause": "Check the CAN bus wiring circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 13,
+        "trend": "down"
+      },
+      {
+        "cause": "Power supply or ground issue",
+        "reportedBy": 52,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect active roll module and wiring for damage or loose connections.",
+        "reportedBy": 120,
+        "trend": "down"
+      },
+      {
+        "step": "Verify communication using diagnostic tools.",
+        "reportedBy": 67,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the module if communication cannot be restored.",
+        "reportedBy": 14,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "C2015-15",
+    "description": "Wheel Alignment Sensor Fault",
+    "possible_causes": [
+      {
+        "cause": "Alignment sensor misaligned or faulty",
+        "reportedBy": 144,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 15,
+        "trend": "up"
+      },
+      {
+        "cause": "Chassis control module fault",
+        "reportedBy": 170,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect wheel alignment sensor and wiring for damage.",
+        "reportedBy": 150,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify sensor output with diagnostic equipment.",
+        "reportedBy": 124,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the sensor or control module if readings remain abnormal.",
+        "reportedBy": 109,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "B3011-11",
+    "description": "Rear Door Latch Actuator Circuit",
+    "possible_causes": [
+      {
+        "cause": "Actuator faulty",
+        "reportedBy": 23,
+        "trend": "stable"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 81,
+        "trend": "up"
+      },
+      {
+        "cause": "Body control module internal fault",
+        "reportedBy": 56,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect rear door latch actuator and wiring for damage.",
+        "reportedBy": 51,
+        "trend": "down"
+      },
+      {
+        "step": "Verify actuator operation using diagnostic equipment.",
+        "reportedBy": 94,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the actuator or BCM if readings remain abnormal.",
+        "reportedBy": 69,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "B3012-12",
+    "description": "Trunk Release Module Fault",
+    "possible_causes": [
+      {
+        "cause": "Trunk module malfunction",
+        "reportedBy": 76,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 174,
+        "trend": "up"
+      },
+      {
+        "cause": "Body control module communication fault",
+        "reportedBy": 10,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect trunk release module and wiring for damage or loose connections.",
+        "reportedBy": 63,
+        "trend": "up"
+      },
+      {
+        "step": "Verify module operation with diagnostic tools.",
+        "reportedBy": 78,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the module or BCM if fault persists.",
+        "reportedBy": 192,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "B3013-13",
+    "description": "Mirror Adjustment Motor Circuit",
+    "possible_causes": [
+      {
+        "cause": "Mirror motor faulty",
+        "reportedBy": 35,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 179,
+        "trend": "down"
+      },
+      {
+        "cause": "Body control module internal fault",
+        "reportedBy": 35,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect mirror adjustment motor and wiring.",
+        "reportedBy": 159,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify motor operation using diagnostic equipment.",
+        "reportedBy": 116,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the motor or BCM if readings are abnormal.",
+        "reportedBy": 141,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "B3014-14",
+    "description": "Convertible Roof Motor Malfunction",
+    "possible_causes": [
+      {
+        "cause": "Roof motor faulty or overloaded",
+        "reportedBy": 106,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 27,
+        "trend": "up"
+      },
+      {
+        "cause": "Body control module fault affecting motor",
+        "reportedBy": 46,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect convertible roof motor and wiring for damage or obstruction.",
+        "reportedBy": 21,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify motor operation with diagnostic equipment.",
+        "reportedBy": 146,
+        "trend": "up"
+      },
+      {
+        "step": "Replace the motor or BCM if fault persists.",
+        "reportedBy": 31,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "B3015-15",
+    "description": "Keyless Entry Antenna Circuit",
+    "possible_causes": [
+      {
+        "cause": "Antenna malfunction",
+        "reportedBy": 89,
+        "trend": "stable"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 67,
+        "trend": "stable"
+      },
+      {
+        "cause": "Body control module internal fault",
+        "reportedBy": 42,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect keyless entry antenna and wiring for damage.",
+        "reportedBy": 82,
+        "trend": "up"
+      },
+      {
+        "step": "Verify signal reception using diagnostic tools.",
+        "reportedBy": 90,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the antenna or BCM if fault persists.",
+        "reportedBy": 149,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "U4011-11",
+    "description": "Wireless Charging Module Fault",
+    "possible_causes": [
+      {
+        "cause": "Wireless charging module internal failure",
+        "reportedBy": 135,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 23,
+        "trend": "stable"
+      },
+      {
+        "cause": "BCM communication error affecting module",
+        "reportedBy": 90,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the wireless charging module and wiring for damage or loose connections.",
+        "reportedBy": 116,
+        "trend": "up"
+      },
+      {
+        "step": "Verify module operation using diagnostic equipment.",
+        "reportedBy": 23,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the module or BCM if fault persists.",
+        "reportedBy": 103,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "U4012-12",
+    "description": "Bluetooth Module Communication Error",
+    "possible_causes": [
+      {
+        "cause": "Bluetooth module internal fault",
+        "reportedBy": 44,
+        "trend": "stable"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 29,
+        "trend": "stable"
+      },
+      {
+        "cause": "CAN bus communication error",
+        "reportedBy": 21,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the Bluetooth module and wiring for damage or loose connections.",
+        "reportedBy": 123,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify communication using diagnostic tools.",
+        "reportedBy": 116,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the Bluetooth module or BCM if issue persists.",
+        "reportedBy": 163,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "U4013-13",
+    "description": "GPS Navigation Module Fault",
+    "possible_causes": [
+      {
+        "cause": "Navigation module malfunction",
+        "reportedBy": 138,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 50,
+        "trend": "stable"
+      },
+      {
+        "cause": "Control module internal error affecting GPS",
+        "reportedBy": 171,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the GPS navigation module and wiring for damage or loose connections.",
+        "reportedBy": 118,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify module operation using diagnostic equipment.",
+        "reportedBy": 96,
+        "trend": "up"
+      },
+      {
+        "step": "Replace the module or BCM if readings remain abnormal.",
+        "reportedBy": 197,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "U4014-14",
+    "description": "Digital Cluster Communication Lost",
+    "possible_causes": [
+      {
+        "cause": "Instrument cluster internal fault",
+        "reportedBy": 60,
+        "trend": "stable"
+      },
+      {
+        "cause": "Check the CAN bus wiring circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 144,
+        "trend": "down"
+      },
+      {
+        "cause": "Body control module communication error",
+        "reportedBy": 199,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect digital cluster and wiring for damage or loose connections.",
+        "reportedBy": 155,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify cluster communication using diagnostic tools.",
+        "reportedBy": 163,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the cluster or BCM if communication cannot be restored.",
+        "reportedBy": 40,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "U4015-15",
+    "description": "Voice Control Module Malfunction",
+    "possible_causes": [
+      {
+        "cause": "Voice control module internal fault",
+        "reportedBy": 13,
+        "trend": "stable"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 193,
+        "trend": "down"
+      },
+      {
+        "cause": "BCM or infotainment module communication error",
+        "reportedBy": 83,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect the voice control module and wiring for damage or loose connections.",
+        "reportedBy": 193,
+        "trend": "up"
+      },
+      {
+        "step": "Verify module operation with diagnostic equipment.",
+        "reportedBy": 115,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the module or BCM if readings remain abnormal.",
+        "reportedBy": 59,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "P1016-16",
+    "description": "Camshaft Position Sensor Circuit",
+    "possible_causes": [
+      {
+        "cause": "Camshaft sensor malfunction",
+        "reportedBy": 52,
+        "trend": "up"
+      },
+      {
+        "cause": "Open or short in wiring harness",
+        "reportedBy": 142,
+        "trend": "up"
+      },
+      {
+        "cause": "ECM internal fault affecting sensor",
+        "reportedBy": 151,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect camshaft sensor and wiring for damage or loose connections.",
+        "reportedBy": 66,
+        "trend": "down"
+      },
+      {
+        "step": "Verify sensor signal with diagnostic tools.",
+        "reportedBy": 136,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the sensor or ECM if fault persists.",
+        "reportedBy": 164,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "P1017-17",
+    "description": "Crankshaft Position Sensor Performance",
+    "possible_causes": [
+      {
+        "cause": "Crankshaft sensor faulty",
+        "reportedBy": 145,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 116,
+        "trend": "down"
+      },
+      {
+        "cause": "ECM internal error affecting sensor readings",
+        "reportedBy": 141,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect crankshaft sensor and wiring for damage or loose connections.",
+        "reportedBy": 163,
+        "trend": "up"
+      },
+      {
+        "step": "Measure sensor output using diagnostic equipment.",
+        "reportedBy": 92,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the sensor or ECM if readings remain abnormal.",
+        "reportedBy": 81,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "P1018-18",
+    "description": "Fuel Rail Pressure Sensor",
+    "possible_causes": [
+      {
+        "cause": "Fuel pressure sensor malfunction",
+        "reportedBy": 174,
+        "trend": "up"
+      },
+      {
+        "cause": "Open or short in wiring",
+        "reportedBy": 188,
+        "trend": "down"
+      },
+      {
+        "cause": "ECM fault affecting sensor readings",
+        "reportedBy": 43,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect fuel rail pressure sensor and wiring for damage.",
+        "reportedBy": 169,
+        "trend": "down"
+      },
+      {
+        "step": "Verify sensor readings using diagnostic tools.",
+        "reportedBy": 161,
+        "trend": "down"
+      },
+      {
+        "step": "Replace the sensor or ECM if values remain out of specification.",
+        "reportedBy": 105,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "P1019-19",
+    "description": "Oxygen Sensor Heater Circuit",
+    "possible_causes": [
+      {
+        "cause": "O2 sensor heater open or shorted",
+        "reportedBy": 61,
+        "trend": "down"
+      },
+      {
+        "cause": "Connector corrosion or wiring damage",
+        "reportedBy": 172,
+        "trend": "down"
+      },
+      {
+        "cause": "ECM internal fault affecting heater operation",
+        "reportedBy": 135,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect O2 sensor heater and wiring for damage.",
+        "reportedBy": 169,
+        "trend": "down"
+      },
+      {
+        "step": "Measure heater resistance using diagnostic equipment.",
+        "reportedBy": 96,
+        "trend": "up"
+      },
+      {
+        "step": "Replace the sensor or ECM if readings are abnormal.",
+        "reportedBy": 107,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "P1020-20",
+    "description": "Hybrid Battery Module Fault",
+    "possible_causes": [
+      {
+        "cause": "Battery module internal failure",
+        "reportedBy": 70,
+        "trend": "down"
+      },
+      {
+        "cause": "High resistance or short in wiring",
+        "reportedBy": 168,
+        "trend": "up"
+      },
+      {
+        "cause": "Hybrid control module communication fault",
+        "reportedBy": 144,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect hybrid battery module and wiring for damage or corrosion.",
+        "reportedBy": 138,
+        "trend": "down"
+      },
+      {
+        "step": "Verify voltage and communication using diagnostic tools.",
+        "reportedBy": 81,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the battery module or hybrid control module if fault persists.",
+        "reportedBy": 141,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "C2016-16",
+    "description": "ABS Wheel Speed Sensor Circuit \u2013 Front Right",
+    "possible_causes": [
+      {
+        "cause": "Wheel speed sensor malfunction",
+        "reportedBy": 123,
+        "trend": "stable"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 17,
+        "trend": "up"
+      },
+      {
+        "cause": "ABS module internal fault",
+        "reportedBy": 144,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect front right wheel speed sensor and wiring.",
+        "reportedBy": 191,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify sensor signal with diagnostic equipment.",
+        "reportedBy": 112,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace the sensor or ABS module if readings remain abnormal.",
+        "reportedBy": 154,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "C2017-17",
+    "description": "Electronic Parking Brake Actuator Fault",
+    "possible_causes": [
+      {
+        "cause": "Actuator malfunction",
+        "reportedBy": 180,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 186,
+        "trend": "down"
+      },
+      {
+        "cause": "Chassis control module fault",
+        "reportedBy": 11,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect electronic parking brake actuator and wiring.",
+        "reportedBy": 16,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify actuator operation using diagnostic tools.",
+        "reportedBy": 66,
+        "trend": "up"
+      },
+      {
+        "step": "Replace actuator or chassis control module if fault persists.",
+        "reportedBy": 42,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "C2018-18",
+    "description": "Steering Angle Sensor Out of Range",
+    "possible_causes": [
+      {
+        "cause": "Sensor misaligned or faulty",
+        "reportedBy": 172,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 187,
+        "trend": "up"
+      },
+      {
+        "cause": "Chassis control module fault",
+        "reportedBy": 181,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect steering angle sensor and wiring.",
+        "reportedBy": 184,
+        "trend": "down"
+      },
+      {
+        "step": "Verify sensor readings with diagnostic equipment.",
+        "reportedBy": 88,
+        "trend": "down"
+      },
+      {
+        "step": "Replace sensor or control module if fault persists.",
+        "reportedBy": 137,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "C2019-19",
+    "description": "Adaptive Suspension Module Communication",
+    "possible_causes": [
+      {
+        "cause": "Suspension module internal fault",
+        "reportedBy": 169,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the CAN bus wiring circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 63,
+        "trend": "down"
+      },
+      {
+        "cause": "Power supply or ground issue",
+        "reportedBy": 90,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect adaptive suspension module and wiring.",
+        "reportedBy": 63,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify communication using diagnostic tools.",
+        "reportedBy": 101,
+        "trend": "up"
+      },
+      {
+        "step": "Replace module if communication cannot be restored.",
+        "reportedBy": 191,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "C2020-20",
+    "description": "Yaw Rate Sensor Performance",
+    "possible_causes": [
+      {
+        "cause": "Sensor malfunction",
+        "reportedBy": 46,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 32,
+        "trend": "down"
+      },
+      {
+        "cause": "Chassis control module internal fault",
+        "reportedBy": 55,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect yaw rate sensor and wiring.",
+        "reportedBy": 12,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify sensor output with diagnostic equipment.",
+        "reportedBy": 152,
+        "trend": "down"
+      },
+      {
+        "step": "Replace sensor or control module if readings are abnormal.",
+        "reportedBy": 22,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "B3016-16",
+    "description": "Sunroof Motor Overload",
+    "possible_causes": [
+      {
+        "cause": "Sunroof motor jammed or faulty",
+        "reportedBy": 95,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 47,
+        "trend": "down"
+      },
+      {
+        "cause": "Body control module overcurrent fault",
+        "reportedBy": 14,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect sunroof motor and wiring for damage.",
+        "reportedBy": 94,
+        "trend": "down"
+      },
+      {
+        "step": "Verify motor operation with diagnostic tools.",
+        "reportedBy": 21,
+        "trend": "up"
+      },
+      {
+        "step": "Replace motor or BCM if fault persists.",
+        "reportedBy": 156,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "B3017-17",
+    "description": "Seat Position Memory Module Fault",
+    "possible_causes": [
+      {
+        "cause": "Seat memory module malfunction",
+        "reportedBy": 77,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 73,
+        "trend": "down"
+      },
+      {
+        "cause": "Body control module communication error",
+        "reportedBy": 152,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect seat memory module and wiring.",
+        "reportedBy": 116,
+        "trend": "up"
+      },
+      {
+        "step": "Verify module operation with diagnostic tools.",
+        "reportedBy": 62,
+        "trend": "down"
+      },
+      {
+        "step": "Replace module or BCM if readings remain abnormal.",
+        "reportedBy": 27,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "B3018-18",
+    "description": "Rain Sensor Circuit Open",
+    "possible_causes": [
+      {
+        "cause": "Rain sensor faulty",
+        "reportedBy": 163,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 122,
+        "trend": "up"
+      },
+      {
+        "cause": "BCM fault affecting sensor",
+        "reportedBy": 50,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect rain sensor and wiring.",
+        "reportedBy": 31,
+        "trend": "down"
+      },
+      {
+        "step": "Verify sensor output with diagnostic tools.",
+        "reportedBy": 53,
+        "trend": "down"
+      },
+      {
+        "step": "Replace sensor or BCM if readings remain abnormal.",
+        "reportedBy": 34,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "B3019-19",
+    "description": "Adaptive Headlamp Leveling Sensor",
+    "possible_causes": [
+      {
+        "cause": "Leveling sensor misaligned or faulty",
+        "reportedBy": 99,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 130,
+        "trend": "up"
+      },
+      {
+        "cause": "BCM internal fault affecting headlamp",
+        "reportedBy": 166,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect headlamp leveling sensor and wiring.",
+        "reportedBy": 27,
+        "trend": "up"
+      },
+      {
+        "step": "Verify sensor operation using diagnostic tools.",
+        "reportedBy": 17,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace sensor or BCM if readings remain abnormal.",
+        "reportedBy": 86,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "B3020-20",
+    "description": "Interior Ambient Lighting Module Fault",
+    "possible_causes": [
+      {
+        "cause": "Lighting module malfunction",
+        "reportedBy": 104,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 184,
+        "trend": "down"
+      },
+      {
+        "cause": "Body control module internal fault",
+        "reportedBy": 52,
+        "trend": "down"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect ambient lighting module and wiring.",
+        "reportedBy": 138,
+        "trend": "down"
+      },
+      {
+        "step": "Verify module operation with diagnostic equipment.",
+        "reportedBy": 24,
+        "trend": "up"
+      },
+      {
+        "step": "Replace module or BCM if readings remain abnormal.",
+        "reportedBy": 76,
+        "trend": "down"
+      }
+    ]
+  },
+  {
+    "code": "U4016-16",
+    "description": "Infotainment Head Unit Communication",
+    "possible_causes": [
+      {
+        "cause": "Head unit internal fault",
+        "reportedBy": 97,
+        "trend": "stable"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 147,
+        "trend": "down"
+      },
+      {
+        "cause": "CAN bus communication error",
+        "reportedBy": 25,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect infotainment head unit and wiring.",
+        "reportedBy": 85,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify communication with diagnostic tools.",
+        "reportedBy": 23,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace head unit or BCM if fault persists.",
+        "reportedBy": 42,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "U4017-17",
+    "description": "Lane Keep Assist Module Fault",
+    "possible_causes": [
+      {
+        "cause": "Module malfunction",
+        "reportedBy": 31,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 34,
+        "trend": "up"
+      },
+      {
+        "cause": "Control module internal fault",
+        "reportedBy": 12,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect lane keep assist module and wiring.",
+        "reportedBy": 186,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify module operation using diagnostic equipment.",
+        "reportedBy": 66,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace module if readings remain abnormal.",
+        "reportedBy": 24,
+        "trend": "up"
+      }
+    ]
+  },
+  {
+    "code": "U4018-18",
+    "description": "Radar Sensor Module Communication Error",
+    "possible_causes": [
+      {
+        "cause": "Radar sensor malfunction",
+        "reportedBy": 108,
+        "trend": "up"
+      },
+      {
+        "cause": "Check the CAN bus wiring circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 22,
+        "trend": "down"
+      },
+      {
+        "cause": "Control module internal fault",
+        "reportedBy": 74,
+        "trend": "stable"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect radar sensor and wiring.",
+        "reportedBy": 197,
+        "trend": "stable"
+      },
+      {
+        "step": "Verify communication using diagnostic tools.",
+        "reportedBy": 187,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace sensor or control module if issue persists.",
+        "reportedBy": 64,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "U4019-19",
+    "description": "Telematics Control Unit Fault",
+    "possible_causes": [
+      {
+        "cause": "Telematics module malfunction",
+        "reportedBy": 97,
+        "trend": "stable"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 93,
+        "trend": "up"
+      },
+      {
+        "cause": "CAN bus communication error",
+        "reportedBy": 104,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect telematics control unit and wiring.",
+        "reportedBy": 127,
+        "trend": "down"
+      },
+      {
+        "step": "Verify module operation using diagnostic tools.",
+        "reportedBy": 145,
+        "trend": "stable"
+      },
+      {
+        "step": "Replace module if readings remain abnormal.",
+        "reportedBy": 40,
+        "trend": "stable"
+      }
+    ]
+  },
+  {
+    "code": "U4020-20",
+    "description": "ADAS Camera Module Signal Out of Range",
+    "possible_causes": [
+      {
+        "cause": "ADAS camera misaligned or faulty",
+        "reportedBy": 170,
+        "trend": "down"
+      },
+      {
+        "cause": "Check the circuit for short circuit to ground, open circuit, or high resistance",
+        "reportedBy": 67,
+        "trend": "up"
+      },
+      {
+        "cause": "Control module internal fault affecting camera",
+        "reportedBy": 49,
+        "trend": "up"
+      }
+    ],
+    "action": [
+      {
+        "step": "Inspect ADAS camera and wiring.",
+        "reportedBy": 187,
+        "trend": "down"
+      },
+      {
+        "step": "Verify signal with diagnostic tools.",
+        "reportedBy": 27,
+        "trend": "up"
+      },
+      {
+        "step": "Replace camera or control module if readings remain abnormal.",
+        "reportedBy": 39,
+        "trend": "up"
+      }
+    ]
+  }
+]

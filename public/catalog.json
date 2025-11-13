@@ -1,0 +1,2832 @@
+[
+  {
+    "dtcCode": "B3101-01",
+    "parts": [
+      {
+        "partNumber": "FLD-ACT-001",
+        "name": "Front Left Door Lock Actuator",
+        "description": "Electric motor actuator for front left door lock mechanism with integrated position sensor",
+        "material": "ABS plastic housing with steel gears"
+      },
+      {
+        "partNumber": "WH-FLD-002",
+        "name": "Door Lock Actuator Wiring Harness",
+        "description": "Complete wiring harness assembly for front left door lock actuator connection to BCM",
+        "material": "Copper wire with PVC insulation"
+      },
+      {
+        "partNumber": "CON-DLA-003",
+        "name": "Door Lock Actuator Connector",
+        "description": "5-pin waterproof connector for door lock actuator electrical connection",
+        "material": "Nylon connector body with brass terminals"
+      },
+      {
+        "partNumber": "BCM-CTRL-004",
+        "name": "Body Control Module",
+        "description": "Central control unit for body electrical systems including door locks",
+        "material": "Electronic PCB in aluminum housing"
+      },
+      {
+        "partNumber": "DLS-MNT-005",
+        "name": "Door Lock Actuator Mounting Bracket",
+        "description": "Steel bracket for secure mounting of door lock actuator to door frame",
+        "material": "Galvanized steel"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3102-02",
+    "parts": [
+      {
+        "partNumber": "FRD-ACT-006",
+        "name": "Front Right Door Lock Actuator",
+        "description": "Electric motor actuator for front right door lock mechanism with integrated position sensor",
+        "material": "ABS plastic housing with steel gears"
+      },
+      {
+        "partNumber": "WH-FRD-007",
+        "name": "Front Right Door Wiring Harness",
+        "description": "Complete wiring harness assembly for front right door lock actuator",
+        "material": "Copper wire with UV-resistant PVC"
+      },
+      {
+        "partNumber": "CON-FRD-008",
+        "name": "Right Door Connector Assembly",
+        "description": "Multi-pin waterproof connector for right door electrical components",
+        "material": "Thermoplastic with gold-plated pins"
+      },
+      {
+        "partNumber": "BCM-REL-009",
+        "name": "BCM Relay Module",
+        "description": "Power relay module for body control module door lock circuits",
+        "material": "Electronic components in polycarbonate housing"
+      },
+      {
+        "partNumber": "GRD-WR-010",
+        "name": "Door Lock Ground Wire",
+        "description": "Heavy-duty ground wire for door lock actuator system",
+        "material": "Braided copper with EPDM insulation"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3103-03",
+    "parts": [
+      {
+        "partNumber": "RLD-MTR-011",
+        "name": "Rear Left Door Latch Motor",
+        "description": "Electric motor for rear left door latch mechanism operation",
+        "material": "Brushed DC motor with aluminum housing"
+      },
+      {
+        "partNumber": "LTH-ASM-012",
+        "name": "Door Latch Assembly",
+        "description": "Complete mechanical latch assembly for rear left door",
+        "material": "Zinc-plated steel components"
+      },
+      {
+        "partNumber": "WH-RLD-013",
+        "name": "Rear Left Door Wiring Harness",
+        "description": "Wiring harness for rear left door latch motor and sensors",
+        "material": "Copper conductors with silicone insulation"
+      },
+      {
+        "partNumber": "SEN-POS-014",
+        "name": "Latch Position Sensor",
+        "description": "Hall effect sensor for door latch position detection",
+        "material": "Electronic sensor in epoxy-sealed housing"
+      },
+      {
+        "partNumber": "MOD-BCM-015",
+        "name": "BCM Communication Module",
+        "description": "CAN bus communication interface module for door systems",
+        "material": "PCB with surface-mount components"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3104-04",
+    "parts": [
+      {
+        "partNumber": "RRD-MTR-016",
+        "name": "Rear Right Door Latch Motor",
+        "description": "Electric motor assembly for rear right door latch operation",
+        "material": "Brushed DC motor with polymer housing"
+      },
+      {
+        "partNumber": "LTH-GR-017",
+        "name": "Door Latch Gear Set",
+        "description": "Replacement gear set for door latch motor mechanism",
+        "material": "Hardened nylon gears"
+      },
+      {
+        "partNumber": "WH-RRD-018",
+        "name": "Rear Right Door Wiring Kit",
+        "description": "Complete wiring kit for rear right door electrical systems",
+        "material": "Multi-strand copper with TPE jacket"
+      },
+      {
+        "partNumber": "CON-RRD-019",
+        "name": "Rear Door Connector Block",
+        "description": "Multi-circuit connector block for rear door electronics",
+        "material": "Glass-filled nylon with copper alloy terminals"
+      },
+      {
+        "partNumber": "FUS-DR-020",
+        "name": "Door System Fuse Kit",
+        "description": "Blade fuse kit for door lock and latch circuits",
+        "material": "Zinc alloy with ceramic fuse element"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3105-05",
+    "parts": [
+      {
+        "partNumber": "SW-FLD-021",
+        "name": "Front Left Door Lock Switch",
+        "description": "Illuminated rocker switch for front left door lock control",
+        "material": "Polycarbonate switch body with membrane contacts"
+      },
+      {
+        "partNumber": "WH-SWT-022",
+        "name": "Door Switch Wiring Harness",
+        "description": "Dedicated wiring harness for door lock switch circuit",
+        "material": "Tinned copper wire with polyethylene insulation"
+      },
+      {
+        "partNumber": "BZL-SW-023",
+        "name": "Switch Bezel Trim",
+        "description": "Decorative and protective bezel for door lock switch",
+        "material": "Chrome-plated ABS plastic"
+      },
+      {
+        "partNumber": "LED-SW-024",
+        "name": "Switch Illumination LED",
+        "description": "Replacement LED for door lock switch backlighting",
+        "material": "Surface-mount LED with diffuser lens"
+      },
+      {
+        "partNumber": "CON-SW-025",
+        "name": "Switch Connector Pigtail",
+        "description": "Connector pigtail for door lock switch replacement",
+        "material": "Copper wire with sealed connector"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3106-06",
+    "parts": [
+      {
+        "partNumber": "SW-FRD-026",
+        "name": "Front Right Door Lock Switch",
+        "description": "Passenger side door lock control switch with LED indicator",
+        "material": "Thermoplastic housing with silver contacts"
+      },
+      {
+        "partNumber": "PNL-SW-027",
+        "name": "Door Switch Panel Assembly",
+        "description": "Complete switch panel for front right door controls",
+        "material": "Injection-molded ABS with soft-touch coating"
+      },
+      {
+        "partNumber": "WH-FRS-028",
+        "name": "Front Right Switch Harness",
+        "description": "Wiring harness for all front right door switches",
+        "material": "PVC-insulated multi-conductor cable"
+      },
+      {
+        "partNumber": "RES-SW-029",
+        "name": "Switch Pull-up Resistor Pack",
+        "description": "Resistor pack for door switch signal conditioning",
+        "material": "Surface-mount resistors on ceramic substrate"
+      },
+      {
+        "partNumber": "CAP-SW-030",
+        "name": "Switch Debounce Capacitor",
+        "description": "Capacitor for switch contact debouncing circuit",
+        "material": "Ceramic dielectric capacitor"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3107-07",
+    "parts": [
+      {
+        "partNumber": "SEN-RLD-031",
+        "name": "Rear Left Door Ajar Sensor",
+        "description": "Magnetic reed switch for rear left door ajar detection",
+        "material": "Glass-encapsulated reed switch in plastic housing"
+      },
+      {
+        "partNumber": "MAG-DA-032",
+        "name": "Door Ajar Sensor Magnet",
+        "description": "Rare earth magnet for door ajar sensor actuation",
+        "material": "Neodymium magnet in steel bracket"
+      },
+      {
+        "partNumber": "WH-SEN-033",
+        "name": "Door Sensor Wiring Harness",
+        "description": "Shielded wiring harness for door ajar sensor signal",
+        "material": "Shielded twisted pair with aluminum foil"
+      },
+      {
+        "partNumber": "MNT-SEN-034",
+        "name": "Sensor Mounting Bracket",
+        "description": "Adjustable mounting bracket for door ajar sensor",
+        "material": "Stainless steel stamping"
+      },
+      {
+        "partNumber": "CON-SEN-035",
+        "name": "Sensor Terminal Connector",
+        "description": "2-pin weatherpack connector for door sensor",
+        "material": "Nylon connector with tin-plated terminals"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3108-08",
+    "parts": [
+      {
+        "partNumber": "SEN-RRD-036",
+        "name": "Rear Right Door Ajar Sensor",
+        "description": "Hall effect sensor for rear right door ajar status",
+        "material": "Solid-state sensor in epoxy housing"
+      },
+      {
+        "partNumber": "WH-RRS-037",
+        "name": "Rear Right Sensor Harness",
+        "description": "Wiring harness for rear right door ajar sensor",
+        "material": "Cross-linked polyethylene insulated wire"
+      },
+      {
+        "partNumber": "PCB-SEN-038",
+        "name": "Sensor Signal Conditioning Board",
+        "description": "PCB for sensor signal amplification and filtering",
+        "material": "FR-4 PCB with SMD components"
+      },
+      {
+        "partNumber": "CAL-DA-039",
+        "name": "Door Ajar Calibration Tool",
+        "description": "Alignment tool for door ajar sensor calibration",
+        "material": "Machined aluminum tool"
+      },
+      {
+        "partNumber": "SHM-DA-040",
+        "name": "Door Ajar Sensor Shim Kit",
+        "description": "Precision shim set for sensor gap adjustment",
+        "material": "Stainless steel shims in various thicknesses"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3109-09",
+    "parts": [
+      {
+        "partNumber": "ACT-CHL-041",
+        "name": "Child Lock Actuator",
+        "description": "Electric actuator for child safety lock mechanism",
+        "material": "Plastic housing with DC motor and gearbox"
+      },
+      {
+        "partNumber": "LVR-CHL-042",
+        "name": "Child Lock Lever Assembly",
+        "description": "Mechanical lever assembly for child lock engagement",
+        "material": "Die-cast zinc alloy"
+      },
+      {
+        "partNumber": "WH-CHL-043",
+        "name": "Child Lock Wiring Harness",
+        "description": "Dedicated wiring for child lock actuator system",
+        "material": "Copper wire with flame-retardant jacket"
+      },
+      {
+        "partNumber": "SW-CHL-044",
+        "name": "Child Lock Status Switch",
+        "description": "Micro-switch for child lock position feedback",
+        "material": "Snap-action switch in sealed housing"
+      },
+      {
+        "partNumber": "IND-CHL-045",
+        "name": "Child Lock Indicator LED",
+        "description": "Dashboard indicator LED for child lock status",
+        "material": "High-brightness amber LED"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3110-10",
+    "parts": [
+      {
+        "partNumber": "MOD-DR-046",
+        "name": "Door Control Module",
+        "description": "Microcontroller-based module for door system control",
+        "material": "Sealed electronic module in aluminum case"
+      },
+      {
+        "partNumber": "WH-CAN-047",
+        "name": "CAN Bus Wiring Harness",
+        "description": "Twisted-pair CAN bus harness for door module communication",
+        "material": "Shielded twisted pair with drain wire"
+      },
+      {
+        "partNumber": "CON-CAN-048",
+        "name": "CAN Bus Connector Set",
+        "description": "High-reliability connectors for CAN bus network",
+        "material": "Gold-plated terminals in sealed housings"
+      },
+      {
+        "partNumber": "RES-CAN-049",
+        "name": "CAN Bus Termination Resistor",
+        "description": "120-ohm termination resistor for CAN bus network",
+        "material": "Metal film resistor with leads"
+      },
+      {
+        "partNumber": "FIL-CAN-050",
+        "name": "CAN Bus EMI Filter",
+        "description": "Common-mode choke for CAN bus EMI suppression",
+        "material": "Ferrite core with copper windings"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1001-01",
+    "parts": [
+      {
+        "partNumber": "ACT-TRB-051",
+        "name": "Turbocharger Boost Actuator",
+        "description": "Electric wastegate actuator for turbocharger boost control",
+        "material": "Aluminum housing with stepper motor"
+      },
+      {
+        "partNumber": "SEN-MAP-052",
+        "name": "Manifold Absolute Pressure Sensor",
+        "description": "Pressure sensor for boost pressure monitoring",
+        "material": "Silicon sensor die in stainless steel body"
+      },
+      {
+        "partNumber": "WH-TRB-053",
+        "name": "Turbo Actuator Wiring Harness",
+        "description": "Heat-resistant wiring harness for turbo actuator",
+        "material": "Silicone-insulated wire with fiberglass braid"
+      },
+      {
+        "partNumber": "VAC-TRB-054",
+        "name": "Turbo Vacuum Line Kit",
+        "description": "Vacuum line set for boost control system",
+        "material": "Reinforced silicone hose"
+      },
+      {
+        "partNumber": "PCM-TRB-055",
+        "name": "Powertrain Control Module",
+        "description": "Engine and transmission control computer",
+        "material": "Electronic control unit in sealed housing"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1002-02",
+    "parts": [
+      {
+        "partNumber": "VLV-EGR-056",
+        "name": "EGR Valve Assembly",
+        "description": "Exhaust gas recirculation valve with position sensor",
+        "material": "Stainless steel valve body with electric actuator"
+      },
+      {
+        "partNumber": "GSK-EGR-057",
+        "name": "EGR Valve Gasket",
+        "description": "High-temperature gasket for EGR valve mounting",
+        "material": "Multi-layer steel with graphite coating"
+      },
+      {
+        "partNumber": "CLN-EGR-058",
+        "name": "EGR System Cleaner Kit",
+        "description": "Chemical cleaner for EGR valve and passages",
+        "material": "Specialized cleaning solution"
+      },
+      {
+        "partNumber": "WH-EGR-059",
+        "name": "EGR Valve Wiring Harness",
+        "description": "Temperature-resistant harness for EGR valve",
+        "material": "Teflon-insulated wire with ceramic connectors"
+      },
+      {
+        "partNumber": "COL-EGR-060",
+        "name": "EGR Cooler Assembly",
+        "description": "Heat exchanger for EGR gas cooling",
+        "material": "Aluminum core with stainless steel tubes"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1003-03",
+    "parts": [
+      {
+        "partNumber": "SEN-FRP-061",
+        "name": "Fuel Rail Pressure Sensor",
+        "description": "High-pressure sensor for direct injection fuel rail",
+        "material": "Piezoelectric sensor in stainless steel"
+      },
+      {
+        "partNumber": "SEL-FRP-062",
+        "name": "Fuel Pressure Sensor O-Ring",
+        "description": "Fuel-resistant seal for pressure sensor",
+        "material": "Fluoroelastomer O-ring"
+      },
+      {
+        "partNumber": "WH-FRP-063",
+        "name": "Fuel Sensor Wiring Harness",
+        "description": "Shielded harness for fuel pressure sensor signal",
+        "material": "Teflon-insulated shielded cable"
+      },
+      {
+        "partNumber": "CON-FRP-064",
+        "name": "Fuel Sensor Connector",
+        "description": "Sealed connector for fuel pressure sensor",
+        "material": "Nylon housing with gold-plated pins"
+      },
+      {
+        "partNumber": "CAL-FPS-065",
+        "name": "Fuel Pressure Sensor Calibration Tool",
+        "description": "Diagnostic tool for fuel pressure sensor calibration",
+        "material": "Electronic calibration device"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1004-04",
+    "parts": [
+      {
+        "partNumber": "BAT-HV-066",
+        "name": "Hybrid Battery Module",
+        "description": "High-voltage lithium-ion battery module for hybrid system",
+        "material": "Lithium-ion cells in aluminum housing"
+      },
+      {
+        "partNumber": "BMS-HV-067",
+        "name": "Battery Management System",
+        "description": "Electronic control unit for battery monitoring and balancing",
+        "material": "PCB assembly in sealed enclosure"
+      },
+      {
+        "partNumber": "WH-HV-068",
+        "name": "High Voltage Wiring Harness",
+        "description": "Orange high-voltage cable assembly for battery system",
+        "material": "High-voltage cable with orange insulation"
+      },
+      {
+        "partNumber": "CON-HV-069",
+        "name": "High Voltage Connector Set",
+        "description": "Safety interlock connectors for HV battery",
+        "material": "Heavy-duty connectors with safety locks"
+      },
+      {
+        "partNumber": "FUS-HV-070",
+        "name": "High Voltage Fuse Assembly",
+        "description": "Service disconnect fuse for HV battery pack",
+        "material": "Ceramic fuse in insulated housing"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1005-05",
+    "parts": [
+      {
+        "partNumber": "SEN-O2-071",
+        "name": "Oxygen Sensor",
+        "description": "Heated wideband oxygen sensor for exhaust monitoring",
+        "material": "Zirconia element in stainless steel housing"
+      },
+      {
+        "partNumber": "HTR-O2-072",
+        "name": "O2 Sensor Heater Element",
+        "description": "Replacement heater element for oxygen sensor",
+        "material": "Ceramic heater with platinum element"
+      },
+      {
+        "partNumber": "WH-O2-073",
+        "name": "O2 Sensor Wiring Harness",
+        "description": "Heat-resistant harness for oxygen sensor",
+        "material": "Silicone wire with stainless steel braid"
+      },
+      {
+        "partNumber": "SKT-O2-074",
+        "name": "O2 Sensor Socket Tool",
+        "description": "Specialized socket for oxygen sensor removal",
+        "material": "Chrome-molybdenum steel socket"
+      },
+      {
+        "partNumber": "CPD-O2-075",
+        "name": "Anti-Seize Compound",
+        "description": "High-temperature anti-seize for O2 sensor threads",
+        "material": "Nickel-based anti-seize paste"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1006-06",
+    "parts": [
+      {
+        "partNumber": "SEN-CMP-076",
+        "name": "Camshaft Position Sensor",
+        "description": "Hall effect sensor for camshaft timing detection",
+        "material": "Electronic sensor in plastic housing"
+      },
+      {
+        "partNumber": "SEL-CMP-077",
+        "name": "Camshaft Sensor O-Ring",
+        "description": "Oil-resistant seal for camshaft sensor",
+        "material": "Nitrile rubber O-ring"
+      },
+      {
+        "partNumber": "WH-CMP-078",
+        "name": "Camshaft Sensor Harness",
+        "description": "Shielded wiring for camshaft position sensor",
+        "material": "Shielded cable with EMI protection"
+      },
+      {
+        "partNumber": "TRG-CAM-079",
+        "name": "Camshaft Trigger Wheel",
+        "description": "Reluctor wheel for camshaft position sensor",
+        "material": "Magnetic steel reluctor"
+      },
+      {
+        "partNumber": "BLT-CMP-080",
+        "name": "Camshaft Sensor Bolt Kit",
+        "description": "Mounting hardware for camshaft position sensor",
+        "material": "Hardened steel bolts with washers"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1007-07",
+    "parts": [
+      {
+        "partNumber": "SEN-CRK-081",
+        "name": "Crankshaft Position Sensor",
+        "description": "Magnetic pickup sensor for crankshaft position detection",
+        "material": "Inductive sensor in steel housing"
+      },
+      {
+        "partNumber": "WH-CRK-082",
+        "name": "Crankshaft Sensor Wiring",
+        "description": "Shielded cable for crankshaft position sensor",
+        "material": "Twisted pair with aluminum foil shield"
+      },
+      {
+        "partNumber": "TRG-CRK-083",
+        "name": "Crankshaft Reluctor Ring",
+        "description": "Toothed ring for crankshaft position sensing",
+        "material": "Hardened steel with magnetic properties"
+      },
+      {
+        "partNumber": "MNT-CRK-084",
+        "name": "Crankshaft Sensor Bracket",
+        "description": "Adjustable mounting bracket for crank sensor",
+        "material": "Aluminum alloy bracket"
+      },
+      {
+        "partNumber": "SHM-CRK-085",
+        "name": "Crankshaft Sensor Shim Set",
+        "description": "Air gap adjustment shims for crank sensor",
+        "material": "Non-magnetic stainless steel shims"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1008-08",
+    "parts": [
+      {
+        "partNumber": "SEN-IAT-086",
+        "name": "Intake Air Temperature Sensor",
+        "description": "Thermistor-based sensor for intake air temperature",
+        "material": "NTC thermistor in plastic housing"
+      },
+      {
+        "partNumber": "WH-IAT-087",
+        "name": "IAT Sensor Connector Pigtail",
+        "description": "Replacement connector for IAT sensor",
+        "material": "Weatherpack connector with sealed terminals"
+      },
+      {
+        "partNumber": "CLN-IAT-088",
+        "name": "MAF/IAT Sensor Cleaner",
+        "description": "Electronic-safe cleaner for air temperature sensors",
+        "material": "Aerosol electronics cleaner"
+      },
+      {
+        "partNumber": "GSK-IAT-089",
+        "name": "IAT Sensor Mounting Gasket",
+        "description": "Seal for IAT sensor installation",
+        "material": "Silicone rubber gasket"
+      },
+      {
+        "partNumber": "TRM-IAT-090",
+        "name": "Terminal Repair Kit",
+        "description": "Replacement terminals for IAT sensor connector",
+        "material": "Brass terminals with tin plating"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1009-09",
+    "parts": [
+      {
+        "partNumber": "SEN-MAF-091",
+        "name": "Mass Air Flow Sensor",
+        "description": "Hot-wire MAF sensor for air mass measurement",
+        "material": "Silicon sensor element in plastic housing"
+      },
+      {
+        "partNumber": "CLN-MAF-092",
+        "name": "MAF Sensor Cleaning Kit",
+        "description": "Specialized cleaning solution for MAF sensors",
+        "material": "CRC MAF cleaner aerosol"
+      },
+      {
+        "partNumber": "WH-MAF-093",
+        "name": "MAF Sensor Wiring Harness",
+        "description": "Replacement harness for mass air flow sensor",
+        "material": "Copper wire with sealed connectors"
+      },
+      {
+        "partNumber": "FLT-AIR-094",
+        "name": "Engine Air Filter",
+        "description": "High-flow air filter for intake system",
+        "material": "Cellulose paper with synthetic mesh"
+      },
+      {
+        "partNumber": "DUT-INT-095",
+        "name": "Intake Air Duct Assembly",
+        "description": "Air intake duct from filter to throttle body",
+        "material": "Reinforced rubber with molded connections"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1010-10",
+    "parts": [
+      {
+        "partNumber": "TCM-ECU-096",
+        "name": "Transmission Control Module",
+        "description": "Electronic control unit for automatic transmission",
+        "material": "Sealed ECU in aluminum housing"
+      },
+      {
+        "partNumber": "WH-TCM-097",
+        "name": "TCM Wiring Harness",
+        "description": "Main wiring harness for transmission control module",
+        "material": "Multi-conductor cable with sealed connectors"
+      },
+      {
+        "partNumber": "CON-TCM-098",
+        "name": "TCM Connector Assembly",
+        "description": "Multi-pin connector for TCM communication",
+        "material": "High-density connector with gold pins"
+      },
+      {
+        "partNumber": "RES-CAN-099",
+        "name": "CAN Bus Resistor Pack",
+        "description": "Termination resistor set for CAN bus network",
+        "material": "Metal film resistors in heat-shrink"
+      },
+      {
+        "partNumber": "FUS-TCM-100",
+        "name": "TCM Power Fuse",
+        "description": "Main power fuse for transmission control module",
+        "material": "Blade-type automotive fuse"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2001-01",
+    "parts": [
+      {
+        "partNumber": "SEN-WSS-101",
+        "name": "Front Left Wheel Speed Sensor",
+        "description": "ABS wheel speed sensor with magnetic pickup",
+        "material": "Hall effect sensor in stainless steel"
+      },
+      {
+        "partNumber": "RNG-WSS-102",
+        "name": "ABS Sensor Ring",
+        "description": "Toothed ring for wheel speed sensor detection",
+        "material": "Magnetic steel reluctor ring"
+      },
+      {
+        "partNumber": "WH-ABS-103",
+        "name": "ABS Sensor Wiring Harness",
+        "description": "Shielded harness for wheel speed sensor",
+        "material": "Twisted pair with shield and drain wire"
+      },
+      {
+        "partNumber": "BRK-ABS-104",
+        "name": "ABS Module Bracket",
+        "description": "Mounting bracket for ABS control module",
+        "material": "Steel bracket with rubber isolators"
+      },
+      {
+        "partNumber": "MOD-ABS-105",
+        "name": "ABS Control Module",
+        "description": "Anti-lock brake system electronic control unit",
+        "material": "Electronic module in sealed aluminum case"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2002-02",
+    "parts": [
+      {
+        "partNumber": "ACT-EPB-106",
+        "name": "Electronic Parking Brake Actuator",
+        "description": "Electric motor assembly for parking brake operation",
+        "material": "Brushless DC motor with planetary gearbox"
+      },
+      {
+        "partNumber": "CBL-EPB-107",
+        "name": "Parking Brake Cable Assembly",
+        "description": "Steel cable set for parking brake actuation",
+        "material": "Galvanized steel cable with polymer coating"
+      },
+      {
+        "partNumber": "WH-EPB-108",
+        "name": "EPB Actuator Wiring Harness",
+        "description": "Power and control wiring for EPB actuator",
+        "material": "High-current wire with sealed connectors"
+      },
+      {
+        "partNumber": "SW-EPB-109",
+        "name": "Parking Brake Switch",
+        "description": "Dashboard switch for parking brake control",
+        "material": "Illuminated momentary switch"
+      },
+      {
+        "partNumber": "MOD-CHC-110",
+        "name": "Chassis Control Module",
+        "description": "Central control unit for chassis systems",
+        "material": "Electronic ECU in sealed housing"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2003-03",
+    "parts": [
+      {
+        "partNumber": "SEN-SAS-111",
+        "name": "Steering Angle Sensor",
+        "description": "Multi-turn optical encoder for steering angle detection",
+        "material": "Optical sensor in polycarbonate housing"
+      },
+      {
+        "partNumber": "SPG-SAS-112",
+        "name": "Steering Sensor Spring Contact",
+        "description": "Spiral cable assembly for steering sensor",
+        "material": "Copper spring contacts in plastic housing"
+      },
+      {
+        "partNumber": "WH-SAS-113",
+        "name": "Steering Sensor Harness",
+        "description": "Wiring harness for steering angle sensor",
+        "material": "Flexible multi-conductor cable"
+      },
+      {
+        "partNumber": "CAL-SAS-114",
+        "name": "Steering Sensor Calibration Tool",
+        "description": "Diagnostic tool for steering angle sensor calibration",
+        "material": "Electronic calibration device"
+      },
+      {
+        "partNumber": "BRK-SAS-115",
+        "name": "Sensor Mounting Bracket",
+        "description": "Bracket for steering column sensor mounting",
+        "material": "Aluminum die-cast bracket"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2004-04",
+    "parts": [
+      {
+        "partNumber": "MOD-ASM-116",
+        "name": "Adaptive Suspension Module",
+        "description": "Electronic control unit for active suspension system",
+        "material": "Sealed ECU with aluminum housing"
+      },
+      {
+        "partNumber": "DMP-ASM-117",
+        "name": "Adaptive Damper Assembly",
+        "description": "Electronically controlled shock absorber",
+        "material": "Gas-charged damper with solenoid valve"
+      },
+      {
+        "partNumber": "WH-ASM-118",
+        "name": "Suspension Module Wiring",
+        "description": "CAN bus harness for suspension module",
+        "material": "Shielded twisted pair with connectors"
+      },
+      {
+        "partNumber": "SEN-HGT-119",
+        "name": "Ride Height Sensor",
+        "description": "Ultrasonic sensor for vehicle height measurement",
+        "material": "Ultrasonic transducer in sealed housing"
+      },
+      {
+        "partNumber": "VLV-SUS-120",
+        "name": "Suspension Solenoid Valve",
+        "description": "Proportional solenoid for damper control",
+        "material": "Brass valve body with electronic coil"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2005-05",
+    "parts": [
+      {
+        "partNumber": "SEN-YAW-121",
+        "name": "Yaw Rate Sensor",
+        "description": "MEMS gyroscope for vehicle yaw rate measurement",
+        "material": "Silicon MEMS sensor in plastic package"
+      },
+      {
+        "partNumber": "SEN-LAT-122",
+        "name": "Lateral Acceleration Sensor",
+        "description": "G-force sensor for lateral acceleration detection",
+        "material": "Capacitive accelerometer in sealed case"
+      },
+      {
+        "partNumber": "WH-IMU-123",
+        "name": "IMU Sensor Wiring Harness",
+        "description": "Shielded harness for inertial measurement unit",
+        "material": "Low-capacitance shielded cable"
+      },
+      {
+        "partNumber": "MNT-YAW-124",
+        "name": "Yaw Sensor Mounting Bracket",
+        "description": "Vibration-isolated bracket for yaw rate sensor",
+        "material": "Aluminum with rubber isolators"
+      },
+      {
+        "partNumber": "CAL-YAW-125",
+        "name": "Yaw Sensor Calibration Kit",
+        "description": "Alignment and calibration tool for yaw sensor",
+        "material": "Precision leveling tool"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2006-06",
+    "parts": [
+      {
+        "partNumber": "MOD-TCS-126",
+        "name": "Traction Control Module",
+        "description": "Electronic control unit for traction control system",
+        "material": "Sealed ECU in die-cast housing"
+      },
+      {
+        "partNumber": "WH-TCS-127",
+        "name": "TCS Module Wiring Harness",
+        "description": "CAN bus and power wiring for TCS module",
+        "material": "High-reliability automotive wiring"
+      },
+      {
+        "partNumber": "SW-TCS-128",
+        "name": "Traction Control Switch",
+        "description": "Dashboard switch for TCS on/off control",
+        "material": "Illuminated rocker switch"
+      },
+      {
+        "partNumber": "SEN-WHE-129",
+        "name": "Wheel Speed Sensor Set",
+        "description": "Complete set of four wheel speed sensors",
+        "material": "Hall effect sensors in sealed housings"
+      },
+      {
+        "partNumber": "REL-TCS-130",
+        "name": "TCS Relay Module",
+        "description": "High-current relay for traction control actuation",
+        "material": "Automotive relay in sealed package"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2007-07",
+    "parts": [
+      {
+        "partNumber": "SEN-BRP-131",
+        "name": "Brake Pressure Sensor",
+        "description": "High-pressure sensor for hydraulic brake monitoring",
+        "material": "Stainless steel pressure transducer"
+      },
+      {
+        "partNumber": "SEL-BRP-132",
+        "name": "Brake Sensor O-Ring",
+        "description": "High-pressure seal for brake pressure sensor",
+        "material": "EPDM rubber O-ring"
+      },
+      {
+        "partNumber": "WH-BRP-133",
+        "name": "Brake Sensor Wiring",
+        "description": "Shielded cable for brake pressure sensor",
+        "material": "Teflon-insulated shielded wire"
+      },
+      {
+        "partNumber": "ADP-BRP-134",
+        "name": "Brake Sensor Adapter",
+        "description": "Threaded adapter for brake pressure sensor mounting",
+        "material": "Brass fitting with thread sealant"
+      },
+      {
+        "partNumber": "CHK-BRP-135",
+        "name": "Brake Pressure Check Valve",
+        "description": "One-way valve for brake pressure circuit",
+        "material": "Brass valve with spring"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2008-08",
+    "parts": [
+      {
+        "partNumber": "SEN-ESC-136",
+        "name": "Stability Control Sensor",
+        "description": "Combined yaw rate and lateral acceleration sensor",
+        "material": "MEMS sensor module in sealed housing"
+      },
+      {
+        "partNumber": "WH-ESC-137",
+        "name": "ESC Sensor Wiring Harness",
+        "description": "Low-noise harness for stability control sensor",
+        "material": "Shielded multi-conductor cable"
+      },
+      {
+        "partNumber": "MOD-ESC-138",
+        "name": "Electronic Stability Control Module",
+        "description": "Central ECU for stability control system",
+        "material": "High-performance ECU in aluminum case"
+      },
+      {
+        "partNumber": "HYD-ESC-139",
+        "name": "ESC Hydraulic Unit",
+        "description": "Hydraulic control unit for ESC brake modulation",
+        "material": "Aluminum hydraulic block with solenoids"
+      },
+      {
+        "partNumber": "PMP-ESC-140",
+        "name": "ESC Brake Pump Motor",
+        "description": "High-pressure pump for ESC hydraulic unit",
+        "material": "Brushless DC motor with pump assembly"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2009-09",
+    "parts": [
+      {
+        "partNumber": "SEN-RWS-141",
+        "name": "Rear Wheel Speed Sensor",
+        "description": "Magnetic sensor for rear wheel ABS monitoring",
+        "material": "Hall effect sensor in stainless steel housing"
+      },
+      {
+        "partNumber": "RNG-RWS-142",
+        "name": "Rear ABS Sensor Ring",
+        "description": "Toothed ring for rear wheel speed detection",
+        "material": "Hardened steel reluctor"
+      },
+      {
+        "partNumber": "WH-RWS-143",
+        "name": "Rear Sensor Wiring Harness",
+        "description": "Shielded harness for rear wheel speed sensors",
+        "material": "Twisted pair with aluminum shield"
+      },
+      {
+        "partNumber": "MNT-RWS-144",
+        "name": "Rear Sensor Mounting Bracket",
+        "description": "Bracket for rear wheel speed sensor attachment",
+        "material": "Stamped steel bracket"
+      },
+      {
+        "partNumber": "SHM-RWS-145",
+        "name": "Rear Sensor Shim Kit",
+        "description": "Air gap adjustment shims for rear ABS sensors",
+        "material": "Non-magnetic stainless steel shims"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2010-10",
+    "parts": [
+      {
+        "partNumber": "SEN-TRQ-146",
+        "name": "Electric Power Steering Torque Sensor",
+        "description": "Strain gauge sensor for steering torque measurement",
+        "material": "Magnetoelastic sensor in aluminum housing"
+      },
+      {
+        "partNumber": "MOD-EPS-147",
+        "name": "EPS Control Module",
+        "description": "Electronic control unit for electric power steering",
+        "material": "Sealed ECU with heat sink"
+      },
+      {
+        "partNumber": "MTR-EPS-148",
+        "name": "EPS Assist Motor",
+        "description": "Brushless DC motor for power steering assist",
+        "material": "High-torque brushless motor"
+      },
+      {
+        "partNumber": "WH-EPS-149",
+        "name": "EPS System Wiring Harness",
+        "description": "High-current harness for EPS motor and sensors",
+        "material": "Heavy-gauge copper wire with shielding"
+      },
+      {
+        "partNumber": "GRB-EPS-150",
+        "name": "EPS Gearbox Assembly",
+        "description": "Reduction gearbox for EPS motor",
+        "material": "Aluminum housing with steel gears"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3001-01",
+    "parts": [
+      {
+        "partNumber": "SW-BFL-151",
+        "name": "Brake Fluid Level Switch",
+        "description": "Float switch for brake fluid reservoir monitoring",
+        "material": "Plastic float with magnetic reed switch"
+      },
+      {
+        "partNumber": "RES-BFL-152",
+        "name": "Brake Fluid Reservoir",
+        "description": "Plastic reservoir for brake hydraulic fluid",
+        "material": "Translucent polypropylene"
+      },
+      {
+        "partNumber": "WH-BFL-153",
+        "name": "Brake Fluid Sensor Harness",
+        "description": "Wiring for brake fluid level switch",
+        "material": "Fluid-resistant insulated wire"
+      },
+      {
+        "partNumber": "CAP-BFL-154",
+        "name": "Brake Reservoir Cap",
+        "description": "Vented cap for brake fluid reservoir",
+        "material": "Plastic cap with integral filter"
+      },
+      {
+        "partNumber": "FLD-BRK-155",
+        "name": "DOT 4 Brake Fluid",
+        "description": "High-performance brake hydraulic fluid",
+        "material": "Synthetic glycol-ether brake fluid"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3002-02",
+    "parts": [
+      {
+        "partNumber": "ACT-DLK-156",
+        "name": "Door Lock Actuator Assembly",
+        "description": "Electric actuator for central door locking",
+        "material": "Plastic housing with DC motor"
+      },
+      {
+        "partNumber": "ROD-DLK-157",
+        "name": "Door Lock Actuator Rod",
+        "description": "Mechanical linkage rod for lock actuator",
+        "material": "Steel rod with plastic ball joints"
+      },
+      {
+        "partNumber": "WH-DLK-158",
+        "name": "Door Lock Wiring Harness",
+        "description": "Wiring harness for door lock actuator",
+        "material": "Copper wire with PVC insulation"
+      },
+      {
+        "partNumber": "CON-DLK-159",
+        "name": "Door Lock Connector",
+        "description": "Waterproof connector for door lock circuit",
+        "material": "Sealed nylon connector"
+      },
+      {
+        "partNumber": "GRM-DLK-160",
+        "name": "Door Lock Rubber Grommet",
+        "description": "Weatherproof grommet for door wiring passage",
+        "material": "EPDM rubber grommet"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3003-03",
+    "parts": [
+      {
+        "partNumber": "MTR-SNR-161",
+        "name": "Sunroof Motor Assembly",
+        "description": "Electric motor with gearbox for sunroof operation",
+        "material": "Brushed DC motor with worm gear"
+      },
+      {
+        "partNumber": "CBL-SNR-162",
+        "name": "Sunroof Cable Set",
+        "description": "Steel cable assembly for sunroof sliding mechanism",
+        "material": "Stainless steel cable with end fittings"
+      },
+      {
+        "partNumber": "WH-SNR-163",
+        "name": "Sunroof Motor Wiring Harness",
+        "description": "Power and control wiring for sunroof motor",
+        "material": "High-current wire with sealed connectors"
+      },
+      {
+        "partNumber": "REL-SNR-164",
+        "name": "Sunroof Circuit Breaker",
+        "description": "Resettable thermal circuit breaker for sunroof",
+        "material": "Bimetallic circuit breaker"
+      },
+      {
+        "partNumber": "SW-SNR-165",
+        "name": "Sunroof Control Switch",
+        "description": "Multi-position switch for sunroof control",
+        "material": "Illuminated rocker switch assembly"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3004-04",
+    "parts": [
+      {
+        "partNumber": "MOD-STM-166",
+        "name": "Seat Position Memory Module",
+        "description": "Electronic module for seat position memory storage",
+        "material": "Sealed PCB module with EEPROM"
+      },
+      {
+        "partNumber": "MTR-STM-167",
+        "name": "Seat Adjustment Motor Set",
+        "description": "Set of DC motors for power seat adjustment",
+        "material": "Brushed DC motors with gearboxes"
+      },
+      {
+        "partNumber": "WH-STM-168",
+        "name": "Seat Memory Module Harness",
+        "description": "Wiring harness for seat memory system",
+        "material": "Multi-conductor cable with connectors"
+      },
+      {
+        "partNumber": "SW-STM-169",
+        "name": "Seat Memory Switch Panel",
+        "description": "Control panel with memory preset buttons",
+        "material": "Plastic panel with membrane switches"
+      },
+      {
+        "partNumber": "POT-STM-170",
+        "name": "Seat Position Potentiometer",
+        "description": "Position feedback sensor for seat motors",
+        "material": "Carbon track potentiometer"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3005-05",
+    "parts": [
+      {
+        "partNumber": "SEN-RAN-171",
+        "name": "Rain Sensor Assembly",
+        "description": "Optical sensor for automatic wiper control",
+        "material": "Infrared LED and photodiode in plastic housing"
+      },
+      {
+        "partNumber": "WH-RAN-172",
+        "name": "Rain Sensor Wiring Harness",
+        "description": "Wiring for rain sensor to BCM connection",
+        "material": "Shielded cable with sealed connector"
+      },
+      {
+        "partNumber": "MNT-RAN-173",
+        "name": "Rain Sensor Mounting Bracket",
+        "description": "Windshield mounting bracket for rain sensor",
+        "material": "Plastic bracket with adhesive pad"
+      },
+      {
+        "partNumber": "GEL-RAN-174",
+        "name": "Rain Sensor Coupling Gel",
+        "description": "Optical coupling gel for sensor-to-glass interface",
+        "material": "Silicone optical coupling gel"
+      },
+      {
+        "partNumber": "MOD-WIP-175",
+        "name": "Wiper Control Module",
+        "description": "Electronic module for automatic wiper control",
+        "material": "PCB assembly in plastic housing"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3006-06",
+    "parts": [
+      {
+        "partNumber": "SEN-HLL-176",
+        "name": "Adaptive Headlamp Leveling Sensor",
+        "description": "Rotary position sensor for headlamp leveling",
+        "material": "Potentiometric sensor in sealed housing"
+      },
+      {
+        "partNumber": "ACT-HLL-177",
+        "name": "Headlamp Leveling Actuator",
+        "description": "Stepper motor for headlamp beam adjustment",
+        "material": "Stepper motor with ball joint linkage"
+      },
+      {
+        "partNumber": "WH-HLL-178",
+        "name": "Headlamp Leveling Harness",
+        "description": "Wiring harness for leveling sensor and actuator",
+        "material": "Flexible multi-conductor cable"
+      },
+      {
+        "partNumber": "LNK-HLL-179",
+        "name": "Leveling Sensor Linkage Rod",
+        "description": "Mechanical linkage for suspension height sensing",
+        "material": "Steel rod with ball joints"
+      },
+      {
+        "partNumber": "BRK-HLL-180",
+        "name": "Sensor Mounting Bracket",
+        "description": "Bracket for headlamp leveling sensor attachment",
+        "material": "Aluminum die-cast bracket"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3007-07",
+    "parts": [
+      {
+        "partNumber": "MOD-AMB-181",
+        "name": "Interior Ambient Lighting Module",
+        "description": "LED driver module for ambient lighting system",
+        "material": "PCB with LED driver ICs"
+      },
+      {
+        "partNumber": "LED-AMB-182",
+        "name": "Ambient LED Strip",
+        "description": "RGB LED strip for interior ambient lighting",
+        "material": "Flexible PCB with SMD RGB LEDs"
+      },
+      {
+        "partNumber": "WH-AMB-183",
+        "name": "Ambient Lighting Wiring Harness",
+        "description": "Low-voltage wiring for ambient lighting system",
+        "material": "Multi-conductor cable with quick connectors"
+      },
+      {
+        "partNumber": "SW-AMB-184",
+        "name": "Ambient Light Control Switch",
+        "description": "Dimmer switch for ambient lighting control",
+        "material": "Rotary dimmer with touch control"
+      },
+      {
+        "partNumber": "DRV-LED-185",
+        "name": "LED Driver Board",
+        "description": "PWM LED driver for ambient lighting",
+        "material": "PCB with MOSFET drivers"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3008-08",
+    "parts": [
+      {
+        "partNumber": "MTR-WND-186",
+        "name": "Window Regulator Motor",
+        "description": "Electric motor for power window operation",
+        "material": "Permanent magnet DC motor"
+      },
+      {
+        "partNumber": "REG-WND-187",
+        "name": "Window Regulator Assembly",
+        "description": "Complete window regulator mechanism",
+        "material": "Steel scissor mechanism with cables"
+      },
+      {
+        "partNumber": "WH-WND-188",
+        "name": "Window Motor Wiring Harness",
+        "description": "Power wiring for window motor",
+        "material": "Heavy-gauge copper wire"
+      },
+      {
+        "partNumber": "SW-WND-189",
+        "name": "Window Control Switch",
+        "description": "Master switch panel for window control",
+        "material": "Illuminated multi-position switch"
+      },
+      {
+        "partNumber": "REL-WND-190",
+        "name": "Window Motor Relay",
+        "description": "High-current relay for window motor circuit",
+        "material": "Automotive relay in sealed housing"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3009-09",
+    "parts": [
+      {
+        "partNumber": "MTR-BLW-191",
+        "name": "HVAC Blower Motor",
+        "description": "Electric motor for climate control blower",
+        "material": "Brushless DC motor with fan"
+      },
+      {
+        "partNumber": "RES-BLW-192",
+        "name": "Blower Motor Resistor",
+        "description": "Multi-speed resistor pack for blower control",
+        "material": "Wire-wound resistors in aluminum housing"
+      },
+      {
+        "partNumber": "WH-BLW-193",
+        "name": "Blower Motor Wiring Harness",
+        "description": "High-current wiring for blower motor",
+        "material": "Heat-resistant insulated wire"
+      },
+      {
+        "partNumber": "MOD-HVC-194",
+        "name": "HVAC Control Module",
+        "description": "Electronic control unit for climate system",
+        "material": "PCB assembly in plastic housing"
+      },
+      {
+        "partNumber": "FLT-CAB-195",
+        "name": "Cabin Air Filter",
+        "description": "HEPA filter for HVAC air filtration",
+        "material": "Activated carbon and HEPA media"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3010-10",
+    "parts": [
+      {
+        "partNumber": "SEN-PAD-196",
+        "name": "Passenger Airbag Deactivation Sensor",
+        "description": "Weight sensor for passenger seat occupancy detection",
+        "material": "Pressure mat with strain gauges"
+      },
+      {
+        "partNumber": "MAT-PAD-197",
+        "name": "Seat Occupancy Sensing Mat",
+        "description": "Pressure-sensitive mat for airbag control",
+        "material": "Silicone pressure mat with sensors"
+      },
+      {
+        "partNumber": "WH-PAD-198",
+        "name": "Airbag Sensor Wiring Harness",
+        "description": "Shielded harness for airbag sensor",
+        "material": "High-reliability automotive wiring"
+      },
+      {
+        "partNumber": "MOD-SRS-199",
+        "name": "SRS Control Module",
+        "description": "Supplemental restraint system control unit",
+        "material": "Crash-protected ECU in steel housing"
+      },
+      {
+        "partNumber": "IND-PAD-200",
+        "name": "Airbag Status Indicator",
+        "description": "Dashboard indicator for passenger airbag status",
+        "material": "LED indicator with lens"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4001-01",
+    "parts": [
+      {
+        "partNumber": "ECM-ENG-201",
+        "name": "Engine Control Module",
+        "description": "Main electronic control unit for engine management",
+        "material": "High-performance ECU in sealed aluminum case"
+      },
+      {
+        "partNumber": "WH-ECM-202",
+        "name": "ECM Main Wiring Harness",
+        "description": "Complete wiring harness for ECM connections",
+        "material": "Multi-conductor automotive grade wiring"
+      },
+      {
+        "partNumber": "CON-ECM-203",
+        "name": "ECM Connector Assembly",
+        "description": "Multi-pin connector set for ECM",
+        "material": "High-density connector with gold pins"
+      },
+      {
+        "partNumber": "WH-CAN-204",
+        "name": "CAN Bus Network Cable",
+        "description": "Twisted pair CAN bus communication cable",
+        "material": "Shielded twisted pair with drain wire"
+      },
+      {
+        "partNumber": "GRD-ECM-205",
+        "name": "ECM Ground Strap",
+        "description": "Heavy-duty ground strap for ECM",
+        "material": "Braided copper strap with terminals"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4002-02",
+    "parts": [
+      {
+        "partNumber": "MOD-ABS-206",
+        "name": "ABS Control Module",
+        "description": "Anti-lock brake system electronic control unit",
+        "material": "Sealed ECU with integrated hydraulic unit"
+      },
+      {
+        "partNumber": "WH-ABS-207",
+        "name": "ABS Module Wiring Harness",
+        "description": "Complete wiring harness for ABS module",
+        "material": "High-reliability automotive wiring"
+      },
+      {
+        "partNumber": "CON-ABS-208",
+        "name": "ABS Module Connector Set",
+        "description": "Multi-pin connector assembly for ABS module",
+        "material": "Sealed connector with vibration dampening"
+      },
+      {
+        "partNumber": "PMP-ABS-209",
+        "name": "ABS Hydraulic Pump",
+        "description": "High-pressure pump for ABS hydraulic unit",
+        "material": "Electric motor with piston pump"
+      },
+      {
+        "partNumber": "VLV-ABS-210",
+        "name": "ABS Solenoid Valve Set",
+        "description": "Hydraulic control solenoid valves for ABS",
+        "material": "Brass valve bodies with electronic solenoids"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4003-03",
+    "parts": [
+      {
+        "partNumber": "BCM-CTL-211",
+        "name": "Body Control Module",
+        "description": "Central control unit for body electrical systems",
+        "material": "Electronic ECU in sealed plastic housing"
+      },
+      {
+        "partNumber": "WH-BCM-212",
+        "name": "BCM Main Wiring Harness",
+        "description": "Primary wiring harness for body control module",
+        "material": "Multi-conductor automotive wiring"
+      },
+      {
+        "partNumber": "CON-BCM-213",
+        "name": "BCM Connector Assembly",
+        "description": "Multi-circuit connector for BCM",
+        "material": "High-density sealed connector"
+      },
+      {
+        "partNumber": "FUS-BCM-214",
+        "name": "BCM Fuse Box Assembly",
+        "description": "Integrated fuse and relay box for BCM circuits",
+        "material": "Molded plastic housing with blade fuses"
+      },
+      {
+        "partNumber": "GW-BCM-215",
+        "name": "BCM Gateway Module",
+        "description": "Network gateway for CAN bus communication",
+        "material": "Electronic gateway with multiple CAN interfaces"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4004-04",
+    "parts": [
+      {
+        "partNumber": "WH-CAN-216",
+        "name": "CAN Bus High Line Cable",
+        "description": "High-speed CAN bus communication cable",
+        "material": "Twisted pair with enhanced shielding"
+      },
+      {
+        "partNumber": "WH-CNL-217",
+        "name": "CAN Bus Low Line Cable",
+        "description": "Low-speed CAN bus communication cable",
+        "material": "Standard twisted pair cable"
+      },
+      {
+        "partNumber": "CON-CAN-218",
+        "name": "CAN Bus Connector Kit",
+        "description": "Connector set for CAN bus splicing",
+        "material": "Sealed connectors with strain relief"
+      },
+      {
+        "partNumber": "RES-CAN-219",
+        "name": "CAN Bus Termination Resistor",
+        "description": "120-ohm terminating resistor for CAN bus",
+        "material": "Metal film precision resistor"
+      },
+      {
+        "partNumber": "TST-CAN-220",
+        "name": "CAN Bus Diagnostic Tester",
+        "description": "Diagnostic tool for CAN bus troubleshooting",
+        "material": "Electronic test equipment"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4005-05",
+    "parts": [
+      {
+        "partNumber": "HU-INF-221",
+        "name": "Infotainment Head Unit",
+        "description": "Central display and control unit for infotainment",
+        "material": "Touchscreen display with embedded computer"
+      },
+      {
+        "partNumber": "WH-INF-222",
+        "name": "Infotainment Wiring Harness",
+        "description": "Complete wiring harness for head unit",
+        "material": "Shielded multi-conductor cable"
+      },
+      {
+        "partNumber": "ANT-INF-223",
+        "name": "Infotainment Antenna Module",
+        "description": "Multi-band antenna for radio and GPS",
+        "material": "PCB antenna with amplifier"
+      },
+      {
+        "partNumber": "AMP-INF-224",
+        "name": "Audio Amplifier Module",
+        "description": "Multi-channel audio amplifier for sound system",
+        "material": "Class-D amplifier in aluminum housing"
+      },
+      {
+        "partNumber name": "CON-INF-225",
+        "name": "Infotainment Connector Set",
+        "description": "Multi-pin connector assembly for head unit",
+        "material": "High-density connector with gold pins"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4006-06",
+    "parts": [
+      {
+        "partNumber": "MOD-LKA-226",
+        "name": "Lane Keep Assist Module",
+        "description": "Electronic control unit for lane keeping system",
+        "material": "High-speed ECU with image processing"
+      },
+      {
+        "partNumber": "CAM-LKA-227",
+        "name": "Lane Detection Camera",
+        "description": "Forward-facing camera for lane marking detection",
+        "material": "CMOS image sensor in weatherproof housing"
+      },
+      {
+        "partNumber": "WH-LKA-228",
+        "name": "Lane Assist Wiring Harness",
+        "description": "High-speed data cable for camera and module",
+        "material": "Coaxial cable with shielded twisted pair"
+      },
+      {
+        "partNumber": "MNT-CAM-229",
+        "name": "Camera Mounting Bracket",
+        "description": "Windshield mounting bracket for lane camera",
+        "material": "Plastic bracket with adhesive pad"
+      },
+      {
+        "partNumber": "CAL-LKA-230",
+        "name": "Lane Assist Calibration Target",
+        "description": "Alignment target for lane camera calibration",
+        "material": "Printed calibration pattern on substrate"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4007-07",
+    "parts": [
+      {
+        "partNumber": "SEN-RAD-231",
+        "name": "Radar Sensor Module",
+        "description": "77GHz radar sensor for adaptive cruise control",
+        "material": "MMIC radar in weatherproof housing"
+      },
+      {
+        "partNumber": "WH-RAD-232",
+        "name": "Radar Sensor Wiring Harness",
+        "description": "Shielded harness for radar sensor",
+        "material": "High-frequency shielded cable"
+      },
+      {
+        "partNumber": "CON-RAD-233",
+        "name": "Radar Sensor Connector",
+        "description": "Sealed connector for radar sensor",
+        "material": "Weatherpack connector with EMI shielding"
+      },
+      {
+        "partNumber": "BRK-RAD-234",
+        "name": "Radar Sensor Mounting Bracket",
+        "description": "Adjustable bracket for radar sensor mounting",
+        "material": "Aluminum bracket with vibration damping"
+      },
+      {
+        "partNumber": "CVR-RAD-235",
+        "name": "Radar Sensor Cover",
+        "description": "Radar-transparent cover for front grille",
+        "material": "Plastic composite with low dielectric constant"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4008-08",
+    "parts": [
+      {
+        "partNumber": "TCU-TEL-236",
+        "name": "Telematics Control Unit",
+        "description": "Cellular modem and GPS unit for vehicle connectivity",
+        "material": "LTE modem with GPS receiver"
+      },
+      {
+        "partNumber": "ANT-TEL-237",
+        "name": "Telematics Antenna",
+        "description": "Combined cellular and GPS antenna",
+        "material": "Multi-band antenna with amplifier"
+      },
+      {
+        "partNumber": "WH-TEL-238",
+        "name": "Telematics Wiring Harness",
+        "description": "Wiring harness for TCU connection",
+        "material": "Shielded RF cable with data lines"
+      },
+      {
+        "partNumber": "SIM-TEL-239",
+        "name": "Telematics SIM Card",
+        "description": "Embedded SIM card for cellular connectivity",
+        "material": "Industrial-grade eSIM module"
+      },
+      {
+        "partNumber": "BRK-TCU-240",
+        "name": "TCU Mounting Bracket",
+        "description": "Bracket for telematics control unit mounting",
+        "material": "Steel bracket with EMI shielding"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4009-09",
+    "parts": [
+      {
+        "partNumber": "CAM-ADS-241",
+        "name": "ADAS Camera Module",
+        "description": "Multi-function camera for ADAS features",
+        "material": "High-resolution CMOS camera with HDR"
+      },
+      {
+        "partNumber": "WH-ADS-242",
+        "name": "ADAS Camera Wiring Harness",
+        "description": "High-speed data cable for ADAS camera",
+        "material": "Ethernet cable with PoE capability"
+      },
+      {
+        "partNumber": "MNT-ADS-243",
+        "name": "ADAS Camera Mount",
+        "description": "Precision mounting bracket for ADAS camera",
+        "material": "Aluminum bracket with adjustment screws"
+      },
+      {
+        "partNumber": "HTR-ADS-244",
+        "name": "Camera Lens Heater",
+        "description": "Heating element for camera lens defogging",
+        "material": "Transparent conductive heating film"
+      },
+      {
+        "partNumber": "CAL-ADS-245",
+        "name": "ADAS Calibration Kit",
+        "description": "Complete calibration target set for ADAS",
+        "material": "Printed calibration boards with stands"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4010-10",
+    "parts": [
+      {
+        "partNumber": "SEN-PRK-246",
+        "name": "Parking Assist Sensor",
+        "description": "Ultrasonic sensor for parking distance detection",
+        "material": "Piezoelectric transducer in plastic housing"
+      },
+      {
+        "partNumber": "MOD-PRK-247",
+        "name": "Parking Assist Control Module",
+        "description": "Electronic control unit for parking sensors",
+        "material": "PCB assembly in sealed housing"
+      },
+      {
+        "partNumber": "WH-PRK-248",
+        "name": "Parking Sensor Wiring Harness",
+        "description": "Harness for parking sensor array",
+        "material": "Multi-conductor cable with quick connectors"
+      },
+      {
+        "partNumber": "BUZ-PRK-249",
+        "name": "Parking Alert Buzzer",
+        "description": "Audible warning buzzer for parking system",
+        "material": "Piezoelectric buzzer"
+      },
+      {
+        "partNumber": "DSP-PRK-250",
+        "name": "Parking Display Module",
+        "description": "LED display for parking distance indication",
+        "material": "LED bar graph display"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1011-11",
+    "parts": [
+      {
+        "partNumber": "SEN-KNK-251",
+        "name": "Knock Sensor",
+        "description": "Piezoelectric sensor for engine knock detection",
+        "material": "Piezoelectric crystal in threaded housing"
+      },
+      {
+        "partNumber": "WH-KNK-252",
+        "name": "Knock Sensor Wiring Harness",
+        "description": "Shielded cable for knock sensor signal",
+        "material": "Coaxial cable with heat-resistant insulation"
+      },
+      {
+        "partNumber": "GSK-KNK-253",
+        "name": "Knock Sensor Gasket",
+        "description": "Sealing washer for knock sensor",
+        "material": "Copper crush washer"
+      },
+      {
+        "partNumber": "BLT-KNK-254",
+        "name": "Knock Sensor Mounting Bolt",
+        "description": "Torque-specific bolt for knock sensor",
+        "material": "Hardened steel bolt"
+      },
+      {
+        "partNumber": "SHD-KNK-255",
+        "name": "Knock Sensor Heat Shield",
+        "description": "Protective shield for knock sensor",
+        "material": "Aluminum heat shield"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1012-12",
+    "parts": [
+      {
+        "partNumber": "ACT-THR-256",
+        "name": "Throttle Actuator Assembly",
+        "description": "Electronic throttle control actuator",
+        "material": "Brushless DC motor with position sensor"
+      },
+      {
+        "partNumber": "BDY-THR-257",
+        "name": "Throttle Body Assembly",
+        "description": "Complete electronic throttle body",
+        "material": "Aluminum casting with butterfly valve"
+      },
+      {
+        "partNumber": "WH-THR-258",
+        "name": "Throttle Actuator Wiring",
+        "description": "Harness for electronic throttle control",
+        "material": "Shielded multi-conductor cable"
+      },
+      {
+        "partNumber": "SEN-TPS-259",
+        "name": "Throttle Position Sensor",
+        "description": "Dual redundant throttle position sensor",
+        "material": "Contactless Hall effect sensors"
+      },
+      {
+        "partNumber": "GSK-THR-260",
+        "name": "Throttle Body Gasket",
+        "description": "Intake manifold gasket for throttle body",
+        "material": "Composite gasket material"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1013-13",
+    "parts": [
+      {
+        "partNumber": "SOL-CDA-261",
+        "name": "Cylinder Deactivation Solenoid",
+        "description": "Oil control solenoid for cylinder deactivation",
+        "material": "Brass solenoid with electronic coil"
+      },
+      {
+        "partNumber": "LFT-CDA-262",
+        "name": "Valve Lifter Assembly",
+        "description": "Collapsible lifter for cylinder deactivation",
+        "material": "Steel lifter with internal locking pin"
+      },
+      {
+        "partNumber": "WH-CDA-263",
+        "name": "Deactivation Solenoid Harness",
+        "description": "Wiring for cylinder deactivation solenoids",
+        "material": "Heat-resistant multi-conductor cable"
+      },
+      {
+        "partNumber": "OIL-CDA-264",
+        "name": "Engine Oil Pressure Switch",
+        "description": "Oil pressure sensor for deactivation system",
+        "material": "Pressure sensor with electrical connector"
+      },
+      {
+        "partNumber": "VLV-CDA-265",
+        "name": "Check Valve Kit",
+        "description": "One-way valves for deactivation oil circuit",
+        "material": "Brass check valves"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1014-14",
+    "parts": [
+      {
+        "partNumber": "SOL-VVT-266",
+        "name": "Variable Valve Timing Solenoid",
+        "description": "Oil control solenoid for VVT phaser",
+        "material": "Brass solenoid with PWM control"
+      },
+      {
+        "partNumber": "PHS-VVT-267",
+        "name": "VVT Phaser Assembly",
+        "description": "Camshaft phaser for variable valve timing",
+        "material": "Steel and aluminum phaser mechanism"
+      },
+      {
+        "partNumber": "WH-VVT-268",
+        "name": "VVT Solenoid Wiring Harness",
+        "description": "Harness for VVT solenoid connection",
+        "material": "Heat-resistant insulated wire"
+      },
+      {
+        "partNumber": "FLT-VVT-269",
+        "name": "VVT Oil Filter Screen",
+        "description": "Fine mesh screen for VVT oil supply",
+        "material": "Stainless steel mesh screen"
+      },
+      {
+        "partNumber": "GSK-VVT-270",
+        "name": "VVT Solenoid O-Ring Kit",
+        "description": "Seal kit for VVT solenoid",
+        "material": "Viton O-rings"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1015-15",
+    "parts": [
+      {
+        "partNumber": "SEN-ECT-271",
+        "name": "Engine Coolant Temperature Sensor",
+        "description": "Thermistor sensor for coolant temperature",
+        "material": "NTC thermistor in brass housing"
+      },
+      {
+        "partNumber": "WH-ECT-272",
+        "name": "Coolant Sensor Wiring Harness",
+        "description": "Harness for coolant temperature sensor",
+        "material": "Heat-resistant insulated wire"
+      },
+      {
+        "partNumber": "GSK-ECT-273",
+        "name": "Coolant Sensor O-Ring",
+        "description": "Sealing O-ring for coolant sensor",
+        "material": "EPDM rubber O-ring"
+      },
+      {
+        "partNumber": "ADP-ECT-274",
+        "name": "Coolant Sensor Adapter",
+        "description": "Threaded adapter for sensor installation",
+        "material": "Brass adapter with thread sealant"
+      },
+      {
+        "partNumber": "TST-ECT-275",
+        "name": "Coolant Sensor Test Tool",
+        "description": "Resistance tester for coolant sensor",
+        "material": "Digital multimeter with adapter"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2011-11",
+    "parts": [
+      {
+        "partNumber": "MOD-DIF-276",
+        "name": "Differential Lock Control Module",
+        "description": "Electronic control unit for differential lock",
+        "material": "Sealed ECU in aluminum housing"
+      },
+      {
+        "partNumber": "ACT-DIF-277",
+        "name": "Differential Lock Actuator",
+        "description": "Electric or pneumatic differential lock actuator",
+        "material": "Solenoid actuator with mechanical linkage"
+      },
+      {
+        "partNumber": "WH-DIF-278",
+        "name": "Differential Lock Wiring",
+        "description": "Harness for differential lock system",
+        "material": "Heavy-duty automotive wiring"
+      },
+      {
+        "partNumber": "SW-DIF-279",
+        "name": "Differential Lock Switch",
+        "description": "Dashboard switch for manual lock engagement",
+        "material": "Illuminated rocker switch"
+      },
+      {
+        "partNumber": "SEN-DIF-280",
+        "name": "Differential Lock Position Sensor",
+        "description": "Sensor for lock engagement verification",
+        "material": "Hall effect position sensor"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2012-12",
+    "parts": [
+      {
+        "partNumber": "SEN-BPP-281",
+        "name": "Brake Pedal Position Sensor",
+        "description": "Dual redundant brake pedal position sensor",
+        "material": "Contactless Hall effect sensors"
+      },
+      {
+        "partNumber": "WH-BPP-282",
+        "name": "Brake Pedal Sensor Harness",
+        "description": "Wiring for brake pedal position sensor",
+        "material": "Shielded twisted pair cable"
+      },
+      {
+        "partNumber": "BRK-PED-283",
+        "name": "Brake Pedal Arm Assembly",
+        "description": "Pedal arm with integrated sensor bracket",
+        "material": "Steel pedal arm with mounting bracket"
+      },
+      {
+        "partNumber": "SPR-PED-284",
+        "name": "Brake Pedal Return Spring",
+        "description": "Heavy-duty spring for pedal return",
+        "material": "High-tension steel spring"
+      },
+      {
+        "partNumber": "SW-BRK-285",
+        "name": "Brake Light Switch",
+        "description": "Backup switch for brake light activation",
+        "material": "Mechanical switch with adjustment"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2013-13",
+    "parts": [
+      {
+        "partNumber": "SEN-SCP-286",
+        "name": "Steering Column Position Sensor",
+        "description": "Multi-axis sensor for steering column position",
+        "material": "Optical encoder in plastic housing"
+      },
+      {
+        "partNumber": "WH-SCP-287",
+        "name": "Column Sensor Wiring Harness",
+        "description": "Harness for steering column sensors",
+        "material": "Flexible multi-conductor cable"
+      },
+      {
+        "partNumber": "SPG-SCP-288",
+        "name": "Steering Column Spring Contact",
+        "description": "Clockspring for steering wheel connections",
+        "material": "Spiral cable with gold contacts"
+      },
+      {
+        "partNumber": "BRK-SCP-289",
+        "name": "Column Sensor Mounting Bracket",
+        "description": "Bracket for column position sensor",
+        "material": "Aluminum casting with adjustment"
+      },
+      {
+        "partNumber": "CAL-SCP-290",
+        "name": "Column Sensor Calibration Tool",
+        "description": "Alignment tool for column sensor",
+        "material": "Precision alignment fixture"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2014-14",
+    "parts": [
+      {
+        "partNumber": "MOD-ARC-291",
+        "name": "Active Roll Control Module",
+        "description": "Electronic control unit for active roll system",
+        "material": "High-speed ECU in sealed housing"
+      },
+      {
+        "partNumber": "ACT-ARC-292",
+        "name": "Active Roll Bar Actuator",
+        "description": "Hydraulic or electric actuator for roll bar",
+        "material": "Rotary actuator with position feedback"
+      },
+      {
+        "partNumber": "WH-ARC-293",
+        "name": "Roll Control Wiring Harness",
+        "description": "CAN bus harness for roll control module",
+        "material": "Shielded twisted pair with power lines"
+      },
+      {
+        "partNumber": "PMP-ARC-294",
+        "name": "Active Roll Hydraulic Pump",
+        "description": "High-pressure pump for active roll system",
+        "material": "Electric motor with hydraulic pump"
+      },
+      {
+        "partNumber": "ACC-ARC-295",
+        "name": "Roll Control Accumulator",
+        "description": "Hydraulic accumulator for roll system",
+        "material": "Steel pressure vessel with bladder"
+      }
+    ]
+  },
+  {
+    "dtcCode": "C2015-15",
+    "parts": [
+      {
+        "partNumber": "SEN-ALN-296",
+        "name": "Wheel Alignment Sensor",
+        "description": "Precision sensor for wheel alignment monitoring",
+        "material": "MEMS accelerometer in sealed housing"
+      },
+      {
+        "partNumber": "WH-ALN-297",
+        "name": "Alignment Sensor Wiring",
+        "description": "Shielded harness for alignment sensors",
+        "material": "Low-noise shielded cable"
+      },
+      {
+        "partNumber": "MNT-ALN-298",
+        "name": "Alignment Sensor Mount",
+        "description": "Precision mounting bracket for alignment sensor",
+        "material": "Machined aluminum bracket"
+      },
+      {
+        "partNumber": "CAL-ALN-299",
+        "name": "Alignment Calibration Kit",
+        "description": "Calibration tools for alignment sensors",
+        "material": "Precision measurement fixtures"
+      },
+      {
+        "partNumber": "SHM-ALN-300",
+        "name": "Alignment Sensor Shim Set",
+        "description": "Precision shims for sensor alignment",
+        "material": "Hardened steel shims"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3011-11",
+    "parts": [
+      {
+        "partNumber": "ACT-RDL-301",
+        "name": "Rear Door Latch Actuator",
+        "description": "Electric actuator for rear door latch",
+        "material": "Brushed DC motor with gearbox"
+      },
+      {
+        "partNumber": "LTH-RDL-302",
+        "name": "Rear Door Latch Mechanism",
+        "description": "Complete mechanical latch assembly",
+        "material": "Zinc-plated steel components"
+      },
+      {
+        "partNumber": "WH-RDL-303",
+        "name": "Rear Door Latch Wiring",
+        "description": "Harness for rear door latch actuator",
+        "material": "Copper wire with waterproof connectors"
+      },
+      {
+        "partNumber": "ROD-RDL-304",
+        "name": "Door Latch Linkage Rod",
+        "description": "Mechanical rod connecting latch to handle",
+        "material": "Steel rod with plastic clips"
+      },
+      {
+        "partNumber": "SEN-RDL-305",
+        "name": "Door Latch Position Switch",
+        "description": "Micro-switch for latch position detection",
+        "material": "Sealed micro-switch"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3012-12",
+    "parts": [
+      {
+        "partNumber": "MOD-TRK-306",
+        "name": "Trunk Release Module",
+        "description": "Electronic module for trunk release control",
+        "material": "PCB assembly in plastic housing"
+      },
+      {
+        "partNumber": "ACT-TRK-307",
+        "name": "Trunk Release Actuator",
+        "description": "Solenoid actuator for trunk latch",
+        "material": "High-force solenoid with spring return"
+      },
+      {
+        "partNumber": "WH-TRK-308",
+        "name": "Trunk Release Wiring Harness",
+        "description": "Harness for trunk release system",
+        "material": "Copper wire with sealed connectors"
+      },
+      {
+        "partNumber": "SW-TRK-309",
+        "name": "Trunk Release Switch",
+        "description": "Dashboard button for trunk release",
+        "material": "Illuminated push button switch"
+      },
+      {
+        "partNumber": "LTH-TRK-310",
+        "name": "Trunk Latch Assembly",
+        "description": "Complete trunk latch mechanism",
+        "material": "Steel latch with plastic housing"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3013-13",
+    "parts": [
+      {
+        "partNumber": "MTR-MIR-311",
+        "name": "Mirror Adjustment Motor Set",
+        "description": "Dual-axis motors for mirror adjustment",
+        "material": "Miniature DC motors in plastic housing"
+      },
+      {
+        "partNumber": "MIR-ASM-312",
+        "name": "Complete Mirror Assembly",
+        "description": "Power mirror with motors and glass",
+        "material": "Plastic housing with glass and motors"
+      },
+      {
+        "partNumber": "WH-MIR-313",
+        "name": "Mirror Motor Wiring Harness",
+        "description": "Harness for power mirror motors",
+        "material": "Multi-conductor cable with connectors"
+      },
+      {
+        "partNumber": "SW-MIR-314",
+        "name": "Mirror Control Switch",
+        "description": "Multi-direction switch for mirror adjustment",
+        "material": "Joystick-style control switch"
+      },
+      {
+        "partNumber": "HTR-MIR-315",
+        "name": "Mirror Heater Element",
+        "description": "Defrost heater for mirror glass",
+        "material": "Transparent conductive heating pad"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3014-14",
+    "parts": [
+      {
+        "partNumber": "MTR-ROF-316",
+        "name": "Convertible Roof Motor",
+        "description": "High-torque motor for roof operation",
+        "material": "Brushed DC motor with planetary gears"
+      },
+      {
+        "partNumber": "PMP-ROF-317",
+        "name": "Roof Hydraulic Pump",
+        "description": "Hydraulic pump for roof actuation",
+        "material": "Electric motor with gear pump"
+      },
+      {
+        "partNumber": "WH-ROF-318",
+        "name": "Convertible Roof Wiring",
+        "description": "Complete wiring harness for roof system",
+        "material": "Heavy-gauge wire with multiple connectors"
+      },
+      {
+        "partNumber": "CYL-ROF-319",
+        "name": "Roof Hydraulic Cylinder",
+        "description": "Hydraulic cylinder for roof lifting",
+        "material": "Steel cylinder with piston rod"
+      },
+      {
+        "partNumber": "SW-ROF-320",
+        "name": "Roof Control Switch",
+        "description": "Center console switch for roof operation",
+        "material": "Momentary switch with LED indicator"
+      }
+    ]
+  },
+  {
+    "dtcCode": "B3015-15",
+    "parts": [
+      {
+        "partNumber": "ANT-KEY-321",
+        "name": "Keyless Entry Antenna",
+        "description": "RF antenna for keyless entry system",
+        "material": "PCB antenna with amplifier"
+      },
+      {
+        "partNumber": "MOD-KEY-322",
+        "name": "Keyless Entry Control Module",
+        "description": "RF receiver and control unit for keyless entry",
+        "material": "Electronic module with RF transceiver"
+      },
+      {
+        "partNumber": "WH-KEY-323",
+        "name": "Keyless Entry Wiring Harness",
+        "description": "Shielded harness for keyless entry antenna",
+        "material": "Coaxial cable with RF connectors"
+      },
+      {
+        "partNumber": "FOB-KEY-324",
+        "name": "Key Fob Remote",
+        "description": "Replacement key fob transmitter",
+        "material": "Plastic housing with RF transmitter"
+      },
+      {
+        "partNumber": "BAT-KEY-325",
+        "name": "Key Fob Battery",
+        "description": "CR2032 lithium battery for key fob",
+        "material": "Lithium coin cell battery"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4011-11",
+    "parts": [
+      {
+        "partNumber": "MOD-WCH-326",
+        "name": "Wireless Charging Module",
+        "description": "Qi wireless charging pad and control module",
+        "material": "Charging coil with power electronics"
+      },
+      {
+        "partNumber": "COL-WCH-327",
+        "name": "Wireless Charging Coil",
+        "description": "Inductive charging coil assembly",
+        "material": "Litz wire coil in ferrite backing"
+      },
+      {
+        "partNumber": "WH-WCH-328",
+        "name": "Wireless Charger Wiring",
+        "description": "Power and control wiring for wireless charger",
+        "material": "Heavy-gauge wire with EMI filtering"
+      },
+      {
+        "partNumber": "LED-WCH-329",
+        "name": "Charging Status LED",
+        "description": "LED indicator for charging status",
+        "material": "Multi-color LED with diffuser"
+      },
+      {
+        "partNumber": "PAD-WCH-330",
+        "name": "Wireless Charging Pad",
+        "description": "Non-slip pad for phone placement",
+        "material": "Silicone rubber with texture"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4012-12",
+    "parts": [
+      {
+        "partNumber": "MOD-BLU-331",
+        "name": "Bluetooth Module",
+        "description": "Bluetooth 5.0 communication module",
+        "material": "BLE transceiver with antenna"
+      },
+      {
+        "partNumber": "ANT-BLU-332",
+        "name": "Bluetooth Antenna",
+        "description": "External antenna for Bluetooth module",
+        "material": "PCB antenna with coaxial cable"
+      },
+      {
+        "partNumber": "WH-BLU-333",
+        "name": "Bluetooth Module Wiring",
+        "description": "Data and power wiring for Bluetooth module",
+        "material": "Shielded cable with USB connection"
+      },
+      {
+        "partNumber": "MIC-BLU-334",
+        "name": "Bluetooth Microphone",
+        "description": "Hands-free microphone for Bluetooth calls",
+        "material": "MEMS microphone with noise cancellation"
+      },
+      {
+        "partNumber": "SPK-BLU-335",
+        "name": "Bluetooth Speaker",
+        "description": "Speaker for Bluetooth audio output",
+        "material": "Neodymium speaker driver"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4013-13",
+    "parts": [
+      {
+        "partNumber": "MOD-GPS-336",
+        "name": "GPS Navigation Module",
+        "description": "Multi-constellation GPS receiver with map database",
+        "material": "GPS chipset with flash memory storage"
+      },
+      {
+        "partNumber": "ANT-GPS-337",
+        "name": "GPS Antenna",
+        "description": "Active GPS antenna with LNA amplifier",
+        "material": "Ceramic patch antenna with amplifier"
+      },
+      {
+        "partNumber": "WH-GPS-338",
+        "name": "GPS Module Wiring Harness",
+        "description": "Coaxial cable for GPS antenna connection",
+        "material": "Low-loss coaxial cable with SMA connector"
+      },
+      {
+        "partNumber": "DSP-GPS-339",
+        "name": "Navigation Display Screen",
+        "description": "Touchscreen display for navigation system",
+        "material": "LCD panel with capacitive touch"
+      },
+      {
+        "partNumber": "SD-GPS-340",
+        "name": "Navigation SD Card",
+        "description": "SD card with map data and POI database",
+        "material": "Industrial-grade SD card with maps"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4014-14",
+    "parts": [
+      {
+        "partNumber": "CLU-DIG-341",
+        "name": "Digital Instrument Cluster",
+        "description": "TFT digital display cluster with graphics processor",
+        "material": "TFT LCD with embedded computer"
+      },
+      {
+        "partNumber": "WH-CLU-342",
+        "name": "Instrument Cluster Wiring",
+        "description": "CAN bus and power harness for digital cluster",
+        "material": "Shielded twisted pair with power lines"
+      },
+      {
+        "partNumber": "CON-CLU-343",
+        "name": "Cluster Connector Assembly",
+        "description": "Multi-pin connector for instrument cluster",
+        "material": "High-density connector with gold pins"
+      },
+      {
+        "partNumber": "BKL-CLU-344",
+        "name": "Cluster Backlight LED Board",
+        "description": "LED backlight board for cluster display",
+        "material": "PCB with white LED array"
+      },
+      {
+        "partNumber": "BZL-CLU-345",
+        "name": "Cluster Bezel Trim",
+        "description": "Decorative bezel for instrument cluster",
+        "material": "Injection-molded ABS plastic"
+      }
+    ]
+  },
+  {
+    "dtcCode": "U4015-15",
+    "parts": [
+      {
+        "partNumber": "MOD-VOI-346",
+        "name": "Voice Control Module",
+        "description": "Voice recognition and processing module",
+        "material": "DSP processor with voice recognition software"
+      },
+      {
+        "partNumber": "MIC-VOI-347",
+        "name": "Voice Control Microphone Array",
+        "description": "Multi-directional microphone array for voice input",
+        "material": "MEMS microphone array with beamforming"
+      },
+      {
+        "partNumber": "WH-VOI-348",
+        "name": "Voice Module Wiring Harness",
+        "description": "Digital audio wiring for voice control system",
+        "material": "Shielded audio cable with connectors"
+      },
+      {
+        "partNumber": "SW-VOI-349",
+        "name": "Voice Activation Button",
+        "description": "Steering wheel button for voice activation",
+        "material": "Membrane switch with tactile feedback"
+      },
+      {
+        "partNumber": "SPK-VOI-350",
+        "name": "Voice Feedback Speaker",
+        "description": "Speaker for voice system audio feedback",
+        "material": "Full-range speaker driver"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1016-16",
+    "parts": [
+      {
+        "partNumber": "SEN-CAM-1016A",
+        "name": "Camshaft Position Sensor",
+        "description": "Sensor used to detect the position of the camshaft for timing control",
+        "material": "Magnetoresistive sensor with aluminum housing"
+      },
+      {
+        "partNumber": "WH-CAM-1016B",
+        "name": "Camshaft Sensor Wiring Harness",
+        "description": "Dedicated harness connecting camshaft sensor to ECM",
+        "material": "Copper core wires with PVC insulation"
+      },
+      {
+        "partNumber": "CON-CAM-1016C",
+        "name": "Camshaft Sensor Connector",
+        "description": "Waterproof connector for camshaft sensor signal",
+        "material": "Nylon body with silicone seal"
+      },
+      {
+        "partNumber": "MOD-ECM-1016D",
+        "name": "Engine Control Module (ECM)",
+        "description": "Main engine control unit managing sensor inputs and fuel timing",
+        "material": "Aluminum case with multi-layer PCB"
+      },
+      {
+        "partNumber": "BRK-CAM-1016E",
+        "name": "Sensor Mounting Bracket",
+        "description": "Bracket for securing camshaft sensor to engine block",
+        "material": "Powder-coated steel"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1017-17",
+    "parts": [
+      {
+        "partNumber": "SEN-CRK-1017A",
+        "name": "Crankshaft Position Sensor",
+        "description": "Measures crankshaft rotation speed and position for ignition timing",
+        "material": "Hall effect sensor with plastic enclosure"
+      },
+      {
+        "partNumber": "WH-CRK-1017B",
+        "name": "Crankshaft Sensor Wiring Harness",
+        "description": "Signal harness for crankshaft sensor to ECM connection",
+        "material": "Copper wires with braided shielding"
+      },
+      {
+        "partNumber": "CON-CRK-1017C",
+        "name": "Sensor Connector Plug",
+        "description": "3-pin connector for crankshaft sensor signal",
+        "material": "Heat-resistant polymer"
+      },
+      {
+        "partNumber": "MOD-ECM-1017D",
+        "name": "Engine Control Module",
+        "description": "Processes crankshaft and camshaft inputs for timing control",
+        "material": "Die-cast aluminum with internal PCB"
+      },
+      {
+        "partNumber": "GSK-CRK-1017E",
+        "name": "Crankshaft Sensor O-Ring Seal",
+        "description": "Provides sealing between sensor and housing to prevent oil leakage",
+        "material": "High-temperature rubber compound"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1018-18",
+    "parts": [
+      {
+        "partNumber": "SEN-FRP-1018A",
+        "name": "Fuel Rail Pressure Sensor",
+        "description": "Monitors the pressure inside the fuel rail to optimize injection",
+        "material": "Steel and silicon pressure transducer"
+      },
+      {
+        "partNumber": "WH-FRP-1018B",
+        "name": "Fuel Pressure Sensor Wiring Harness",
+        "description": "Electrical harness for sensor power and signal transmission",
+        "material": "Shielded copper wire with heat protection"
+      },
+      {
+        "partNumber": "FUE-RAL-1018C",
+        "name": "Fuel Rail Assembly",
+        "description": "Fuel distribution rail that connects injectors and houses pressure sensor",
+        "material": "Stainless steel or anodized aluminum"
+      },
+      {
+        "partNumber": "CON-FRP-1018D",
+        "name": "Sensor Connector",
+        "description": "Waterproof connector for fuel pressure sensor interface",
+        "material": "Nylon with silicone gasket"
+      },
+      {
+        "partNumber": "MOD-ECM-1018E",
+        "name": "Engine Control Module",
+        "description": "Processes fuel rail pressure data for engine management",
+        "material": "Metal-encased PCB control unit"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1019-19",
+    "parts": [
+      {
+        "partNumber": "SEN-O2H-1019A",
+        "name": "Heated Oxygen Sensor",
+        "description": "Measures oxygen content in exhaust gases with integrated heater",
+        "material": "Ceramic zirconia sensing element"
+      },
+      {
+        "partNumber": "WH-O2H-1019B",
+        "name": "Oxygen Sensor Harness",
+        "description": "Cable assembly connecting oxygen sensor to ECM",
+        "material": "Teflon-coated copper wires"
+      },
+      {
+        "partNumber": "MOD-ECM-1019C",
+        "name": "Engine Control Module",
+        "description": "Controls heater circuit and processes oxygen feedback",
+        "material": "Sealed aluminum control module"
+      },
+      {
+        "partNumber": "CON-O2H-1019D",
+        "name": "Sensor Connector",
+        "description": "4-pin connector for oxygen sensor signal and heater power",
+        "material": "Heat-resistant nylon"
+      },
+      {
+        "partNumber": "BRK-O2H-1019E",
+        "name": "Oxygen Sensor Mounting Boss",
+        "description": "Mounting fitting on exhaust pipe for sensor placement",
+        "material": "Welded stainless steel"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P1020-20",
+    "parts": [
+      {
+        "partNumber": "MOD-HBM-1020A",
+        "name": "Hybrid Battery Module",
+        "description": "High-voltage battery pack for hybrid power system",
+        "material": "Lithium-ion or NiMH cell array"
+      },
+      {
+        "partNumber": "MOD-HCM-1020B",
+        "name": "Hybrid Control Module",
+        "description": "Manages battery charging and discharging functions",
+        "material": "Sealed metal electronic module"
+      },
+      {
+        "partNumber": "WH-HBM-1020C",
+        "name": "High-Voltage Battery Harness",
+        "description": "Wiring harness for power transfer between modules",
+        "material": "Shielded copper cable with orange insulation"
+      },
+      {
+        "partNumber": "SEN-VLT-1020D",
+        "name": "Battery Voltage Sensor",
+        "description": "Measures voltage across hybrid battery cells",
+        "material": "PCB-mounted voltage sensing circuit"
+      },
+      {
+        "partNumber": "CON-HBM-1020E",
+        "name": "Battery Connector Plug",
+        "description": "High-current connector for hybrid battery terminals",
+        "material": "Reinforced thermoplastic with copper contacts"
+      }
+    ]
+  },
+  {
+  "DTC": "B3102-01",
+  "description": "Front Right Door Lock Actuator Circuit",
+  "parts": [
+    {
+      "part_name": "Front Right Door Lock Actuator",
+      "part_number": "ACT-FRD-401",
+      "material": "Reinforced ABS Plastic and Steel",
+      "function": "Converts electrical signals from the BCM into mechanical motion to lock/unlock the front right door.",
+      "location": "Inside front right door panel near latch assembly"
+    },
+    {
+      "part_name": "Door Lock Rod Assembly",
+      "part_number": "ROD-FRD-402",
+      "material": "Galvanized Steel",
+      "function": "Transfers motion between the actuator and the latch mechanism.",
+      "location": "Between actuator and latch inside front right door"
+    },
+    {
+      "part_name": "Door Latch Mechanism",
+      "part_number": "LAT-FRD-403",
+      "material": "Zinc Alloy and Plastic",
+      "function": "Secures the door to the vehicle body when closed.",
+      "location": "Edge of the front right door"
+    },
+    {
+      "part_name": "Door Wiring Harness Connector",
+      "part_number": "CON-FRD-404",
+      "material": "Copper and Nylon",
+      "function": "Provides electrical connection between actuator and body control module.",
+      "location": "Inside front right door connected to actuator"
+    },
+    {
+      "part_name": "Body Control Module (BCM)",
+      "part_number": "MOD-FRD-405",
+      "material": "Electronic PCB with Plastic Enclosure",
+      "function": "Processes door lock signals and controls actuator operation.",
+      "location": "Under dashboard on driver side"
+    }
+  ]
+},
+{
+  "DTC": "B3103-01",
+  "description": "Rear Left Door Lock Actuator Circuit",
+  "parts": [
+    {
+      "part_name": "Rear Left Door Lock Actuator",
+      "part_number": "ACT-RLD-411",
+      "material": "Reinforced Plastic and Metal Gear Assembly",
+      "function": "Controls the locking and unlocking of the rear left door via BCM signals.",
+      "location": "Inside rear left door panel"
+    },
+    {
+      "part_name": "Door Lock Cable Assembly",
+      "part_number": "CAB-RLD-412",
+      "material": "Steel Cable with PVC Coating",
+      "function": "Transfers actuator movement to the latch mechanism.",
+      "location": "Between latch and actuator inside door"
+    },
+    {
+      "part_name": "Rear Door Latch",
+      "part_number": "LAT-RLD-413",
+      "material": "Zinc Alloy and Nylon",
+      "function": "Mechanically secures the door when closed.",
+      "location": "Rear left door edge"
+    },
+    {
+      "part_name": "Rear Door Electrical Connector",
+      "part_number": "CON-RLD-414",
+      "material": "Copper and Plastic",
+      "function": "Provides power and signal path for door components.",
+      "location": "Inside rear door near hinge area"
+    },
+    {
+      "part_name": "BCM Door Output Circuit",
+      "part_number": "MOD-RLD-415",
+      "material": "Circuit Board",
+      "function": "Controls voltage supply to the actuator motor.",
+      "location": "BCM internal circuit under dashboard"
+    }
+  ]
+},
+{
+  "DTC": "B3104-01",
+  "description": "Rear Right Door Lock Actuator Circuit",
+  "parts": [
+    {
+      "part_name": "Rear Right Door Lock Actuator",
+      "part_number": "ACT-RRD-421",
+      "material": "ABS Plastic with Steel Motor Assembly",
+      "function": "Engages or releases the rear right door latch when commanded.",
+      "location": "Inside rear right door"
+    },
+    {
+      "part_name": "Door Latch Assembly",
+      "part_number": "LAT-RRD-422",
+      "material": "Zinc Alloy and Nylon",
+      "function": "Locks the rear right door securely when closed.",
+      "location": "Rear right door edge"
+    },
+    {
+      "part_name": "Link Rod Assembly",
+      "part_number": "ROD-RRD-423",
+      "material": "Steel Rod with Plastic Clips",
+      "function": "Transfers actuator motion to door latch lever.",
+      "location": "Between actuator and latch"
+    },
+    {
+      "part_name": "Rear Door Wiring Harness",
+      "part_number": "HAR-RRD-424",
+      "material": "Copper Wires and PVC Insulation",
+      "function": "Carries electrical signals from BCM to actuator.",
+      "location": "Inside door routed through rubber boot"
+    },
+    {
+      "part_name": "BCM Output Relay",
+      "part_number": "REL-RRD-425",
+      "material": "Electronic Relay with Copper Contacts",
+      "function": "Switches power to actuator motor based on BCM logic.",
+      "location": "Inside fuse/relay box under dash"
+    }
+  ]
+},
+{
+  "DTC": "B3105-01",
+  "description": "Driver Door Lock Switch Circuit",
+  "parts": [
+    {
+      "part_name": "Driver Door Lock Switch",
+      "part_number": "SWT-DRD-431",
+      "material": "Plastic and Electronic Contacts",
+      "function": "Allows manual lock/unlock input from the driver.",
+      "location": "On driver door armrest panel"
+    },
+    {
+      "part_name": "Switch Connector Harness",
+      "part_number": "CON-DRD-432",
+      "material": "Copper and Nylon",
+      "function": "Connects door lock switch to BCM input line.",
+      "location": "Behind switch assembly inside door"
+    },
+    {
+      "part_name": "BCM Input Circuit",
+      "part_number": "MOD-DRD-433",
+      "material": "Printed Circuit Board",
+      "function": "Receives lock/unlock signal from switch.",
+      "location": "Inside BCM module under dashboard"
+    },
+    {
+      "part_name": "Ground Wire Assembly",
+      "part_number": "GND-DRD-434",
+      "material": "Copper Wire with Ring Terminal",
+      "function": "Provides stable ground connection for switch circuit.",
+      "location": "Door frame ground point"
+    },
+    {
+      "part_name": "Fuse (Lock Control)",
+      "part_number": "FUS-DRD-435",
+      "material": "Plastic and Metal Strip",
+      "function": "Protects the lock switch circuit from short circuits.",
+      "location": "Fuse box under dashboard"
+    }
+  ]
+},
+{
+  "DTC": "B3106-01",
+  "description": "Passenger Door Lock Switch Circuit",
+  "parts": [
+    {
+      "part_name": "Passenger Door Lock Switch",
+      "part_number": "SWT-PSD-441",
+      "material": "Plastic Housing with Copper Contacts",
+      "function": "Enables passenger control of door locks.",
+      "location": "On passenger door armrest"
+    },
+    {
+      "part_name": "Door Switch Connector",
+      "part_number": "CON-PSD-442",
+      "material": "Copper and Nylon Plug",
+      "function": "Links switch to BCM signal input line.",
+      "location": "Behind switch inside passenger door"
+    },
+    {
+      "part_name": "BCM Input Channel",
+      "part_number": "MOD-PSD-443",
+      "material": "Electronic PCB Circuit",
+      "function": "Processes input signal from passenger switch.",
+      "location": "Integrated in BCM under dashboard"
+    },
+    {
+      "part_name": "Passenger Door Ground",
+      "part_number": "GND-PSD-444",
+      "material": "Copper Wire with Eye Terminal",
+      "function": "Maintains electrical grounding for the switch.",
+      "location": "Passenger door frame"
+    },
+    {
+      "part_name": "Fuse (Passenger Lock)",
+      "part_number": "FUS-PSD-445",
+      "material": "Plastic Body with Metal Element",
+      "function": "Prevents overload in passenger lock circuit.",
+      "location": "Fuse panel in cabin"
+    }
+  ]
+}
+]

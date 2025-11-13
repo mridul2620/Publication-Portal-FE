@@ -37,6 +37,27 @@ const DocumentLibrary: React.FC = () => {
       ]
     },
     {
+      id: 'electrical-diagrams',
+      label: 'Electrical Diagrams',
+      icon: '⚡',
+      documents: [
+        { id: '1', title: 'Wiring Schematic', type: 'link', isClickable: true, route: '/circuit-page', description: 'Interactive wiring diagrams' },
+        { id: '2', title: 'System Diagrams', type: 'link', isClickable: true, route: '/system-diagram', description: 'Detailed electrical system components diagrams' },
+        { id: '3', title: 'Fuse and Relay Listings', type: 'doc', description: 'Complete fuse and relay information' },
+        { id: '4', title: 'Splice Locations', type: 'pdf', description: 'Wire splice location diagrams' },
+      ]
+    },
+    {
+      id: 'system-diagnostics',
+      label: 'System Diagnostics',
+      icon: '🔍',
+      documents: [
+        { id: '1', title: 'Check Sheet', type: 'pdf', description: 'Comprehensive diagnostic checklist' },
+        { id: '2', title: 'DTC Codes', type: 'link', route: '/dtc-page', description: 'Diagnostic trouble code reference' },
+        { id: '3', title: 'DTC Codes History', type: 'link', route: '/dtc-history', description: 'Historical diagnostic data' },
+      ]
+    },
+    {
       id: 'accessory-installation',
       label: 'Accessory Installation',
       icon: '🔧',
@@ -56,17 +77,6 @@ const DocumentLibrary: React.FC = () => {
         { id: '2', title: 'Charging Best Practices', type: 'doc' },
         { id: '3', title: 'Storage Guidelines', type: 'pdf' },
         { id: '4', title: 'Troubleshooting Guide', type: 'doc' },
-      ]
-    },
-    {
-      id: 'electrical-diagrams',
-      label: 'Electrical Diagrams',
-      icon: '⚡',
-      documents: [
-        { id: '1', title: 'Wiring Schematic', type: 'link', isClickable: true, route: '/circuit-page', description: 'Interactive wiring diagrams' },
-        { id: '2', title: 'System Diagrams', type: 'link', isClickable: true, route: '/system-diagram', description: 'Detailed electrical system components diagrams' },
-        { id: '3', title: 'Fuse and Relay Listings', type: 'doc', description: 'Complete fuse and relay information' },
-        { id: '4', title: 'Splice Locations', type: 'pdf', description: 'Wire splice location diagrams' },
       ]
     },
     {
@@ -111,16 +121,6 @@ const DocumentLibrary: React.FC = () => {
         { id: '2', title: 'Safety Recalls', type: 'doc' },
         { id: '3', title: 'Technical Updates', type: 'pdf' },
         { id: '4', title: 'Field Fixes', type: 'doc' },
-      ]
-    },
-    {
-      id: 'system-diagnostics',
-      label: 'System Diagnostics',
-      icon: '🔍',
-      documents: [
-        { id: '1', title: 'Check Sheet', type: 'pdf', description: 'Comprehensive diagnostic checklist' },
-        { id: '2', title: 'DTC Codes', type: 'doc', description: 'Diagnostic trouble code reference' },
-        { id: '3', title: 'History', type: 'pdf', description: 'Historical diagnostic data' },
       ]
     },
     {
@@ -196,7 +196,7 @@ const DocumentLibrary: React.FC = () => {
   };
 
   const handleDocumentClick = (doc: DocumentItem) => {
-    if (doc.isClickable && doc.route) {
+    if (doc.route) {
       window.location.href = doc.route;
     } else {
       console.log(`Opening document: ${doc.title}`);
@@ -373,7 +373,7 @@ const DocumentLibrary: React.FC = () => {
                   >
                     <div className="flex items-start gap-3">
                       <div className={`flex-shrink-0 p-2.5 rounded-lg transition-all duration-300 ${
-                        doc.isClickable
+                        doc.isClickable  || doc.route
                           ? 'bg-gradient-to-br from-blue-100 to-indigo-100 text-blue-600 group-hover:scale-110'
                           : 'bg-gradient-to-br from-slate-100 to-slate-50 text-slate-600 group-hover:scale-110'
                       }`}>
@@ -399,7 +399,7 @@ const DocumentLibrary: React.FC = () => {
                           <span>Updated recently</span>
                         </div>
                       </div>
-                      {!doc.isClickable && (
+                      {!doc.isClickable || !doc.route && (
                         <div className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity">
                           <Download className="h-4 w-4 text-blue-600" />
                         </div>
@@ -442,7 +442,7 @@ const DocumentLibrary: React.FC = () => {
                     >
                       <div className="flex items-start gap-3">
                         <div className={`flex-shrink-0 p-2.5 rounded-lg transition-all duration-300 ${
-                          doc.isClickable
+                          doc.isClickable || doc.route
                             ? 'bg-gradient-to-br from-blue-100 to-indigo-100 text-blue-600 group-hover:scale-110'
                             : 'bg-gradient-to-br from-slate-100 to-slate-50 text-slate-600 group-hover:scale-110'
                         }`}>
@@ -473,7 +473,7 @@ const DocumentLibrary: React.FC = () => {
                             <span>Updated recently</span>
                           </div>
                         </div>
-                        {!doc.isClickable && (
+                        {!doc.isClickable || !doc.route && (
                           <div className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity">
                             <Download className="h-4 w-4 text-blue-600" />
                           </div>

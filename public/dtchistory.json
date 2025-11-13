@@ -1,0 +1,79 @@
+[
+  {
+    "code": "B3101-01",
+    "description": "Front Left Door Lock Actuator Circuit",
+    "date":"03-02-2025",
+    "possible_causes": [
+      "Front left door actuator faulty"
+    ],
+    "action": [
+      "Inspected and fixed the front left door lock actuator and wiring for loose connections"
+    ]
+  },
+  {
+    "code": "B3102-02",
+    "description": "Front Right Door Lock Actuator Circuit",
+    "date":"03-06-2025",
+    "possible_causes": [
+      "Body control module communication error"
+    ],
+    "action": [
+      "Replaced the BCM actuator"
+    ]
+  },
+  {
+    "code": "B3107-07",
+    "description": "Door Ajar Sensor Circuit – Rear Left",
+    "date":"10-06-2025",
+    "possible_causes": [
+      "Body control module fault affecting sensor"
+    ],
+    "action": [
+      "Replaced the sensor or BCM as readings were abnormal"
+    ]
+  },
+   {
+    "code": "C2018-18",
+    "description": "Steering Angle Sensor Out of Range",
+    "date":"23-02-2025",
+    "possible_causes": [
+      "Sensor misaligned or faulty"
+    ],
+    "action": [
+      "Inspected steering angle sensor and wiring."
+    ]
+  },
+  {
+    "code": "B3020-20",
+    "description": "Interior Ambient Lighting Module Fault",
+    "date":"13-05-2025",
+    "possible_causes": [
+      "Body control module internal fault"
+    ],
+    "action": [
+      "Replaced module or BCM as readings were abnormal."
+    ]
+  },
+  {
+    "code": "U4016-16",
+    "description": "Infotainment Head Unit Communication",
+    "date":"12-10-2025",
+    "possible_causes": [
+      "Head unit internal fault"
+    ],
+    "action": [
+      "Inspected infotainment head unit and wiring."
+    ]
+  },
+  {
+    "code": "U4017-17",
+    "description": "Lane Keep Assist Module Fault",
+    "date":"10-08-2025",
+    "possible_causes": [
+      "Module malfunction"
+    ],
+    "action": [
+      "Replaced the module as readings were abnormal."
+    ]
+  }
+]
