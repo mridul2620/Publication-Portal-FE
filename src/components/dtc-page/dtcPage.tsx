@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { LogOut, X, Search, Minus, TrendingDown, TrendingUp } from 'lucide-react';
 import CircuitPopup from './circuitpopup';
 import PartsCatalogPage from './PartsCatalog';
-
-
 interface DTCData {
   [key: string]: {
     DTCs: Array<{
@@ -291,12 +289,9 @@ const DTCPage: React.FC = () => {
                       }`}
                     >
                       <td className="px-6 py-5 border-r border-slate-300">
-                        <button
-                          onClick={() => handleDtcCodeClick(dtc.code)}
-                          className="inline-flex items-center px-4 py-2 rounded-md text-sm font-bold text-slate-700 whitespace-nowrap hover:bg-blue-50 hover:text-blue-700 hover:shadow-md transition-all duration-200 cursor-pointer border-2 border-transparent hover:border-blue-300"
-                        >
+                        <span className="inline-flex items-center px-4 py-2 rounded-md text-sm font-bold text-slate-700 whitespace-nowrap">
                           {dtc.code}
-                        </button>
+                        </span>
                       </td>
                       <td className="px-6 py-5 border-r border-slate-300">
                         <span className="text-sm text-slate-900 font-semibold leading-relaxed">
@@ -350,6 +345,29 @@ const DTCPage: React.FC = () => {
                               </div>
                             </div>
                           ))}
+                          
+                          {/* Related Parts Button */}
+                          <div className="mt-4 pt-3 border-t border-slate-200">
+                            <button
+                              onClick={() => handleDtcCodeClick(dtc.code)}
+                              className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-all duration-200 shadow-sm hover:shadow-md"
+                            >
+                              <svg 
+                                className="w-4 h-4" 
+                                fill="none" 
+                                stroke="currentColor" 
+                                viewBox="0 0 24 24"
+                              >
+                                <path 
+                                  strokeLinecap="round" 
+                                  strokeLinejoin="round" 
+                                  strokeWidth={2} 
+                                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" 
+                                />
+                              </svg>
+                              Related Parts
+                            </button>
+                          </div>
                         </div>
                       </td>
                     </tr>

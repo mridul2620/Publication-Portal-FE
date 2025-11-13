@@ -152,7 +152,7 @@ const DTCHistory: React.FC = () => {
                   <tr className="bg-gradient-to-r from-slate-700 to-slate-800 text-white">
                     <th className="px-6 py-4 text-left text-xs font-bold uppercase tracking-wider w-40 border-r border-slate-600">Code</th>
                     <th className="px-6 py-4 text-left text-xs font-bold uppercase tracking-wider border-r border-slate-600">Description</th>
-                    <th className="px-6 py-4 text-left text-xs font-bold uppercase tracking-wider border-r border-slate-600">Reported On</th>
+                    <th className="px-6 py-4 text-left text-xs font-bold uppercase tracking-wider border-r border-slate-600">Reported Date & Location</th>
                     <th className="px-6 py-4 text-left text-xs font-bold uppercase tracking-wider border-r border-slate-600">Cause</th>
                     <th className="px-6 py-4 text-left text-xs font-bold uppercase tracking-wider">Action</th>
                   </tr>

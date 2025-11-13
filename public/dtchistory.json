@@ -2,7 +2,7 @@
   {
     "code": "B3101-01",
     "description": "Front Left Door Lock Actuator Circuit",
-    "date":"03-02-2025",
+    "date":"03-02-2025, UK",
     "possible_causes": [
       "Front left door actuator faulty"
     ],
@@ -13,7 +13,7 @@
   {
     "code": "B3102-02",
     "description": "Front Right Door Lock Actuator Circuit",
-    "date":"03-06-2025",
+    "date":"03-06-2025, UK",
     "possible_causes": [
       "Body control module communication error"
     ],
@@ -24,7 +24,7 @@
   {
     "code": "B3107-07",
     "description": "Door Ajar Sensor Circuit – Rear Left",
-    "date":"10-06-2025",
+    "date":"10-06-2025, US",
     "possible_causes": [
       "Body control module fault affecting sensor"
     ],
@@ -35,7 +35,7 @@
    {
     "code": "C2018-18",
     "description": "Steering Angle Sensor Out of Range",
-    "date":"23-02-2025",
+    "date":"23-02-2025, UK",
     "possible_causes": [
       "Sensor misaligned or faulty"
     ],
@@ -46,7 +46,7 @@
   {
     "code": "B3020-20",
     "description": "Interior Ambient Lighting Module Fault",
-    "date":"13-05-2025",
+    "date":"13-05-2025, US",
     "possible_causes": [
       "Body control module internal fault"
     ],
@@ -57,7 +57,7 @@
   {
     "code": "U4016-16",
     "description": "Infotainment Head Unit Communication",
-    "date":"12-10-2025",
+    "date":"12-10-2025, US",
     "possible_causes": [
       "Head unit internal fault"
     ],
@@ -68,12 +68,627 @@
   {
     "code": "U4017-17",
     "description": "Lane Keep Assist Module Fault",
-    "date":"10-08-2025",
+    "date":"10-08-2025, IND",
     "possible_causes": [
       "Module malfunction"
     ],
     "action": [
       "Replaced the module as readings were abnormal."
     ]
-  }
+  },
+  {
+  "DTC": "B3107-01",
+  "description": "Trunk Lock Actuator Circuit",
+  "parts": [
+    {
+      "part_name": "Trunk Lock Actuator",
+      "part_number": "ACT-TRK-451",
+      "material": "ABS Plastic, Steel Motor, Nylon Gears",
+      "function": "Drives the latch mechanism to lock or unlock the trunk electronically.",
+      "location": "Inside trunk lid near latch"
+    },
+    {
+      "part_name": "Trunk Latch Assembly",
+      "part_number": "LAT-TRK-452",
+      "material": "Zinc Alloy and Plastic",
+      "function": "Physically secures the trunk lid when closed.",
+      "location": "Mounted at lower trunk edge"
+    },
+    {
+      "part_name": "Actuator Wiring Harness",
+      "part_number": "HAR-TRK-453",
+      "material": "Copper Wires with PVC Insulation",
+      "function": "Connects actuator to BCM trunk control output.",
+      "location": "Routed through trunk lid harness"
+    },
+    {
+      "part_name": "Trunk Release Switch",
+      "part_number": "SWT-TRK-454",
+      "material": "Plastic and Copper Contacts",
+      "function": "Allows user to command trunk unlock.",
+      "location": "Near driver seat or trunk handle"
+    },
+    {
+      "part_name": "BCM Trunk Output Circuit",
+      "part_number": "MOD-TRK-455",
+      "material": "Printed Circuit Board",
+      "function": "Supplies power and control to trunk actuator.",
+      "location": "Inside body control module under dashboard"
+    }
+  ]
+},
+{
+  "DTC": "B3108-01",
+  "description": "Fuel Filler Door Actuator Circuit",
+  "parts": [
+    {
+      "part_name": "Fuel Filler Door Actuator",
+      "part_number": "ACT-FUE-461",
+      "material": "Plastic Body, Steel Shaft, Electric Motor",
+      "function": "Locks and unlocks the fuel filler door via BCM signal.",
+      "location": "Behind fuel filler cap compartment"
+    },
+    {
+      "part_name": "Fuel Door Latch",
+      "part_number": "LAT-FUE-462",
+      "material": "Zinc Alloy and Nylon",
+      "function": "Mechanically secures the fuel door when closed.",
+      "location": "Attached to body near filler neck"
+    },
+    {
+      "part_name": "Fuel Door Switch",
+      "part_number": "SWT-FUE-463",
+      "material": "Plastic, Copper, and Spring Contacts",
+      "function": "Triggers opening signal for fuel door release.",
+      "location": "Inside cabin near driver seat"
+    },
+    {
+      "part_name": "Harness Connector",
+      "part_number": "CON-FUE-464",
+      "material": "Copper and Nylon",
+      "function": "Links actuator wiring to BCM harness.",
+      "location": "Rear quarter panel inside trunk"
+    },
+    {
+      "part_name": "BCM Fuel Door Output",
+      "part_number": "MOD-FUE-465",
+      "material": "Electronic PCB Circuit",
+      "function": "Provides control output to fuel door actuator motor.",
+      "location": "Inside BCM near fuse panel"
+    }
+  ]
+},
+{
+  "DTC": "B3109-01",
+  "description": "Hood Latch Switch Circuit",
+  "parts": [
+    {
+      "part_name": "Hood Latch Assembly with Switch",
+      "part_number": "LAT-HOD-471",
+      "material": "Steel Latch with Plastic Switch Housing",
+      "function": "Detects if the hood is open or closed and secures it mechanically.",
+      "location": "Front center of engine bay"
+    },
+    {
+      "part_name": "Hood Ajar Switch",
+      "part_number": "SWT-HOD-472",
+      "material": "Plastic and Copper Contacts",
+      "function": "Sends hood open/closed status to BCM.",
+      "location": "Integrated into hood latch"
+    },
+    {
+      "part_name": "Hood Release Cable",
+      "part_number": "CAB-HOD-473",
+      "material": "Steel Wire with Plastic Sheath",
+      "function": "Allows manual hood opening from cabin.",
+      "location": "From cabin lever to latch"
+    },
+    {
+      "part_name": "Switch Connector Harness",
+      "part_number": "CON-HOD-474",
+      "material": "Copper and PVC",
+      "function": "Connects hood switch to BCM input circuit.",
+      "location": "Front wiring harness under radiator support"
+    },
+    {
+      "part_name": "BCM Hood Input Circuit",
+      "part_number": "MOD-HOD-475",
+      "material": "Printed Circuit Board",
+      "function": "Receives and interprets hood switch signal.",
+      "location": "Inside BCM under dashboard"
+    }
+  ]
+},
+{
+  "DTC": "B3110-01",
+  "description": "Tailgate Latch Circuit",
+  "parts": [
+    {
+      "part_name": "Tailgate Latch Actuator",
+      "part_number": "ACT-TGT-481",
+      "material": "Reinforced Plastic and Metal Motor Assembly",
+      "function": "Controls locking and unlocking of the tailgate electronically.",
+      "location": "Inside tailgate door panel"
+    },
+    {
+      "part_name": "Tailgate Latch Mechanism",
+      "part_number": "LAT-TGT-482",
+      "material": "Steel and Zinc Alloy",
+      "function": "Physically secures the tailgate when closed.",
+      "location": "Mounted at base of tailgate"
+    },
+    {
+      "part_name": "Tailgate Release Switch",
+      "part_number": "SWT-TGT-483",
+      "material": "Plastic and Copper Contacts",
+      "function": "Allows manual release of tailgate latch.",
+      "location": "Tailgate handle area"
+    },
+    {
+      "part_name": "Tailgate Wiring Harness",
+      "part_number": "HAR-TGT-484",
+      "material": "Copper and PVC Insulation",
+      "function": "Carries actuator control signals and power.",
+      "location": "Inside tailgate routed through hinge boot"
+    },
+    {
+      "part_name": "BCM Tailgate Output Channel",
+      "part_number": "MOD-TGT-485",
+      "material": "Electronic PCB Assembly",
+      "function": "Drives power to tailgate actuator circuit.",
+      "location": "BCM under driver-side dashboard"
+    }
+  ]
+},
+{
+  "DTC": "B3111-01",
+  "description": "Glove Box Lock Actuator Circuit",
+  "parts": [
+    {
+      "part_name": "Glove Box Lock Actuator",
+      "part_number": "ACT-GLV-491",
+      "material": "Plastic Housing, Electric Motor, Metal Gears",
+      "function": "Locks and unlocks the glove box using an electrical signal.",
+      "location": "Behind glove box latch assembly"
+    },
+    {
+      "part_name": "Glove Box Latch",
+      "part_number": "LAT-GLV-492",
+      "material": "Zinc Alloy and Plastic",
+      "function": "Keeps glove box closed and secured.",
+      "location": "Front edge of glove box"
+    },
+    {
+      "part_name": "Actuator Harness Connector",
+      "part_number": "CON-GLV-493",
+      "material": "Copper and Nylon Plug",
+      "function": "Connects glove box actuator to BCM.",
+      "location": "Behind glove box compartment"
+    },
+    {
+      "part_name": "BCM Glove Box Output Circuit",
+      "part_number": "MOD-GLV-494",
+      "material": "Printed Circuit Board",
+      "function": "Controls power output to glove box actuator.",
+      "location": "Inside BCM near passenger side"
+    },
+    {
+      "part_name": "Fuse (Glove Box Lock)",
+      "part_number": "FUS-GLV-495",
+      "material": "Plastic and Metal",
+      "function": "Protects glove box actuator circuit from short circuits.",
+      "location": "Fuse panel behind dashboard"
+    }
+  ]
+},
+{
+  "DTC": "B3112-01",
+  "description": "Rear Hatch Release Circuit",
+  "parts": [
+    {
+      "part_name": "Rear Hatch Release Actuator",
+      "part_number": "ACT-HCH-501",
+      "material": "ABS Plastic, Steel Gear Motor",
+      "function": "Engages the rear hatch latch to open when commanded.",
+      "location": "Inside rear hatch panel"
+    },
+    {
+      "part_name": "Hatch Latch Assembly",
+      "part_number": "LAT-HCH-502",
+      "material": "Steel and Zinc Alloy",
+      "function": "Secures the rear hatch when closed.",
+      "location": "Mounted to lower edge of hatch"
+    },
+    {
+      "part_name": "Hatch Release Switch",
+      "part_number": "SWT-HCH-503",
+      "material": "Plastic with Metal Contacts",
+      "function": "Sends release signal to BCM.",
+      "location": "Exterior of rear hatch handle"
+    },
+    {
+      "part_name": "Harness Connector",
+      "part_number": "CON-HCH-504",
+      "material": "Copper and Nylon",
+      "function": "Links actuator to BCM output wiring.",
+      "location": "Inside tailgate harness bundle"
+    },
+    {
+      "part_name": "BCM Hatch Output Driver",
+      "part_number": "MOD-HCH-505",
+      "material": "Electronic PCB Assembly",
+      "function": "Drives actuator motor upon release command.",
+      "location": "BCM module under dashboard"
+    }
+  ]
+},
+{
+  "DTC": "B3113-01",
+  "description": "Power Tailgate Control Circuit",
+  "parts": [
+    {
+      "part_name": "Power Tailgate Control Unit",
+      "part_number": "MOD-PTG-511",
+      "material": "Electronic PCB Enclosure",
+      "function": "Controls automatic opening and closing of power tailgate.",
+      "location": "Inside tailgate trim panel"
+    },
+    {
+      "part_name": "Tailgate Motor Assembly",
+      "part_number": "MOT-PTG-512",
+      "material": "Steel Motor with Plastic Gear Housing",
+      "function": "Drives mechanical lifting and closing of the tailgate.",
+      "location": "Inside tailgate frame"
+    },
+    {
+      "part_name": "Power Strut Assembly",
+      "part_number": "STR-PTG-513",
+      "material": "Gas Strut with Integrated Sensor",
+      "function": "Supports and moves the tailgate under motor power.",
+      "location": "On both sides of tailgate hinge"
+    },
+    {
+      "part_name": "Tailgate Control Switch",
+      "part_number": "SWT-PTG-514",
+      "material": "Plastic Housing with Micro Switch",
+      "function": "Allows user input to open or close power tailgate.",
+      "location": "On tailgate handle and driver-side dashboard"
+    },
+    {
+      "part_name": "BCM Communication Line",
+      "part_number": "HAR-PTG-515",
+      "material": "Shielded Copper Wire Harness",
+      "function": "Provides data link between BCM and power tailgate unit.",
+      "location": "Routed from cabin to rear tailgate"
+    }
+  ]
+},
+{
+  "DTC": "B3114-01",
+  "description": "Sunroof Motor Circuit",
+  "parts": [
+    {
+      "part_name": "Sunroof Motor Assembly",
+      "part_number": "MOT-SRF-521",
+      "material": "Aluminium Housing, Electric Motor, Nylon Gears",
+      "function": "Drives the sunroof panel open and closed.",
+      "location": "Above headliner near sunroof frame"
+    },
+    {
+      "part_name": "Sunroof Control Module",
+      "part_number": "MOD-SRF-522",
+      "material": "Plastic Housing, Electronic PCB",
+      "function": "Regulates sunroof motor operation and position sensing.",
+      "location": "Roof area near motor"
+    },
+    {
+      "part_name": "Sunroof Switch Assembly",
+      "part_number": "SWT-SRF-523",
+      "material": "Plastic and Copper Contacts",
+      "function": "Allows driver control over sunroof movement.",
+      "location": "Overhead console in cabin"
+    },
+    {
+      "part_name": "Sunroof Position Sensor",
+      "part_number": "SNS-SRF-524",
+      "material": "Hall Effect Sensor with Plastic Body",
+      "function": "Detects the open/close position of the sunroof.",
+      "location": "Integrated with sunroof motor assembly"
+    },
+    {
+      "part_name": "BCM Roof Control Output",
+      "part_number": "MOD-SRF-525",
+      "material": "PCB with Control Relays",
+      "function": "Provides control signals and power to the sunroof module.",
+      "location": "Inside BCM unit below dash"
+    }
+  ]
+},
+{
+  "DTC": "B3115-01",
+  "description": "Power Window Master Switch Circuit",
+  "parts": [
+    {
+      "part_name": "Power Window Master Switch",
+      "part_number": "SWT-PWM-531",
+      "material": "Plastic Housing, Copper Contacts",
+      "function": "Controls all vehicle windows from the driver’s side.",
+      "location": "Driver door armrest control panel"
+    },
+    {
+      "part_name": "Window Control Module",
+      "part_number": "MOD-PWM-532",
+      "material": "Plastic Enclosure, PCB Electronics",
+      "function": "Receives inputs from master switch and drives window motors.",
+      "location": "Integrated with master switch or door panel"
+    },
+    {
+      "part_name": "Door Wiring Harness",
+      "part_number": "HAR-PWM-533",
+      "material": "Copper Wire Bundle, PVC Coating",
+      "function": "Carries signals and power to window regulators.",
+      "location": "Driver door interior and door hinge boot"
+    },
+    {
+      "part_name": "Power Window Relay",
+      "part_number": "REL-PWM-534",
+      "material": "Plastic Case, Copper Contacts",
+      "function": "Provides switched power supply to window circuit.",
+      "location": "Relay box under dashboard"
+    },
+    {
+      "part_name": "BCM Window Input Circuit",
+      "part_number": "MOD-PWM-535",
+      "material": "Printed Circuit Board",
+      "function": "Interprets signals from window switches for safety interlock.",
+      "location": "Inside BCM under dash"
+    }
+  ]
+},
+{
+  "DTC": "B3116-01",
+  "description": "Rear Defogger Relay Circuit",
+  "parts": [
+    {
+      "part_name": "Rear Defogger Relay",
+      "part_number": "REL-RDF-541",
+      "material": "Plastic Relay Housing with Copper Contacts",
+      "function": "Switches high current to rear defogger grid when activated.",
+      "location": "Fuse and relay box in cabin or engine bay"
+    },
+    {
+      "part_name": "Defogger Switch",
+      "part_number": "SWT-RDF-542",
+      "material": "Plastic Button, Copper Contacts",
+      "function": "Allows driver to turn the rear defogger on and off.",
+      "location": "Instrument panel or center console"
+    },
+    {
+      "part_name": "Rear Window Defogger Grid",
+      "part_number": "GRD-RDF-543",
+      "material": "Conductive Metallic Traces on Glass",
+      "function": "Heats up to clear condensation from rear window.",
+      "location": "On interior surface of rear windshield"
+    },
+    {
+      "part_name": "BCM Defogger Control Circuit",
+      "part_number": "MOD-RDF-544",
+      "material": "Electronic PCB",
+      "function": "Sends activation signal to defogger relay based on switch input.",
+      "location": "Inside BCM under dashboard"
+    },
+    {
+      "part_name": "Fuse (Rear Defogger)",
+      "part_number": "FUS-RDF-545",
+      "material": "Plastic Body, Metal Strip",
+      "function": "Protects rear defogger circuit from overload.",
+      "location": "Fuse box under dash or engine bay"
+    }
+  ]
+},
+{
+  "DTC": "B3117-01",
+  "description": "Power Mirror Adjustment Circuit",
+  "parts": [
+    {
+      "part_name": "Power Mirror Adjustment Switch",
+      "part_number": "SWT-PMR-551",
+      "material": "Plastic Housing, Copper Contacts",
+      "function": "Allows the driver to control mirror angle adjustment.",
+      "location": "Driver door trim panel"
+    },
+    {
+      "part_name": "Mirror Adjustment Motor",
+      "part_number": "MOT-PMR-552",
+      "material": "Steel Motor, Nylon Gear Assembly",
+      "function": "Moves the mirror glass up, down, left, or right.",
+      "location": "Inside side mirror housing"
+    },
+    {
+      "part_name": "Door Wiring Harness",
+      "part_number": "HAR-PMR-553",
+      "material": "Copper Wire, PVC Coating",
+      "function": "Carries electrical power and control signals to the mirror motor.",
+      "location": "Driver door and hinge area"
+    },
+    {
+      "part_name": "Mirror Control Module",
+      "part_number": "MOD-PMR-554",
+      "material": "Electronic PCB with Plastic Enclosure",
+      "function": "Processes switch inputs and drives mirror motor outputs.",
+      "location": "Inside driver door or BCM housing"
+    },
+    {
+      "part_name": "Fuse (Mirror Control)",
+      "part_number": "FUS-PMR-555",
+      "material": "Plastic Body, Metal Link",
+      "function": "Protects mirror adjustment circuit from overcurrent.",
+      "location": "Fuse box under dashboard"
+    }
+  ]
+},
+{
+  "DTC": "B3118-01",
+  "description": "Seat Memory Control Circuit",
+  "parts": [
+    {
+      "part_name": "Seat Memory Control Module",
+      "part_number": "MOD-STM-561",
+      "material": "Plastic Enclosure, Electronic PCB",
+      "function": "Stores and recalls seat position presets.",
+      "location": "Under driver seat frame"
+    },
+    {
+      "part_name": "Seat Position Sensor",
+      "part_number": "SNS-STM-562",
+      "material": "Plastic Sensor Body, Magnetic Element",
+      "function": "Detects current seat position and sends feedback to control module.",
+      "location": "Integrated into seat rail assembly"
+    },
+    {
+      "part_name": "Seat Adjustment Switch",
+      "part_number": "SWT-STM-563",
+      "material": "Plastic Switch with Copper Contacts",
+      "function": "Provides manual seat adjustment and memory recall inputs.",
+      "location": "Side of driver seat cushion"
+    },
+    {
+      "part_name": "Seat Motor Assembly",
+      "part_number": "MOT-STM-564",
+      "material": "Electric Motor, Steel Gears",
+      "function": "Drives mechanical movement for seat adjustments.",
+      "location": "Under driver seat frame"
+    },
+    {
+      "part_name": "BCM Seat Memory Communication Line",
+      "part_number": "HAR-STM-565",
+      "material": "Shielded Copper Wire Harness",
+      "function": "Provides CAN communication between BCM and seat module.",
+      "location": "Routed beneath carpet to BCM"
+    }
+  ]
+},
+{
+  "DTC": "B3119-01",
+  "description": "Steering Angle Sensor Circuit",
+  "parts": [
+    {
+      "part_name": "Steering Angle Sensor",
+      "part_number": "SNS-SAS-571",
+      "material": "Plastic Housing with Optical Encoder",
+      "function": "Measures steering wheel angle and sends signal to BCM and ESC system.",
+      "location": "Mounted on steering column behind steering wheel"
+    },
+    {
+      "part_name": "Clockspring Assembly",
+      "part_number": "SPR-SAS-572",
+      "material": "Plastic and Flat Cable Coil",
+      "function": "Maintains electrical connection for steering sensors and airbag during rotation.",
+      "location": "Between steering wheel and column"
+    },
+    {
+      "part_name": "Steering Column Harness",
+      "part_number": "HAR-SAS-573",
+      "material": "Copper Wires, PVC Coating",
+      "function": "Transfers sensor signal to BCM and ESC module.",
+      "location": "Inside steering column"
+    },
+    {
+      "part_name": "BCM Steering Input Circuit",
+      "part_number": "MOD-SAS-574",
+      "material": "PCB with Microcontroller",
+      "function": "Receives and processes steering angle signal.",
+      "location": "Inside BCM under dashboard"
+    },
+    {
+      "part_name": "Fuse (Steering Sensor)",
+      "part_number": "FUS-SAS-575",
+      "material": "Plastic and Metal",
+      "function": "Protects steering sensor circuit from short circuits.",
+      "location": "Fuse box under dashboard"
+    }
+  ]
+},
+{
+  "DTC": "B3120-01",
+  "description": "Keyless Entry Antenna Circuit",
+  "parts": [
+    {
+      "part_name": "Keyless Entry Antenna",
+      "part_number": "ANT-KLS-581",
+      "material": "Copper Coil with Plastic Frame",
+      "function": "Receives low-frequency signal from the key fob for access authentication.",
+      "location": "Inside cabin near door or trunk"
+    },
+    {
+      "part_name": "Keyless Entry Receiver Module",
+      "part_number": "MOD-KLS-582",
+      "material": "Electronic PCB, Plastic Case",
+      "function": "Processes antenna signals and communicates with BCM.",
+      "location": "Behind dashboard or rear quarter panel"
+    },
+    {
+      "part_name": "Key Fob Transmitter",
+      "part_number": "TRN-KLS-583",
+      "material": "Plastic Housing, Battery, PCB",
+      "function": "Transmits coded signal to vehicle antenna for unlocking or starting.",
+      "location": "Carried by user"
+    },
+    {
+      "part_name": "BCM Keyless Control Circuit",
+      "part_number": "MOD-KLS-584",
+      "material": "Electronic PCB",
+      "function": "Authenticates key signal and triggers door unlock or ignition.",
+      "location": "BCM module under dashboard"
+    },
+    {
+      "part_name": "Fuse (Keyless System)",
+      "part_number": "FUS-KLS-585",
+      "material": "Plastic Body, Metal Fuse Link",
+      "function": "Protects the keyless system from short or overcurrent.",
+      "location": "Fuse box under driver side dash"
+    }
+  ]
+},
+{
+  "DTC": "B3121-01",
+  "description": "Immobilizer Communication Circuit",
+  "parts": [
+    {
+      "part_name": "Immobilizer Control Module",
+      "part_number": "MOD-IMM-591",
+      "material": "Plastic Enclosure with Microprocessor PCB",
+      "function": "Validates key authentication and allows engine start.",
+      "location": "Behind dashboard near ignition area"
+    },
+    {
+      "part_name": "Ignition Key Transponder",
+      "part_number": "TRN-IMM-592",
+      "material": "Plastic Key Head with Embedded Chip",
+      "function": "Transmits coded signal to immobilizer coil for vehicle access.",
+      "location": "Inside ignition key"
+    },
+    {
+      "part_name": "Immobilizer Antenna Coil",
+      "part_number": "ANT-IMM-593",
+      "material": "Copper Wire Coil, Plastic Housing",
+      "function": "Receives transponder signal when key is inserted or nearby.",
+      "location": "Around ignition barrel"
+    },
+    {
+      "part_name": "Engine Control Module (ECM)",
+      "part_number": "MOD-IMM-594",
+      "material": "Aluminium Casing, Electronic PCB",
+      "function": "Receives validation signal from immobilizer to permit engine start.",
+      "location": "Engine bay or firewall"
+    },
+    {
+      "part_name": "Fuse (Immobilizer System)",
+      "part_number": "FUS-IMM-595",
+      "material": "Plastic Casing, Metal Fuse Strip",
+      "function": "Protects immobilizer power and communication circuit.",
+      "location": "Fuse box in cabin"
+    }
+  ]
+}
 ]
