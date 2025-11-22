@@ -15,6 +15,7 @@ interface DocumentItem {
   description?: string;
   isClickable?: boolean;
   route?: string;
+  pdfFileName?: string;
 }
 
 const DocumentLibrary: React.FC = () => {
@@ -23,6 +24,8 @@ const DocumentLibrary: React.FC = () => {
   const [isSearching, setIsSearching] = useState<boolean>(false);
   const [searchResults, setSearchResults] = useState<Array<DocumentItem & { category: string }>>([]);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [selectedPdf, setSelectedPdf] = useState<string | null>(null);
+  const [pdfTitle, setPdfTitle] = useState<string>('');
 
   const tabsData: TabData[] = [
     {
@@ -30,10 +33,34 @@ const DocumentLibrary: React.FC = () => {
       label: 'User Reference Guides',
       icon: '📚',
       documents: [
-        { id: '1', title: 'Quick Start Guide', type: 'pdf', description: 'Essential setup and operation instructions' },
-        { id: '2', title: 'User Manual v2.1', type: 'pdf', description: 'Complete user documentation' },
-        { id: '3', title: 'Safety Guidelines', type: 'pdf', description: 'Important safety information' },
-        { id: '4', title: 'Feature Overview', type: 'doc', description: 'Detailed feature explanations' },
+        { 
+          id: '1', 
+          title: 'Quick Start Guide', 
+          type: 'pdf', 
+          description: 'Essential setup and operation instructions',
+          pdfFileName: 'Quick Setup Guide.pdf'
+        },
+        { 
+          id: '2', 
+          title: 'User Manual v2.1', 
+          type: 'pdf', 
+          description: 'Complete user documentation',
+          pdfFileName: 'User Manual.pdf'
+        },
+        { 
+          id: '3', 
+          title: 'Safety Guidelines', 
+          type: 'pdf', 
+          description: 'Important safety information',
+          pdfFileName: 'Safety Guidelines.pdf'
+        },
+        { 
+          id: '4', 
+          title: 'Feature Overview', 
+          type: 'pdf', 
+          description: 'Detailed feature explanations',
+          pdfFileName: 'Feature Overview.pdf'
+        },
       ]
     },
     {
@@ -43,8 +70,20 @@ const DocumentLibrary: React.FC = () => {
       documents: [
         { id: '1', title: 'Wiring Schematic', type: 'link', isClickable: true, route: '/circuit-page', description: 'Interactive wiring diagrams' },
         { id: '2', title: 'System Diagrams', type: 'link', isClickable: true, route: '/system-diagram', description: 'Detailed electrical system components diagrams' },
-        { id: '3', title: 'Fuse and Relay Listings', type: 'doc', description: 'Complete fuse and relay information' },
-        { id: '4', title: 'Splice Locations', type: 'pdf', description: 'Wire splice location diagrams' },
+        { 
+          id: '3', 
+          title: 'Fuse and Relay Listings', 
+          type: 'pdf', 
+          description: 'Complete fuse and relay information',
+          pdfFileName: 'Fuse and Relay Listings.pdf'
+        },
+        { 
+          id: '4', 
+          title: 'Splice Locations', 
+          type: 'pdf', 
+          description: 'Wire splice location diagrams',
+          pdfFileName: 'Splice Locations.pdf'
+        },
       ]
     },
     {
@@ -52,7 +91,13 @@ const DocumentLibrary: React.FC = () => {
       label: 'System Diagnostics',
       icon: '🔍',
       documents: [
-        { id: '1', title: 'Check Sheet', type: 'pdf', description: 'Comprehensive diagnostic checklist' },
+        { 
+          id: '1', 
+          title: 'Check Sheet', 
+          type: 'pdf', 
+          description: 'Comprehensive diagnostic checklist',
+          pdfFileName: 'Check Sheet.pdf'
+        },
         { id: '2', title: 'DTC Codes', type: 'link', route: '/dtc-page', description: 'Diagnostic trouble code reference' },
         { id: '3', title: 'DTC Codes History', type: 'link', route: '/dtc-history', description: 'Historical diagnostic data' },
       ]
@@ -62,10 +107,30 @@ const DocumentLibrary: React.FC = () => {
       label: 'Accessory Installation',
       icon: '🔧',
       documents: [
-        { id: '1', title: 'Installation Guide - Standard', type: 'pdf' },
-        { id: '2', title: 'Installation Guide - Premium', type: 'pdf' },
-        { id: '3', title: 'Mounting Hardware Specifications', type: 'doc' },
-        { id: '4', title: 'Compatibility Chart', type: 'pdf' },
+        { 
+          id: '1', 
+          title: 'Installation Guide - Standard', 
+          type: 'pdf',
+          pdfFileName: 'Installation Guide - Standard.pdf'
+        },
+        { 
+          id: '2', 
+          title: 'Installation Guide - Premium', 
+          type: 'pdf',
+          pdfFileName: 'Installation Guide - Premium.pdf'
+        },
+        { 
+          id: '3', 
+          title: 'Mounting Hardware Specifications', 
+          type: 'pdf',
+          pdfFileName: 'Mounting Hardware Specifications.pdf'
+        },
+        { 
+          id: '4', 
+          title: 'Compatibility Chart', 
+          type: 'pdf',
+          pdfFileName: 'Compatibility Chart.pdf'
+        },
       ]
     },
     {
@@ -73,10 +138,30 @@ const DocumentLibrary: React.FC = () => {
       label: 'Battery Maintenance',
       icon: '🔋',
       documents: [
-        { id: '1', title: 'Battery Care Instructions', type: 'pdf' },
-        { id: '2', title: 'Charging Best Practices', type: 'doc' },
-        { id: '3', title: 'Storage Guidelines', type: 'pdf' },
-        { id: '4', title: 'Troubleshooting Guide', type: 'doc' },
+        { 
+          id: '1', 
+          title: 'Battery Care Instructions', 
+          type: 'pdf',
+          pdfFileName: 'Battery Care Instructions.pdf'
+        },
+        { 
+          id: '2', 
+          title: 'Charging Best Practices', 
+          type: 'pdf',
+          pdfFileName: 'Charging Best Practices.pdf'
+        },
+        { 
+          id: '3', 
+          title: 'Storage Guidelines', 
+          type: 'pdf',
+          pdfFileName: 'Storage Guidelines.pdf'
+        },
+        { 
+          id: '4', 
+          title: 'Troubleshooting Guide', 
+          type: 'pdf',
+          pdfFileName: 'Troubleshooting Guide.pdf'
+        },
       ]
     },
     {
@@ -84,10 +169,30 @@ const DocumentLibrary: React.FC = () => {
       label: 'System Software',
       icon: '💻',
       documents: [
-        { id: '1', title: 'Software Update Guide', type: 'pdf' },
-        { id: '2', title: 'Configuration Manual', type: 'doc' },
-        { id: '3', title: 'API Documentation', type: 'pdf' },
-        { id: '4', title: 'Integration Specifications', type: 'doc' },
+        { 
+          id: '1', 
+          title: 'Software Update Guide', 
+          type: 'pdf',
+          pdfFileName: 'Software Update Guide.pdf'
+        },
+        { 
+          id: '2', 
+          title: 'Configuration Manual', 
+          type: 'pdf',
+          pdfFileName: 'Configuration Manual.pdf'
+        },
+        { 
+          id: '3', 
+          title: 'API Documentation', 
+          type: 'pdf',
+          pdfFileName: 'API Documentation.pdf'
+        },
+        { 
+          id: '4', 
+          title: 'Integration Specifications', 
+          type: 'pdf',
+          pdfFileName: 'Integration Specifications.pdf'
+        },
       ]
     },
     {
@@ -95,10 +200,30 @@ const DocumentLibrary: React.FC = () => {
       label: 'Vehicle Maintenance & Storage',
       icon: '🚗',
       documents: [
-        { id: '1', title: 'Maintenance Schedule', type: 'pdf' },
-        { id: '2', title: 'Storage Procedures', type: 'doc' },
-        { id: '3', title: 'Inspection Checklist', type: 'pdf' },
-        { id: '4', title: 'Seasonal Care Guide', type: 'doc' },
+        { 
+          id: '1', 
+          title: 'Maintenance Schedule', 
+          type: 'pdf',
+          pdfFileName: 'Maintenance Schedule.pdf'
+        },
+        { 
+          id: '2', 
+          title: 'Storage Procedures', 
+          type: 'pdf',
+          pdfFileName: 'Storage Procedures.pdf'
+        },
+        { 
+          id: '3', 
+          title: 'Inspection Checklist', 
+          type: 'pdf',
+          pdfFileName: 'Inspection Checklist.pdf'
+        },
+        { 
+          id: '4', 
+          title: 'Seasonal Care Guide', 
+          type: 'pdf',
+          pdfFileName: 'Seasonal Care Guide.pdf'
+        },
       ]
     },
     {
@@ -106,10 +231,30 @@ const DocumentLibrary: React.FC = () => {
       label: 'Service Manual',
       icon: '📖',
       documents: [
-        { id: '1', title: 'Complete Service Manual', type: 'pdf' },
-        { id: '2', title: 'Parts Catalog', type: 'doc' },
-        { id: '3', title: 'Repair Procedures', type: 'pdf' },
-        { id: '4', title: 'Technical Specifications', type: 'doc' },
+        { 
+          id: '1', 
+          title: 'Complete Service Manual', 
+          type: 'pdf',
+          pdfFileName: 'Complete Service Manual.pdf'
+        },
+        { 
+          id: '2', 
+          title: 'Parts Catalog', 
+          type: 'pdf',
+          pdfFileName: 'Parts Catalog.pdf'
+        },
+        { 
+          id: '3', 
+          title: 'Repair Procedures', 
+          type: 'pdf',
+          pdfFileName: 'Repair Procedures.pdf'
+        },
+        { 
+          id: '4', 
+          title: 'Technical Specifications', 
+          type: 'pdf',
+          pdfFileName: 'Technical Specifications.pdf'
+        },
       ]
     },
     {
@@ -117,10 +262,30 @@ const DocumentLibrary: React.FC = () => {
       label: 'Service Notices',
       icon: '📢',
       documents: [
-        { id: '1', title: 'Current Service Bulletins', type: 'pdf' },
-        { id: '2', title: 'Safety Recalls', type: 'doc' },
-        { id: '3', title: 'Technical Updates', type: 'pdf' },
-        { id: '4', title: 'Field Fixes', type: 'doc' },
+        { 
+          id: '1', 
+          title: 'Current Service Bulletins', 
+          type: 'pdf',
+          pdfFileName: 'Current Service Bulletins.pdf'
+        },
+        { 
+          id: '2', 
+          title: 'Safety Recalls', 
+          type: 'pdf',
+          pdfFileName: 'Safety Recalls.pdf'
+        },
+        { 
+          id: '3', 
+          title: 'Technical Updates', 
+          type: 'pdf',
+          pdfFileName: 'Technical Updates.pdf'
+        },
+        { 
+          id: '4', 
+          title: 'Field Fixes', 
+          type: 'pdf',
+          pdfFileName: 'Field Fixes.pdf'
+        },
       ]
     },
     {
@@ -128,10 +293,30 @@ const DocumentLibrary: React.FC = () => {
       label: 'Dealer Standards & Training',
       icon: '🎓',
       documents: [
-        { id: '1', title: 'Training Materials', type: 'pdf' },
-        { id: '2', title: 'Certification Requirements', type: 'doc' },
-        { id: '3', title: 'Quality Standards', type: 'pdf' },
-        { id: '4', title: 'Best Practices Guide', type: 'doc' },
+        { 
+          id: '1', 
+          title: 'Training Materials', 
+          type: 'pdf',
+          pdfFileName: 'Training Materials.pdf'
+        },
+        { 
+          id: '2', 
+          title: 'Certification Requirements', 
+          type: 'pdf',
+          pdfFileName: 'Certification Requirements.pdf'
+        },
+        { 
+          id: '3', 
+          title: 'Quality Standards', 
+          type: 'pdf',
+          pdfFileName: 'Quality Standards.pdf'
+        },
+        { 
+          id: '4', 
+          title: 'Best Practices Guide', 
+          type: 'pdf',
+          pdfFileName: 'Best Practices Guide.pdf'
+        },
       ]
     },
     {
@@ -139,10 +324,30 @@ const DocumentLibrary: React.FC = () => {
       label: 'Owner Resources',
       icon: '👤',
       documents: [
-        { id: '1', title: 'Owner Portal Guide', type: 'pdf' },
-        { id: '2', title: 'Mobile App Instructions', type: 'doc' },
-        { id: '3', title: 'FAQ Document', type: 'pdf' },
-        { id: '4', title: 'Contact Directory', type: 'doc' },
+        { 
+          id: '1', 
+          title: 'Owner Portal Guide', 
+          type: 'pdf',
+          pdfFileName: 'Owner Portal Guide.pdf'
+        },
+        { 
+          id: '2', 
+          title: 'Mobile App Instructions', 
+          type: 'pdf',
+          pdfFileName: 'Mobile App Instructions.pdf'
+        },
+        { 
+          id: '3', 
+          title: 'FAQ Document', 
+          type: 'pdf',
+          pdfFileName: 'FAQ Document.pdf'
+        },
+        { 
+          id: '4', 
+          title: 'Contact Directory', 
+          type: 'pdf',
+          pdfFileName: 'Contact Directory.pdf'
+        },
       ]
     },
     {
@@ -150,10 +355,30 @@ const DocumentLibrary: React.FC = () => {
       label: 'Breakdown Assistance',
       icon: '🆘',
       documents: [
-        { id: '1', title: 'Emergency Procedures', type: 'pdf' },
-        { id: '2', title: 'Roadside Assistance Guide', type: 'doc' },
-        { id: '3', title: 'Emergency Contacts', type: 'pdf' },
-        { id: '4', title: 'Self-Help Troubleshooting', type: 'doc' },
+        { 
+          id: '1', 
+          title: 'Emergency Procedures', 
+          type: 'pdf',
+          pdfFileName: 'Emergency Procedures.pdf'
+        },
+        { 
+          id: '2', 
+          title: 'Roadside Assistance Guide', 
+          type: 'pdf',
+          pdfFileName: 'Roadside Assistance Guide.pdf'
+        },
+        { 
+          id: '3', 
+          title: 'Emergency Contacts', 
+          type: 'pdf',
+          pdfFileName: 'Emergency Contacts.pdf'
+        },
+        { 
+          id: '4', 
+          title: 'Self-Help Troubleshooting', 
+          type: 'pdf',
+          pdfFileName: 'Self-Help Troubleshooting.pdf'
+        },
       ]
     },
     {
@@ -161,10 +386,30 @@ const DocumentLibrary: React.FC = () => {
       label: 'EV Resources',
       icon: '🔌',
       documents: [
-        { id: '1', title: 'EV Operating Manual', type: 'pdf' },
-        { id: '2', title: 'Charging Infrastructure', type: 'doc' },
-        { id: '3', title: 'Battery Technology Guide', type: 'pdf' },
-        { id: '4', title: 'EV Maintenance Schedule', type: 'doc' },
+        { 
+          id: '1', 
+          title: 'EV Operating Manual', 
+          type: 'pdf',
+          pdfFileName: 'EV Operating Manual.pdf'
+        },
+        { 
+          id: '2', 
+          title: 'Charging Infrastructure', 
+          type: 'pdf',
+          pdfFileName: 'Charging Infrastructure.pdf'
+        },
+        { 
+          id: '3', 
+          title: 'Battery Technology Guide', 
+          type: 'pdf',
+          pdfFileName: 'Battery Technology Guide.pdf'
+        },
+        { 
+          id: '4', 
+          title: 'EV Maintenance Schedule', 
+          type: 'pdf',
+          pdfFileName: 'EV Maintenance Schedule.pdf'
+        },
       ]
     },
     {
@@ -172,10 +417,30 @@ const DocumentLibrary: React.FC = () => {
       label: 'Bodywork & Paint',
       icon: '🎨',
       documents: [
-        { id: '1', title: 'Paint Code Reference', type: 'pdf' },
-        { id: '2', title: 'Body Repair Manual', type: 'doc' },
-        { id: '3', title: 'Paint Application Guide', type: 'pdf' },
-        { id: '4', title: 'Refinish Procedures', type: 'doc' },
+        { 
+          id: '1', 
+          title: 'Paint Code Reference', 
+          type: 'pdf',
+          pdfFileName: 'Paint Code Reference.pdf'
+        },
+        { 
+          id: '2', 
+          title: 'Body Repair Manual', 
+          type: 'pdf',
+          pdfFileName: 'Body Repair Manual.pdf'
+        },
+        { 
+          id: '3', 
+          title: 'Paint Application Guide', 
+          type: 'pdf',
+          pdfFileName: 'Paint Application Guide.pdf'
+        },
+        { 
+          id: '4', 
+          title: 'Refinish Procedures', 
+          type: 'pdf',
+          pdfFileName: 'Refinish Procedures.pdf'
+        },
       ]
     },
     {
@@ -183,10 +448,30 @@ const DocumentLibrary: React.FC = () => {
       label: 'Warranty Guide',
       icon: '🛡️',
       documents: [
-        { id: '1', title: 'Warranty Terms', type: 'pdf' },
-        { id: '2', title: 'Claims Process', type: 'doc' },
-        { id: '3', title: 'Coverage Details', type: 'pdf' },
-        { id: '4', title: 'Extended Warranty Options', type: 'doc' },
+        { 
+          id: '1', 
+          title: 'Warranty Terms', 
+          type: 'pdf',
+          pdfFileName: 'Warranty Terms.pdf'
+        },
+        { 
+          id: '2', 
+          title: 'Claims Process', 
+          type: 'pdf',
+          pdfFileName: 'Claims Process.pdf'
+        },
+        { 
+          id: '3', 
+          title: 'Coverage Details', 
+          type: 'pdf',
+          pdfFileName: 'Coverage Details.pdf'
+        },
+        { 
+          id: '4', 
+          title: 'Extended Warranty Options', 
+          type: 'pdf',
+          pdfFileName: 'Extended Warranty Options.pdf'
+        },
       ]
     },
   ];
@@ -198,8 +483,27 @@ const DocumentLibrary: React.FC = () => {
   const handleDocumentClick = (doc: DocumentItem) => {
     if (doc.route) {
       window.location.href = doc.route;
+    } else if (doc.type === 'pdf' && doc.pdfFileName) {
+      setSelectedPdf(`/Data/${doc.pdfFileName}`);
+      setPdfTitle(doc.title);
     } else {
       console.log(`Opening document: ${doc.title}`);
+    }
+  };
+
+  const handleClosePdf = () => {
+    setSelectedPdf(null);
+    setPdfTitle('');
+  };
+
+  const handleDownloadPdf = () => {
+    if (selectedPdf) {
+      const link = document.createElement('a');
+      link.href = selectedPdf;
+      link.download = selectedPdf.split('/').pop() || 'document.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     }
   };
 
@@ -287,6 +591,69 @@ const DocumentLibrary: React.FC = () => {
     return items;
   };
 
+  // Render PDF viewer as a separate full-screen view
+  if (selectedPdf) {
+    return (
+      <div className="h-screen bg-white flex flex-col overflow-hidden">
+        {/* Header */}
+        <header className="border-b border-slate-200 bg-white/80 backdrop-blur-md shadow-sm">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex h-24 items-center justify-between">
+              <div className="flex items-center gap-3 cursor-pointer"
+               onClick={() => window.location.href = '/home-page'}>
+                  <img src="/logo_inverted.png" alt="Company Logo" className="h-24 w-30" />
+              </div>
+              <button
+                onClick={handleLogout}
+                className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium rounded-md border border-slate-200 bg-white text-slate-900 hover:bg-slate-50 transition-all duration-200 shadow-sm"
+              >
+                <LogOut className="h-4 w-4" />
+                <span className="hidden sm:inline">Logout</span>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        {/* PDF Viewer */}
+        <div className="flex-1 flex flex-col overflow-hidden">
+          {/* PDF Header */}
+          <div className="flex items-center justify-between px-6 py-3 border-b border-slate-200 bg-gradient-to-r from-slate-50 to-blue-50">
+            <div className="flex items-center gap-4">
+              <h2 className="text-lg font-semibold text-slate-800">{pdfTitle}</h2>
+            </div>
+            
+            <div className="flex items-center gap-2">
+              <button
+                onClick={handleDownloadPdf}
+                className="p-2 rounded-lg hover:bg-blue-50 transition-colors"
+                title="Download PDF"
+              >
+                <Download className="h-5 w-5 text-blue-600" />
+              </button>
+              
+              <button
+                onClick={handleClosePdf}
+                className="p-2 rounded-lg hover:bg-red-50 transition-colors"
+                title="Close"
+              >
+                <X className="h-5 w-5 text-red-600" />
+              </button>
+            </div>
+          </div>
+
+          {/* PDF Content */}
+          <div className="flex-1 bg-slate-100">
+            <iframe
+              src={selectedPdf}
+              className="w-full h-full border-0"
+              title={pdfTitle}
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="h-screen bg-gradient-to-br from-indigo-50 via-white to-blue-50 flex flex-col overflow-hidden relative">
       {/* Animated Background Elements */}
@@ -297,26 +664,26 @@ const DocumentLibrary: React.FC = () => {
       </div>
 
       {/* Header */}
-      <header className="border-b border-slate-200 bg-white/80 backdrop-blur-md shadow-sm">
-              <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex h-24 items-center justify-between">
-                  <div className="flex items-center gap-3 cursor-pointer"
-                   onClick={() => window.location.href = '/home-page'}>
-                      <img src="/logo_inverted.png" alt="Company Logo" className="h-24 w-30" />
-                  </div>
-                  <button
-                    onClick={handleLogout}
-                    className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium rounded-md border border-slate-200 bg-white text-slate-900 hover:bg-slate-50 transition-all duration-200 shadow-sm"
-                  >
-                    <LogOut className="h-4 w-4" />
-                    <span className="hidden sm:inline">Logout</span>
-                  </button>
-                </div>
-              </div>
-            </header>
+      <header className="border-b border-slate-200 bg-white/80 backdrop-blur-md shadow-sm relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex h-24 items-center justify-between">
+            <div className="flex items-center gap-3 cursor-pointer"
+             onClick={() => window.location.href = '/home-page'}>
+                <img src="/logo_inverted.png" alt="Company Logo" className="h-24 w-30" />
+            </div>
+            <button
+              onClick={handleLogout}
+              className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium rounded-md border border-slate-200 bg-white text-slate-900 hover:bg-slate-50 transition-all duration-200 shadow-sm"
+            >
+              <LogOut className="h-4 w-4" />
+              <span className="hidden sm:inline">Logout</span>
+            </button>
+          </div>
+        </div>
+      </header>
 
       {/* Search Bar */}
-      <div className="bg-white/40 backdrop-blur-md border-b border-white/20 py-3 px-6 relative">
+      <div className="bg-white/40 backdrop-blur-md border-b border-white/20 py-3 px-6 relative z-10">
         <div className="container mx-auto max-w-3xl">
           <div className="relative group">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400 group-focus-within:text-blue-600 transition-colors" />
@@ -399,7 +766,7 @@ const DocumentLibrary: React.FC = () => {
                           <span>Updated recently</span>
                         </div>
                       </div>
-                      {!doc.isClickable || !doc.route && (
+                      {(!doc.isClickable && !doc.route) && (
                         <div className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity">
                           <Download className="h-4 w-4 text-blue-600" />
                         </div>
@@ -473,7 +840,7 @@ const DocumentLibrary: React.FC = () => {
                             <span>Updated recently</span>
                           </div>
                         </div>
-                        {!doc.isClickable || !doc.route && (
+                        {(!doc.isClickable && !doc.route) && (
                           <div className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity">
                             <Download className="h-4 w-4 text-blue-600" />
                           </div>
