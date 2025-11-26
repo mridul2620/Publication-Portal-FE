@@ -1,10 +1,35 @@
-import React, { useState } from 'react';
-import { LogOut, FileText, Download, ExternalLink, Search, ChevronLeft, ChevronRight, X } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from 'react';
+import { 
+  LogOut, 
+  FileText, 
+  Download, 
+  ExternalLink, 
+  Search, 
+  ChevronLeft, 
+  ChevronRight, 
+  X, 
+  Menu,
+  BookOpen,
+  Zap,
+  ScanSearch,
+  Wrench,
+  BatteryCharging,
+  Monitor,
+  Car,
+  BookMarked,
+  Bell,
+  GraduationCap,
+  User,
+  LifeBuoy,
+  Plug,
+  Paintbrush,
+  ShieldCheck
+} from 'lucide-react';
 
 interface TabData {
   id: string;
   label: string;
-  icon: string;
+  icon: React.ReactNode;
   documents: DocumentItem[];
 }
 
@@ -26,78 +51,61 @@ const DocumentLibrary: React.FC = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [selectedPdf, setSelectedPdf] = useState<string | null>(null);
   const [pdfTitle, setPdfTitle] = useState<string>('');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+  const [screenSize, setScreenSize] = useState<'mobile' | 'tablet' | 'desktop'>('desktop');
+
+  // SSR-safe screen size detection
+  useEffect(() => {
+    setIsMounted(true);
+    
+    const checkScreenSize = () => {
+      if (window.innerWidth < 640) {
+        setScreenSize('mobile');
+      } else if (window.innerWidth < 1024) {
+        setScreenSize('tablet');
+      } else {
+        setScreenSize('desktop');
+      }
+    };
+    
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
+  const isMobile = screenSize === 'mobile';
+  const isTablet = screenSize === 'tablet';
 
   const tabsData: TabData[] = [
     {
       id: 'user-reference-guides',
       label: 'User Reference Guides',
-      icon: '📚',
+      icon: <BookOpen className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
-        { 
-          id: '1', 
-          title: 'Quick Start Guide', 
-          type: 'pdf', 
-          description: 'Essential setup and operation instructions',
-          pdfFileName: 'Quick Setup Guide.pdf'
-        },
-        { 
-          id: '2', 
-          title: 'User Manual v2.1', 
-          type: 'pdf', 
-          description: 'Complete user documentation',
-          pdfFileName: 'User Manual.pdf'
-        },
-        { 
-          id: '3', 
-          title: 'Safety Guidelines', 
-          type: 'pdf', 
-          description: 'Important safety information',
-          pdfFileName: 'Safety Guidelines.pdf'
-        },
-        { 
-          id: '4', 
-          title: 'Feature Overview', 
-          type: 'pdf', 
-          description: 'Detailed feature explanations',
-          pdfFileName: 'Feature Overview.pdf'
-        },
+        { id: '1', title: 'Quick Start Guide', type: 'pdf', description: 'Essential setup and operation instructions', pdfFileName: 'Quick Setup Guide.pdf' },
+        { id: '2', title: 'User Manual v2.1', type: 'pdf', description: 'Complete user documentation', pdfFileName: 'User Manual.pdf' },
+        { id: '3', title: 'Safety Guidelines', type: 'pdf', description: 'Important safety information', pdfFileName: 'Safety Guidelines.pdf' },
+        { id: '4', title: 'Feature Overview', type: 'pdf', description: 'Detailed feature explanations', pdfFileName: 'Feature Overview.pdf' },
       ]
     },
     {
       id: 'electrical-diagrams',
       label: 'Electrical Diagrams',
-      icon: '⚡',
+      icon: <Zap className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
         { id: '1', title: 'Wiring Schematic', type: 'link', isClickable: true, route: '/circuit-page', description: 'Interactive wiring diagrams' },
         { id: '2', title: 'System Diagrams', type: 'link', isClickable: true, route: '/system-diagram', description: 'Detailed electrical system components diagrams' },
-        { 
-          id: '3', 
-          title: 'Fuse and Relay Listings', 
-          type: 'pdf', 
-          description: 'Complete fuse and relay information',
-          pdfFileName: 'Fuse and Relay Listings.pdf'
-        },
-        { 
-          id: '4', 
-          title: 'Splice Locations', 
-          type: 'pdf', 
-          description: 'Wire splice location diagrams',
-          pdfFileName: 'Splice Locations.pdf'
-        },
+        { id: '3', title: 'Connector Quick Reference Guide', type: 'pdf', description: 'Quick connector information', pdfFileName: 'cqrg.pdf' },
+        { id: '4', title: 'Splice Locations', type: 'pdf', description: 'Wire splice location diagrams', pdfFileName: 'splice-location.pdf' },
       ]
     },
     {
       id: 'system-diagnostics',
       label: 'System Diagnostics',
-      icon: '🔍',
+      icon: <ScanSearch className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
-        { 
-          id: '1', 
-          title: 'Check Sheet', 
-          type: 'pdf', 
-          description: 'Comprehensive diagnostic checklist',
-          pdfFileName: 'Check Sheet.pdf'
-        },
+        { id: '1', title: 'Check Sheet', type: 'pdf', description: 'Comprehensive diagnostic checklist', pdfFileName: 'Check Sheet.pdf' },
         { id: '2', title: 'DTC Codes', type: 'link', route: '/dtc-page', description: 'Diagnostic trouble code reference' },
         { id: '3', title: 'DTC Codes History', type: 'link', route: '/dtc-history', description: 'Historical diagnostic data' },
       ]
@@ -105,373 +113,133 @@ const DocumentLibrary: React.FC = () => {
     {
       id: 'accessory-installation',
       label: 'Accessory Installation',
-      icon: '🔧',
+      icon: <Wrench className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
-        { 
-          id: '1', 
-          title: 'Installation Guide - Standard', 
-          type: 'pdf',
-          pdfFileName: 'Installation Guide - Standard.pdf'
-        },
-        { 
-          id: '2', 
-          title: 'Installation Guide - Premium', 
-          type: 'pdf',
-          pdfFileName: 'Installation Guide - Premium.pdf'
-        },
-        { 
-          id: '3', 
-          title: 'Mounting Hardware Specifications', 
-          type: 'pdf',
-          pdfFileName: 'Mounting Hardware Specifications.pdf'
-        },
-        { 
-          id: '4', 
-          title: 'Compatibility Chart', 
-          type: 'pdf',
-          pdfFileName: 'Compatibility Chart.pdf'
-        },
+        { id: '1', title: 'Installation Guide - Standard', type: 'pdf', pdfFileName: 'Installation Guide - Standard.pdf' },
+        { id: '2', title: 'Installation Guide - Premium', type: 'pdf', pdfFileName: 'Installation Guide - Premium.pdf' },
+        { id: '3', title: 'Mounting Hardware Specifications', type: 'pdf', pdfFileName: 'Mounting Hardware Specifications.pdf' },
+        { id: '4', title: 'Compatibility Chart', type: 'pdf', pdfFileName: 'Compatibility Chart.pdf' },
       ]
     },
     {
       id: 'battery-maintenance',
       label: 'Battery Maintenance',
-      icon: '🔋',
+      icon: <BatteryCharging className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
-        { 
-          id: '1', 
-          title: 'Battery Care Instructions', 
-          type: 'pdf',
-          pdfFileName: 'Battery Care Instructions.pdf'
-        },
-        { 
-          id: '2', 
-          title: 'Charging Best Practices', 
-          type: 'pdf',
-          pdfFileName: 'Charging Best Practices.pdf'
-        },
-        { 
-          id: '3', 
-          title: 'Storage Guidelines', 
-          type: 'pdf',
-          pdfFileName: 'Storage Guidelines.pdf'
-        },
-        { 
-          id: '4', 
-          title: 'Troubleshooting Guide', 
-          type: 'pdf',
-          pdfFileName: 'Troubleshooting Guide.pdf'
-        },
+        { id: '1', title: 'Battery Care Instructions', type: 'pdf', pdfFileName: 'Battery Care Instructions.pdf' },
+        { id: '2', title: 'Charging Best Practices', type: 'pdf', pdfFileName: 'Charging Best Practices.pdf' },
+        { id: '3', title: 'Storage Guidelines', type: 'pdf', pdfFileName: 'Storage Guidelines.pdf' },
+        { id: '4', title: 'Troubleshooting Guide', type: 'pdf', pdfFileName: 'Troubleshooting Guide.pdf' },
       ]
     },
     {
       id: 'system-software',
       label: 'System Software',
-      icon: '💻',
+      icon: <Monitor className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
-        { 
-          id: '1', 
-          title: 'Software Update Guide', 
-          type: 'pdf',
-          pdfFileName: 'Software Update Guide.pdf'
-        },
-        { 
-          id: '2', 
-          title: 'Configuration Manual', 
-          type: 'pdf',
-          pdfFileName: 'Configuration Manual.pdf'
-        },
-        { 
-          id: '3', 
-          title: 'API Documentation', 
-          type: 'pdf',
-          pdfFileName: 'API Documentation.pdf'
-        },
-        { 
-          id: '4', 
-          title: 'Integration Specifications', 
-          type: 'pdf',
-          pdfFileName: 'Integration Specifications.pdf'
-        },
+        { id: '1', title: 'Software Update Guide', type: 'pdf', pdfFileName: 'Software Update Guide.pdf' },
+        { id: '2', title: 'Configuration Manual', type: 'pdf', pdfFileName: 'Configuration Manual.pdf' },
+        { id: '3', title: 'API Documentation', type: 'pdf', pdfFileName: 'API Documentation.pdf' },
+        { id: '4', title: 'Integration Specifications', type: 'pdf', pdfFileName: 'Integration Specifications.pdf' },
       ]
     },
     {
       id: 'vehicle-maintenance',
       label: 'Vehicle Maintenance & Storage',
-      icon: '🚗',
+      icon: <Car className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
-        { 
-          id: '1', 
-          title: 'Maintenance Schedule', 
-          type: 'pdf',
-          pdfFileName: 'Maintenance Schedule.pdf'
-        },
-        { 
-          id: '2', 
-          title: 'Storage Procedures', 
-          type: 'pdf',
-          pdfFileName: 'Storage Procedures.pdf'
-        },
-        { 
-          id: '3', 
-          title: 'Inspection Checklist', 
-          type: 'pdf',
-          pdfFileName: 'Inspection Checklist.pdf'
-        },
-        { 
-          id: '4', 
-          title: 'Seasonal Care Guide', 
-          type: 'pdf',
-          pdfFileName: 'Seasonal Care Guide.pdf'
-        },
+        { id: '1', title: 'Maintenance Schedule', type: 'pdf', pdfFileName: 'Maintenance Schedule.pdf' },
+        { id: '2', title: 'Storage Procedures', type: 'pdf', pdfFileName: 'Storage Procedures.pdf' },
+        { id: '3', title: 'Inspection Checklist', type: 'pdf', pdfFileName: 'Inspection Checklist.pdf' },
+        { id: '4', title: 'Seasonal Care Guide', type: 'pdf', pdfFileName: 'Seasonal Care Guide.pdf' },
       ]
     },
     {
       id: 'service-manual',
       label: 'Service Manual',
-      icon: '📖',
+      icon: <BookMarked className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
-        { 
-          id: '1', 
-          title: 'Complete Service Manual', 
-          type: 'pdf',
-          pdfFileName: 'Complete Service Manual.pdf'
-        },
-        { 
-          id: '2', 
-          title: 'Parts Catalog', 
-          type: 'pdf',
-          pdfFileName: 'Parts Catalog.pdf'
-        },
-        { 
-          id: '3', 
-          title: 'Repair Procedures', 
-          type: 'pdf',
-          pdfFileName: 'Repair Procedures.pdf'
-        },
-        { 
-          id: '4', 
-          title: 'Technical Specifications', 
-          type: 'pdf',
-          pdfFileName: 'Technical Specifications.pdf'
-        },
+        { id: '1', title: 'Complete Service Manual', type: 'pdf', pdfFileName: 'Complete Service Manual.pdf' },
+        { id: '2', title: 'Parts Catalog', type: 'pdf', pdfFileName: 'Parts Catalog.pdf' },
+        { id: '3', title: 'Repair Procedures', type: 'pdf', pdfFileName: 'Repair Procedures.pdf' },
+        { id: '4', title: 'Technical Specifications', type: 'pdf', pdfFileName: 'Technical Specifications.pdf' },
       ]
     },
     {
       id: 'service-notices',
       label: 'Service Notices',
-      icon: '📢',
+      icon: <Bell className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
-        { 
-          id: '1', 
-          title: 'Current Service Bulletins', 
-          type: 'pdf',
-          pdfFileName: 'Current Service Bulletins.pdf'
-        },
-        { 
-          id: '2', 
-          title: 'Safety Recalls', 
-          type: 'pdf',
-          pdfFileName: 'Safety Recalls.pdf'
-        },
-        { 
-          id: '3', 
-          title: 'Technical Updates', 
-          type: 'pdf',
-          pdfFileName: 'Technical Updates.pdf'
-        },
-        { 
-          id: '4', 
-          title: 'Field Fixes', 
-          type: 'pdf',
-          pdfFileName: 'Field Fixes.pdf'
-        },
+        { id: '1', title: 'Current Service Bulletins', type: 'pdf', pdfFileName: 'Current Service Bulletins.pdf' },
+        { id: '2', title: 'Safety Recalls', type: 'pdf', pdfFileName: 'Safety Recalls.pdf' },
+        { id: '3', title: 'Technical Updates', type: 'pdf', pdfFileName: 'Technical Updates.pdf' },
+        { id: '4', title: 'Field Fixes', type: 'pdf', pdfFileName: 'Field Fixes.pdf' },
       ]
     },
     {
       id: 'dealer-standards',
       label: 'Dealer Standards & Training',
-      icon: '🎓',
+      icon: <GraduationCap className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
-        { 
-          id: '1', 
-          title: 'Training Materials', 
-          type: 'pdf',
-          pdfFileName: 'Training Materials.pdf'
-        },
-        { 
-          id: '2', 
-          title: 'Certification Requirements', 
-          type: 'pdf',
-          pdfFileName: 'Certification Requirements.pdf'
-        },
-        { 
-          id: '3', 
-          title: 'Quality Standards', 
-          type: 'pdf',
-          pdfFileName: 'Quality Standards.pdf'
-        },
-        { 
-          id: '4', 
-          title: 'Best Practices Guide', 
-          type: 'pdf',
-          pdfFileName: 'Best Practices Guide.pdf'
-        },
+        { id: '1', title: 'Training Materials', type: 'pdf', pdfFileName: 'Training Materials.pdf' },
+        { id: '2', title: 'Certification Requirements', type: 'pdf', pdfFileName: 'Certification Requirements.pdf' },
+        { id: '3', title: 'Quality Standards', type: 'pdf', pdfFileName: 'Quality Standards.pdf' },
+        { id: '4', title: 'Best Practices Guide', type: 'pdf', pdfFileName: 'Best Practices Guide.pdf' },
       ]
     },
     {
       id: 'owner-resources',
       label: 'Owner Resources',
-      icon: '👤',
+      icon: <User className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
-        { 
-          id: '1', 
-          title: 'Owner Portal Guide', 
-          type: 'pdf',
-          pdfFileName: 'Owner Portal Guide.pdf'
-        },
-        { 
-          id: '2', 
-          title: 'Mobile App Instructions', 
-          type: 'pdf',
-          pdfFileName: 'Mobile App Instructions.pdf'
-        },
-        { 
-          id: '3', 
-          title: 'FAQ Document', 
-          type: 'pdf',
-          pdfFileName: 'FAQ Document.pdf'
-        },
-        { 
-          id: '4', 
-          title: 'Contact Directory', 
-          type: 'pdf',
-          pdfFileName: 'Contact Directory.pdf'
-        },
+        { id: '1', title: 'Owner Portal Guide', type: 'pdf', pdfFileName: 'Owner Portal Guide.pdf' },
+        { id: '2', title: 'Mobile App Instructions', type: 'pdf', pdfFileName: 'Mobile App Instructions.pdf' },
+        { id: '3', title: 'FAQ Document', type: 'pdf', pdfFileName: 'FAQ Document.pdf' },
+        { id: '4', title: 'Contact Directory', type: 'pdf', pdfFileName: 'Contact Directory.pdf' },
       ]
     },
     {
       id: 'breakdown-assistance',
       label: 'Breakdown Assistance',
-      icon: '🆘',
+      icon: <LifeBuoy className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
-        { 
-          id: '1', 
-          title: 'Emergency Procedures', 
-          type: 'pdf',
-          pdfFileName: 'Emergency Procedures.pdf'
-        },
-        { 
-          id: '2', 
-          title: 'Roadside Assistance Guide', 
-          type: 'pdf',
-          pdfFileName: 'Roadside Assistance Guide.pdf'
-        },
-        { 
-          id: '3', 
-          title: 'Emergency Contacts', 
-          type: 'pdf',
-          pdfFileName: 'Emergency Contacts.pdf'
-        },
-        { 
-          id: '4', 
-          title: 'Self-Help Troubleshooting', 
-          type: 'pdf',
-          pdfFileName: 'Self-Help Troubleshooting.pdf'
-        },
+        { id: '1', title: 'Emergency Procedures', type: 'pdf', pdfFileName: 'Emergency Procedures.pdf' },
+        { id: '2', title: 'Roadside Assistance Guide', type: 'pdf', pdfFileName: 'Roadside Assistance Guide.pdf' },
+        { id: '3', title: 'Emergency Contacts', type: 'pdf', pdfFileName: 'Emergency Contacts.pdf' },
+        { id: '4', title: 'Self-Help Troubleshooting', type: 'pdf', pdfFileName: 'Self-Help Troubleshooting.pdf' },
       ]
     },
     {
       id: 'ev-resources',
       label: 'EV Resources',
-      icon: '🔌',
+      icon: <Plug className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
-        { 
-          id: '1', 
-          title: 'EV Operating Manual', 
-          type: 'pdf',
-          pdfFileName: 'EV Operating Manual.pdf'
-        },
-        { 
-          id: '2', 
-          title: 'Charging Infrastructure', 
-          type: 'pdf',
-          pdfFileName: 'Charging Infrastructure.pdf'
-        },
-        { 
-          id: '3', 
-          title: 'Battery Technology Guide', 
-          type: 'pdf',
-          pdfFileName: 'Battery Technology Guide.pdf'
-        },
-        { 
-          id: '4', 
-          title: 'EV Maintenance Schedule', 
-          type: 'pdf',
-          pdfFileName: 'EV Maintenance Schedule.pdf'
-        },
+        { id: '1', title: 'EV Operating Manual', type: 'pdf', pdfFileName: 'EV Operating Manual.pdf' },
+        { id: '2', title: 'Charging Infrastructure', type: 'pdf', pdfFileName: 'Charging Infrastructure.pdf' },
+        { id: '3', title: 'Battery Technology Guide', type: 'pdf', pdfFileName: 'Battery Technology Guide.pdf' },
+        { id: '4', title: 'EV Maintenance Schedule', type: 'pdf', pdfFileName: 'EV Maintenance Schedule.pdf' },
       ]
     },
     {
       id: 'bodywork-paint',
       label: 'Bodywork & Paint',
-      icon: '🎨',
+      icon: <Paintbrush className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
-        { 
-          id: '1', 
-          title: 'Paint Code Reference', 
-          type: 'pdf',
-          pdfFileName: 'Paint Code Reference.pdf'
-        },
-        { 
-          id: '2', 
-          title: 'Body Repair Manual', 
-          type: 'pdf',
-          pdfFileName: 'Body Repair Manual.pdf'
-        },
-        { 
-          id: '3', 
-          title: 'Paint Application Guide', 
-          type: 'pdf',
-          pdfFileName: 'Paint Application Guide.pdf'
-        },
-        { 
-          id: '4', 
-          title: 'Refinish Procedures', 
-          type: 'pdf',
-          pdfFileName: 'Refinish Procedures.pdf'
-        },
+        { id: '1', title: 'Paint Code Reference', type: 'pdf', pdfFileName: 'Paint Code Reference.pdf' },
+        { id: '2', title: 'Body Repair Manual', type: 'pdf', pdfFileName: 'Body Repair Manual.pdf' },
+        { id: '3', title: 'Paint Application Guide', type: 'pdf', pdfFileName: 'Paint Application Guide.pdf' },
+        { id: '4', title: 'Refinish Procedures', type: 'pdf', pdfFileName: 'Refinish Procedures.pdf' },
       ]
     },
     {
       id: 'warranty-guide',
       label: 'Warranty Guide',
-      icon: '🛡️',
+      icon: <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6" />,
       documents: [
-        { 
-          id: '1', 
-          title: 'Warranty Terms', 
-          type: 'pdf',
-          pdfFileName: 'Warranty Terms.pdf'
-        },
-        { 
-          id: '2', 
-          title: 'Claims Process', 
-          type: 'pdf',
-          pdfFileName: 'Claims Process.pdf'
-        },
-        { 
-          id: '3', 
-          title: 'Coverage Details', 
-          type: 'pdf',
-          pdfFileName: 'Coverage Details.pdf'
-        },
-        { 
-          id: '4', 
-          title: 'Extended Warranty Options', 
-          type: 'pdf',
-          pdfFileName: 'Extended Warranty Options.pdf'
-        },
+        { id: '1', title: 'Warranty Terms', type: 'pdf', pdfFileName: 'Warranty Terms.pdf' },
+        { id: '2', title: 'Claims Process', type: 'pdf', pdfFileName: 'Claims Process.pdf' },
+        { id: '3', title: 'Coverage Details', type: 'pdf', pdfFileName: 'Coverage Details.pdf' },
+        { id: '4', title: 'Extended Warranty Options', type: 'pdf', pdfFileName: 'Extended Warranty Options.pdf' },
       ]
     },
   ];
@@ -518,15 +286,16 @@ const DocumentLibrary: React.FC = () => {
     }
   };
 
-  const handleTabChange = (tabId: string) => {
+  const handleTabChange = useCallback((tabId: string) => {
     if (tabId === activeTab || isTransitioning) return;
     
     setIsTransitioning(true);
     setActiveTab(tabId);
+    setIsMobileMenuOpen(false);
     setTimeout(() => {
       setIsTransitioning(false);
     }, 400);
-  };
+  }, [activeTab, isTransitioning]);
 
   const navigateCarousel = (direction: 'prev' | 'next') => {
     if (isTransitioning) return;
@@ -581,8 +350,11 @@ const DocumentLibrary: React.FC = () => {
   const activeIndex = tabsData.findIndex(tab => tab.id === activeTab);
 
   const getCarouselItems = () => {
+    const visibleCount = isMobile ? 1 : isTablet ? 3 : 5;
+    const sideItems = Math.floor(visibleCount / 2);
     const items = [];
-    for (let i = -2; i <= 2; i++) {
+    
+    for (let i = -sideItems; i <= sideItems; i++) {
       let index = activeIndex + i;
       if (index < 0) index = tabsData.length + index;
       if (index >= tabsData.length) index = index - tabsData.length;
@@ -591,24 +363,30 @@ const DocumentLibrary: React.FC = () => {
     return items;
   };
 
-  // Render PDF viewer as a separate full-screen view
+  // PDF Viewer - Full Screen
   if (selectedPdf) {
     return (
       <div className="h-screen bg-white flex flex-col overflow-hidden">
         {/* Header */}
         <header className="border-b border-slate-200 bg-white/80 backdrop-blur-md shadow-sm">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex h-24 items-center justify-between">
-              <div className="flex items-center gap-3 cursor-pointer"
-               onClick={() => window.location.href = '/home-page'}>
-                  <img src="/logo_inverted.png" alt="Company Logo" className="h-24 w-30" />
+          <div className="container mx-auto px-3 sm:px-4 lg:px-8">
+            <div className="flex h-16 sm:h-20 lg:h-24 items-center justify-between">
+              <div 
+                className="flex items-center gap-2 sm:gap-3 cursor-pointer"
+                onClick={() => window.location.href = '/home-page'}
+              >
+                <img 
+                  src="/logo_inverted.png" 
+                  alt="Company Logo" 
+                  className="h-12 sm:h-16 lg:h-24 w-auto" 
+                />
               </div>
               <button
                 onClick={handleLogout}
-                className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium rounded-md border border-slate-200 bg-white text-slate-900 hover:bg-slate-50 transition-all duration-200 shadow-sm"
+                className="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium rounded-md border border-slate-200 bg-white text-slate-900 hover:bg-slate-50 transition-all duration-200 shadow-sm"
               >
-                <LogOut className="h-4 w-4" />
-                <span className="hidden sm:inline">Logout</span>
+                <LogOut className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                <span className="hidden xs:inline">Logout</span>
               </button>
             </div>
           </div>
@@ -617,26 +395,28 @@ const DocumentLibrary: React.FC = () => {
         {/* PDF Viewer */}
         <div className="flex-1 flex flex-col overflow-hidden">
           {/* PDF Header */}
-          <div className="flex items-center justify-between px-6 py-3 border-b border-slate-200 bg-gradient-to-r from-slate-50 to-blue-50">
-            <div className="flex items-center gap-4">
-              <h2 className="text-lg font-semibold text-slate-800">{pdfTitle}</h2>
+          <div className="flex items-center justify-between px-3 sm:px-6 py-2 sm:py-3 border-b border-slate-200 bg-gradient-to-r from-slate-50 to-blue-50">
+            <div className="flex items-center gap-2 sm:gap-4 min-w-0 flex-1">
+              <h2 className="text-sm sm:text-base lg:text-lg font-semibold text-slate-800 truncate">
+                {pdfTitle}
+              </h2>
             </div>
             
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
               <button
                 onClick={handleDownloadPdf}
-                className="p-2 rounded-lg hover:bg-blue-50 transition-colors"
+                className="p-1.5 sm:p-2 rounded-lg hover:bg-blue-50 transition-colors"
                 title="Download PDF"
               >
-                <Download className="h-5 w-5 text-blue-600" />
+                <Download className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
               </button>
               
               <button
                 onClick={handleClosePdf}
-                className="p-2 rounded-lg hover:bg-red-50 transition-colors"
+                className="p-1.5 sm:p-2 rounded-lg hover:bg-red-50 transition-colors"
                 title="Close"
               >
-                <X className="h-5 w-5 text-red-600" />
+                <X className="h-4 w-4 sm:h-5 sm:w-5 text-red-600" />
               </button>
             </div>
           </div>
@@ -658,53 +438,99 @@ const DocumentLibrary: React.FC = () => {
     <div className="h-screen bg-gradient-to-br from-indigo-50 via-white to-blue-50 flex flex-col overflow-hidden relative">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 -left-4 w-96 h-96 bg-gradient-to-br from-blue-200/20 to-indigo-200/20 rounded-full blur-3xl animate-blob"></div>
-        <div className="absolute top-0 -right-4 w-96 h-96 bg-gradient-to-br from-purple-200/20 to-pink-200/20 rounded-full blur-3xl animate-blob-delayed"></div>
-        <div className="absolute -bottom-8 left-1/2 w-96 h-96 bg-gradient-to-br from-cyan-200/20 to-blue-200/20 rounded-full blur-3xl animate-blob-more-delayed"></div>
+        <div className="absolute top-0 -left-4 w-48 sm:w-72 lg:w-96 h-48 sm:h-72 lg:h-96 bg-gradient-to-br from-blue-200/20 to-indigo-200/20 rounded-full blur-3xl animate-blob" />
+        <div className="absolute top-0 -right-4 w-48 sm:w-72 lg:w-96 h-48 sm:h-72 lg:h-96 bg-gradient-to-br from-purple-200/20 to-pink-200/20 rounded-full blur-3xl animate-blob-delayed" />
+        <div className="absolute -bottom-8 left-1/2 w-48 sm:w-72 lg:w-96 h-48 sm:h-72 lg:h-96 bg-gradient-to-br from-cyan-200/20 to-blue-200/20 rounded-full blur-3xl animate-blob-more-delayed" />
       </div>
 
       {/* Header */}
-      <header className="border-b border-slate-200 bg-white/80 backdrop-blur-md shadow-sm relative z-10">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex h-24 items-center justify-between">
-            <div className="flex items-center gap-3 cursor-pointer"
-             onClick={() => window.location.href = '/home-page'}>
-                <img src="/logo_inverted.png" alt="Company Logo" className="h-24 w-30" />
-            </div>
-            <button
-              onClick={handleLogout}
-              className="inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium rounded-md border border-slate-200 bg-white text-slate-900 hover:bg-slate-50 transition-all duration-200 shadow-sm"
+      <header className="border-b border-slate-200 bg-white/80 backdrop-blur-md shadow-sm relative z-20">
+        <div className="container mx-auto px-3 sm:px-4 lg:px-8">
+          <div className="flex h-14 sm:h-20 lg:h-24 items-center justify-between">
+            <div 
+              className="flex items-center gap-2 sm:gap-3 cursor-pointer"
+              onClick={() => window.location.href = '/home-page'}
             >
-              <LogOut className="h-4 w-4" />
-              <span className="hidden sm:inline">Logout</span>
-            </button>
+              <img 
+                src="/logo_inverted.png" 
+                alt="Company Logo" 
+                className="h-10 sm:h-16 lg:h-24 w-auto" 
+              />
+            </div>
+            
+            <div className="flex items-center gap-2 sm:gap-3">
+              {/* Mobile Menu Button */}
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="lg:hidden inline-flex items-center justify-center p-2 rounded-md border border-slate-200 bg-white text-slate-900 hover:bg-slate-50 transition-all duration-200 shadow-sm"
+              >
+                <Menu className="h-5 w-5" />
+              </button>
+              
+              <button
+                onClick={handleLogout}
+                className="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium rounded-md border border-slate-200 bg-white text-slate-900 hover:bg-slate-50 transition-all duration-200 shadow-sm"
+              >
+                <LogOut className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                <span className="hidden sm:inline">Logout</span>
+              </button>
+            </div>
           </div>
         </div>
       </header>
 
+      {/* Mobile Category Menu */}
+      {isMobileMenuOpen && (
+        <div className="lg:hidden absolute top-14 sm:top-20 left-0 right-0 z-30 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-lg max-h-[60vh] overflow-y-auto">
+          <div className="p-3 sm:p-4">
+            <h3 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2 px-2">
+              Categories
+            </h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              {tabsData.map((tab) => (
+                <button
+                  key={tab.id}
+                  onClick={() => handleTabChange(tab.id)}
+                  className={`flex items-center gap-2 px-3 py-2.5 rounded-lg text-left transition-all duration-200 ${
+                    activeTab === tab.id
+                      ? 'bg-cyan-500 text-white shadow-md'
+                      : 'bg-slate-50 text-slate-700 hover:bg-slate-100'
+                  }`}
+                >
+                  <span className={`flex-shrink-0 ${activeTab === tab.id ? 'text-white' : 'text-cyan-600'}`}>
+                    {tab.icon}
+                  </span>
+                  <span className="text-xs font-medium truncate">{tab.label}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Search Bar */}
-      <div className="bg-white/40 backdrop-blur-md border-b border-white/20 py-3 px-6 relative z-10">
+      <div className="bg-white/40 backdrop-blur-md border-b border-white/20 py-2 sm:py-3 px-3 sm:px-6 relative z-10">
         <div className="container mx-auto max-w-3xl">
           <div className="relative group">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400 group-focus-within:text-blue-600 transition-colors" />
+            <Search className="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 h-4 w-4 sm:h-5 sm:w-5 text-slate-400 group-focus-within:text-blue-600 transition-colors" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => handleSearch(e.target.value)}
               placeholder="Search across all documents, manuals, and categories..."
-              className="w-full pl-12 pr-12 py-2.5 rounded-xl border-2 border-slate-200/50 focus:border-blue-400 focus:ring-4 focus:ring-blue-100/50 outline-none transition-all duration-200 text-slate-700 placeholder-slate-400 bg-white/80 backdrop-blur-sm shadow-sm hover:shadow-md"
+              className="w-full pl-10 sm:pl-12 pr-10 sm:pr-12 py-2 sm:py-2.5 rounded-lg sm:rounded-xl border-2 border-slate-200/50 focus:border-blue-400 focus:ring-4 focus:ring-blue-100/50 outline-none transition-all duration-200 text-sm sm:text-base text-slate-700 placeholder-slate-400 bg-white/80 backdrop-blur-sm shadow-sm hover:shadow-md"
             />
             {searchQuery && (
               <button
                 onClick={clearSearch}
-                className="absolute right-3 top-1/2 -translate-y-1/2 p-1.5 hover:bg-slate-100 rounded-full transition-colors"
+                className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 p-1 sm:p-1.5 hover:bg-slate-100 rounded-full transition-colors"
               >
-                <X className="h-4 w-4 text-slate-400" />
+                <X className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-slate-400" />
               </button>
             )}
           </div>
           {isSearching && (
-            <p className="mt-2 text-sm text-slate-600 animate-fadeIn">
+            <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm text-slate-600 animate-fadeIn">
               Found <span className="font-semibold text-blue-600">{searchResults.length}</span> result{searchResults.length !== 1 ? 's' : ''}
             </p>
           )}
@@ -712,62 +538,70 @@ const DocumentLibrary: React.FC = () => {
       </div>
 
       {/* Main Content */}
-      <main className="flex-1 flex flex-col min-h-0 overflow-hidden relative pb-52">
+      <main className="flex-1 flex flex-col min-h-0 overflow-hidden relative pb-28 sm:pb-32 lg:pb-36">
         {!isSearching ? (
-          <div className="flex-1 overflow-y-auto px-6 py-6">
+          <div className="flex-1 overflow-y-auto px-3 sm:px-6 py-4 sm:py-6">
             <div className="container mx-auto max-w-7xl">
-              <div className="mb-4">
+              {/* Category Header */}
+              <div className="mb-3 sm:mb-4">
                 <div className={`transition-all duration-300 ease-out ${isTransitioning ? 'opacity-0 transform -translate-y-2' : 'opacity-100 transform translate-y-0'}`}>
-                  <h2 className="text-3xl font-bold bg-gradient-to-r from-slate-800 via-blue-800 to-indigo-800 bg-clip-text text-transparent mb-1">
-                    {activeTabData?.label}
-                  </h2>
-                  <p className="text-slate-600 text-sm">
+                  <div className="flex items-center gap-2 sm:gap-3 mb-1">
+                    <span className="text-cyan-600">
+                      {activeTabData?.icon}
+                    </span>
+                    <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-slate-800 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
+                      {activeTabData?.label}
+                    </h2>
+                  </div>
+                  <p className="text-slate-600 text-xs sm:text-sm ml-7 sm:ml-9">
                     {activeTabData?.documents.length} document{activeTabData?.documents.length !== 1 ? 's' : ''} available
                   </p>
                 </div>
               </div>
 
-              <div className={`grid grid-cols-1 md:grid-cols-2 gap-3 transition-all duration-300 ease-out ${isTransitioning ? 'opacity-0 transform translate-y-2' : 'opacity-100 transform translate-y-0'}`}>
+              {/* Document Grid */}
+              <div className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-2 sm:gap-3 transition-all duration-300 ease-out ${isTransitioning ? 'opacity-0 transform translate-y-2' : 'opacity-100 transform translate-y-0'}`}>
                 {activeTabData?.documents.map((doc, index) => (
                   <div
                     key={doc.id}
                     onClick={() => handleDocumentClick(doc)}
-                    className="group bg-white/60 backdrop-blur-sm rounded-xl border border-slate-200/50 p-4 transition-all duration-300 cursor-pointer hover:bg-white hover:border-blue-300 hover:shadow-lg hover:-translate-y-0.5"
+                    className="group bg-white/60 backdrop-blur-sm rounded-lg sm:rounded-xl border border-slate-200/50 p-3 sm:p-4 transition-all duration-300 cursor-pointer hover:bg-white hover:border-blue-300 hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98]"
                     style={{ 
                       animationDelay: `${index * 30}ms`,
                       animation: isTransitioning ? 'none' : 'slideInUp 0.3s ease-out forwards'
                     }}
                   >
-                    <div className="flex items-start gap-3">
-                      <div className={`flex-shrink-0 p-2.5 rounded-lg transition-all duration-300 ${
-                        doc.isClickable  || doc.route
+                    <div className="flex items-start gap-2.5 sm:gap-3">
+                      <div className={`flex-shrink-0 p-2 sm:p-2.5 rounded-lg transition-all duration-300 ${
+                        doc.isClickable || doc.route
                           ? 'bg-gradient-to-br from-blue-100 to-indigo-100 text-blue-600 group-hover:scale-110'
                           : 'bg-gradient-to-br from-slate-100 to-slate-50 text-slate-600 group-hover:scale-110'
                       }`}>
                         {getDocumentIcon(doc.type)}
                       </div>
                       <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2 mb-0.5">
-                          <h4 className="font-semibold text-slate-900 text-base group-hover:text-blue-700 transition-colors">
+                        <div className="flex items-center gap-1.5 sm:gap-2 mb-0.5">
+                          <h4 className="font-semibold text-slate-900 text-sm sm:text-base group-hover:text-blue-700 transition-colors truncate">
                             {doc.title}
                           </h4>
                           {doc.isClickable && (
-                            <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-700">
+                            <span className="hidden xs:inline-flex items-center px-1.5 sm:px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-medium bg-blue-100 text-blue-700 flex-shrink-0">
                               Interactive
                             </span>
                           )}
                         </div>
                         {doc.description && (
-                          <p className="text-slate-600 text-sm mb-1.5 line-clamp-1">{doc.description}</p>
+                          <p className="text-slate-600 text-xs sm:text-sm mb-1 sm:mb-1.5 line-clamp-1">{doc.description}</p>
                         )}
-                        <div className="flex items-center gap-2 text-xs text-slate-500">
+                        <div className="flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs text-slate-500">
                           <span className="capitalize font-medium">{doc.type || 'document'}</span>
                           <span>•</span>
-                          <span>Updated recently</span>
+                          <span className="hidden xs:inline">Updated recently</span>
+                          <span className="xs:hidden">Recent</span>
                         </div>
                       </div>
                       {(!doc.isClickable && !doc.route) && (
-                        <div className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:block">
                           <Download className="h-4 w-4 text-blue-600" />
                         </div>
                       )}
@@ -778,37 +612,38 @@ const DocumentLibrary: React.FC = () => {
             </div>
           </div>
         ) : (
-          <div className="flex-1 overflow-y-auto px-6 py-6">
+          /* Search Results */
+          <div className="flex-1 overflow-y-auto px-3 sm:px-6 py-4 sm:py-6">
             <div className="container mx-auto max-w-7xl">
-              <div className="mb-4">
-                <h2 className="text-2xl font-bold text-slate-900 mb-1">
+              <div className="mb-3 sm:mb-4">
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-slate-900 mb-1">
                   Search Results
                 </h2>
-                <p className="text-slate-600 text-sm">
+                <p className="text-slate-600 text-xs sm:text-sm">
                   Showing {searchResults.length} result{searchResults.length !== 1 ? 's' : ''} for "{searchQuery}"
                 </p>
               </div>
 
               {searchResults.length === 0 ? (
-                <div className="text-center py-16 animate-fadeIn">
-                  <div className="text-6xl mb-4">🔍</div>
-                  <h3 className="text-xl font-semibold text-slate-700 mb-2">No results found</h3>
-                  <p className="text-slate-500">Try adjusting your search terms</p>
+                <div className="text-center py-12 sm:py-16 animate-fadeIn">
+                  <div className="text-4xl sm:text-6xl mb-3 sm:mb-4">🔍</div>
+                  <h3 className="text-lg sm:text-xl font-semibold text-slate-700 mb-2">No results found</h3>
+                  <p className="text-slate-500 text-sm">Try adjusting your search terms</p>
                 </div>
               ) : (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-2 sm:gap-3">
                   {searchResults.map((doc, index) => (
                     <div
                       key={`${doc.category}-${doc.id}`}
                       onClick={() => handleDocumentClick(doc)}
-                      className="group bg-white/60 backdrop-blur-sm rounded-xl border border-slate-200/50 p-4 transition-all duration-300 cursor-pointer hover:bg-white hover:border-blue-300 hover:shadow-lg hover:-translate-y-0.5"
+                      className="group bg-white/60 backdrop-blur-sm rounded-lg sm:rounded-xl border border-slate-200/50 p-3 sm:p-4 transition-all duration-300 cursor-pointer hover:bg-white hover:border-blue-300 hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98]"
                       style={{ 
                         animationDelay: `${index * 40}ms`,
                         animation: 'slideInUp 0.4s ease-out forwards'
                       }}
                     >
-                      <div className="flex items-start gap-3">
-                        <div className={`flex-shrink-0 p-2.5 rounded-lg transition-all duration-300 ${
+                      <div className="flex items-start gap-2.5 sm:gap-3">
+                        <div className={`flex-shrink-0 p-2 sm:p-2.5 rounded-lg transition-all duration-300 ${
                           doc.isClickable || doc.route
                             ? 'bg-gradient-to-br from-blue-100 to-indigo-100 text-blue-600 group-hover:scale-110'
                             : 'bg-gradient-to-br from-slate-100 to-slate-50 text-slate-600 group-hover:scale-110'
@@ -816,32 +651,33 @@ const DocumentLibrary: React.FC = () => {
                           {getDocumentIcon(doc.type)}
                         </div>
                         <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2 mb-1">
-                            <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+                          <div className="flex items-center gap-1.5 sm:gap-2 mb-1">
+                            <span className="text-[10px] sm:text-xs font-medium px-1.5 sm:px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200 truncate max-w-[120px] sm:max-w-none">
                               {doc.category}
                             </span>
                           </div>
-                          <div className="flex items-center gap-2 mb-0.5">
-                            <h4 className="font-semibold text-slate-900 text-base group-hover:text-blue-700 transition-colors">
+                          <div className="flex items-center gap-1.5 sm:gap-2 mb-0.5">
+                            <h4 className="font-semibold text-slate-900 text-sm sm:text-base group-hover:text-blue-700 transition-colors truncate">
                               {doc.title}
                             </h4>
                             {doc.isClickable && (
-                              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-700">
+                              <span className="hidden sm:inline-flex items-center px-1.5 sm:px-2 py-0.5 rounded-full text-[10px] sm:text-xs font-medium bg-blue-100 text-blue-700 flex-shrink-0">
                                 Interactive
                               </span>
                             )}
                           </div>
                           {doc.description && (
-                            <p className="text-slate-600 text-sm mb-1.5 line-clamp-1">{doc.description}</p>
+                            <p className="text-slate-600 text-xs sm:text-sm mb-1 sm:mb-1.5 line-clamp-1">{doc.description}</p>
                           )}
-                          <div className="flex items-center gap-2 text-xs text-slate-500">
+                          <div className="flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs text-slate-500">
                             <span className="capitalize font-medium">{doc.type || 'document'}</span>
                             <span>•</span>
-                            <span>Updated recently</span>
+                            <span className="hidden xs:inline">Updated recently</span>
+                            <span className="xs:hidden">Recent</span>
                           </div>
                         </div>
                         {(!doc.isClickable && !doc.route) && (
-                          <div className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                          <div className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity hidden sm:block">
                             <Download className="h-4 w-4 text-blue-600" />
                           </div>
                         )}
@@ -854,101 +690,122 @@ const DocumentLibrary: React.FC = () => {
           </div>
         )}
 
-        {/* Bottom Carousel - Card Style with Overlapping */}
-        {!isSearching && (
-          <div className="absolute bottom-0 left-0 right-0 h-48 pointer-events-none flex items-center justify-center">
-            <div className="relative flex items-center pointer-events-auto perspective-1000 gap-6">
+        {/* Bottom Carousel - Compact */}
+        {!isSearching && isMounted && (
+          <div className="absolute bottom-0 left-0 right-0 h-28 sm:h-32 lg:h-36 pointer-events-none flex items-center justify-center bg-gradient-to-t from-white/80 to-transparent">
+            <div className="relative flex items-center pointer-events-auto gap-2 sm:gap-3 lg:gap-4 px-2 sm:px-4">
               {/* Navigation Arrow - Left */}
               <button
                 onClick={() => navigateCarousel('prev')}
                 disabled={isTransitioning}
-                className="z-30 bg-white shadow-lg rounded-full p-3 hover:bg-slate-50 hover:shadow-xl hover:scale-110 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex-shrink-0"
+                className="z-30 bg-white shadow-md rounded-full p-1.5 sm:p-2 hover:bg-slate-50 hover:shadow-lg hover:scale-110 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex-shrink-0"
               >
-                <ChevronLeft className="h-6 w-6 text-teal-700" />
+                <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5 text-teal-700" />
               </button>
 
-              {/* Carousel Items - Overlapping */}
-              <div className="flex items-end justify-center pb-8 relative" style={{ width: '900px', height: '180px' }}>
+              {/* Carousel Items - Compact */}
+              <div 
+                className="flex items-end justify-center pb-2 sm:pb-3 relative"
+                style={{ 
+                  width: isMobile ? '200px' : isTablet ? '460px' : '780px',
+                  height: isMobile ? '80px' : isTablet ? '100px' : '115px'
+                }}
+              >
                 {getCarouselItems().map((item) => {
                   const isActive = item.position === 0;
                   const isAdjacent = Math.abs(item.position) === 1;
-                  const isFar = Math.abs(item.position) === 2;
                   
-                  // Calculate overlapping positions
+                  // Calculate positions based on screen size - more compact
                   let xOffset = 0;
-                  if (item.position === -2) xOffset = 0;
-                  else if (item.position === -1) xOffset = 140;
-                  else if (item.position === 0) xOffset = 320;
-                  else if (item.position === 1) xOffset = 500;
-                  else if (item.position === 2) xOffset = 640;
+                  if (isMobile) {
+                    xOffset = item.position === 0 ? 30 : (item.position < 0 ? -140 : 200);
+                  } else if (isTablet) {
+                    if (item.position === -1) xOffset = 0;
+                    else if (item.position === 0) xOffset = 145;
+                    else if (item.position === 1) xOffset = 290;
+                    else xOffset = item.position < 0 ? -100 : 450;
+                  } else {
+                    // Desktop: Show 5 cards - wider spacing for full text
+                    if (item.position === -2) xOffset = 0;
+                    else if (item.position === -1) xOffset = 135;
+                    else if (item.position === 0) xOffset = 305;
+                    else if (item.position === 1) xOffset = 475;
+                    else if (item.position === 2) xOffset = 610;
+                  }
+
+                  // Wider cards to fit text - increased height
+                  const cardWidth = isMobile ? 'w-32' : isTablet ? 'w-36' : 'w-44';
+                  const cardHeight = isMobile ? 'h-16' : isTablet ? 'h-20' : 'h-24';
+                  
+                  // Hide far items on smaller screens
+                  if (isMobile && Math.abs(item.position) > 0) return null;
+                  if (isTablet && Math.abs(item.position) > 1) return null;
                   
                   return (
                     <button
                       key={item.id}
                       onClick={() => handleTabChange(item.id)}
                       disabled={isTransitioning}
-                      className={`absolute transition-all duration-800 ease-in-out ${
+                      className={`absolute transition-all duration-500 ease-in-out ${
                         isActive ? 'z-20' : isAdjacent ? 'z-10' : 'z-0'
                       } ${isTransitioning ? 'pointer-events-none' : ''}`}
                       style={{
                         left: `${xOffset}px`,
-                        transform: `scale(${isActive ? 1.05 : isAdjacent ? 0.92 : 0.82}) rotateY(${item.position * -8}deg)`,
-                        opacity: isActive ? 1 : isAdjacent ? 0.85 : 0.5,
+                        transform: `scale(${isActive ? 1.08 : isAdjacent ? 0.88 : 0.78}) rotateY(${item.position * -5}deg)`,
+                        opacity: isActive ? 1 : isAdjacent ? 0.75 : 0.45,
                       }}
                     >
-                      <div className={`w-56 h-40 rounded-3xl overflow-hidden transition-all duration-800 ${
-                        isActive ? 'shadow-xl shadow-cyan-500/30' : 'shadow-lg shadow-slate-300/50'
-                      }`}
+                      <div 
+                        className={`${cardWidth} ${cardHeight} rounded-xl overflow-hidden transition-all duration-500 ${
+                          isActive ? 'shadow-lg shadow-cyan-500/25' : 'shadow-md shadow-slate-300/40'
+                        }`}
                         style={{
                           background: isActive 
                             ? 'linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)'
-                            : 'linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%)',
+                            : 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)',
                         }}
                       >
-                        <div className="relative h-full flex flex-col p-5">
-                          {/* Top Section with Icon/Image */}
-                          <div className="flex-1 flex items-center justify-center mb-3">
-                            <div className={`text-6xl transition-all duration-800 ${
-                              isActive ? 'scale-110 drop-shadow-lg' : 'scale-100'
-                            }`}>
-                              {item.icon}
-                            </div>
+                        <div className="relative h-full flex items-center gap-2 sm:gap-2.5 px-2.5 sm:px-3">
+                          {/* Icon */}
+                          <div className={`flex-shrink-0 transition-all duration-500 ${
+                            isActive ? 'text-white drop-shadow-md' : 'text-cyan-600'
+                          }`}>
+                            {item.icon}
                           </div>
                           
-                          {/* Bottom Section with Text */}
-                          <div className="text-center">
-                            <h3 className={`font-bold text-sm leading-tight mb-1 transition-colors duration-800 ${
-                              isActive ? 'text-white' : 'text-teal-900'
+                          {/* Text */}
+                          <div className="flex-1 min-w-0 text-left">
+                            <h3 className={`font-semibold text-[9px] sm:text-[10px] lg:text-xs leading-tight transition-colors duration-500 ${
+                              isActive ? 'text-white' : 'text-slate-700'
                             }`}>
-                              {item.label.toUpperCase()}
+                              {item.label}
                             </h3>
-                            <p className={`text-xs transition-colors duration-800 ${
-                              isActive ? 'text-cyan-100' : 'text-slate-600'
+                            <p className={`text-[8px] sm:text-[9px] mt-0.5 transition-colors duration-500 ${
+                              isActive ? 'text-cyan-100' : 'text-slate-500'
                             }`}>
-                              {isActive ? `Go to ${item.label}` : `${item.documents.length} documents`}
+                              {isActive ? 'Selected' : `${item.documents.length} docs`}
                             </p>
                           </div>
 
-                          {/* Top Corner Indicator */}
+                          {/* Active Indicator */}
                           {isActive && (
-                            <div className="absolute top-3 right-3">
-                              <div className="w-2 h-2 rounded-full bg-white animate-ping"></div>
-                              <div className="absolute top-0 right-0 w-2 h-2 rounded-full bg-white"></div>
+                            <div className="absolute top-1.5 right-2">
+                              <div className="w-1.5 h-1.5 rounded-full bg-white/80" />
                             </div>
                           )}
 
-                          {/* Card Border Effect */}
-                          <div className={`absolute inset-0 rounded-3xl pointer-events-none transition-all duration-800 ${
+                          {/* Border */}
+                          <div className={`absolute inset-0 rounded-xl pointer-events-none transition-all duration-500 ${
                             isActive 
-                              ? 'border-4 border-white/20' 
-                              : 'border-2 border-slate-200/50'
-                          }`}></div>
+                              ? 'border-2 border-white/20' 
+                              : 'border border-slate-200/60'
+                          }`} />
                         </div>
                       </div>
                       
-                      {/* Top Arrow Indicator */}
+                      {/* Arrow Indicator */}
                       {isActive && (
-                        <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-b-8 border-l-transparent border-r-transparent border-b-cyan-500 animate-gentleBounce drop-shadow-lg" />
+                        <div className="absolute -top-2.5 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[6px] border-r-[6px] border-b-[6px] border-l-transparent border-r-transparent border-b-cyan-500 animate-gentleBounce drop-shadow-sm" />
                       )}
                     </button>
                   );
@@ -959,14 +816,22 @@ const DocumentLibrary: React.FC = () => {
               <button
                 onClick={() => navigateCarousel('next')}
                 disabled={isTransitioning}
-                className="z-30 bg-white shadow-lg rounded-full p-3 hover:bg-slate-50 hover:shadow-xl hover:scale-110 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex-shrink-0"
+                className="z-30 bg-white shadow-md rounded-full p-1.5 sm:p-2 hover:bg-slate-50 hover:shadow-lg hover:scale-110 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex-shrink-0"
               >
-                <ChevronRight className="h-6 w-6 text-teal-700" />
+                <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 text-teal-700" />
               </button>
             </div>
           </div>
         )}
       </main>
+
+      {/* Overlay for mobile menu */}
+      {isMobileMenuOpen && (
+        <div 
+          className="lg:hidden fixed inset-0 bg-black/20 z-20"
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+      )}
 
       <style>{`
         @keyframes slideInUp {
@@ -1042,6 +907,58 @@ const DocumentLibrary: React.FC = () => {
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           overflow: hidden;
+        }
+
+        /* Custom breakpoint for extra small screens */
+        @media (min-width: 480px) {
+          .xs\\:inline {
+            display: inline;
+          }
+          .xs\\:hidden {
+            display: none;
+          }
+          .xs\\:inline-flex {
+            display: inline-flex;
+          }
+        }
+
+        @media (max-width: 479px) {
+          .xs\\:inline {
+            display: none;
+          }
+          .xs\\:hidden {
+            display: inline;
+          }
+          .xs\\:inline-flex {
+            display: none;
+          }
+        }
+
+        /* Touch-friendly hover states on mobile */
+        @media (hover: none) {
+          .group:hover .group-hover\\:opacity-100 {
+            opacity: 0;
+          }
+          .group:hover .group-hover\\:scale-110 {
+            transform: scale(1);
+          }
+          .group:active .group-hover\\:scale-110 {
+            transform: scale(1.05);
+          }
+        }
+
+        /* Smooth scrolling for the document list */
+        .overflow-y-auto {
+          -webkit-overflow-scrolling: touch;
+          scroll-behavior: smooth;
+        }
+
+        /* Better touch targets on mobile */
+        @media (max-width: 640px) {
+          button, [role="button"] {
+            min-height: 44px;
+            min-width: 44px;
+          }
         }
       `}</style>
     </div>
