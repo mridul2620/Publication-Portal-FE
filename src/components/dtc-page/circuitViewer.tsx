@@ -122,7 +122,7 @@ const CircuitViewer: React.FC<CircuitViewerProps> = ({
   }, [currentSchematic, initialZoom]);
 
   useEffect(() => {
-    if (currentSchematic) {
+    if (currentSchematic && activeTab === 'schematics') {
       setIsProcessingSvg(true);
       
       const timer = setTimeout(() => {
@@ -132,11 +132,11 @@ const CircuitViewer: React.FC<CircuitViewerProps> = ({
           removeSvgBorders(svg2Ref.current);
         }
         setIsProcessingSvg(false);
-      }, 200);
+      }, 100);
 
       return () => clearTimeout(timer);
     }
-  }, [currentSchematic]);
+  }, [currentSchematic, activeTab]);
 
   useEffect(() => {
     setCurrentSchematic(selectedSchematic);
@@ -300,7 +300,7 @@ const CircuitViewer: React.FC<CircuitViewerProps> = ({
             <div style={{ 
               transform: `scale(${zoomLevel / 100})`, 
               transformOrigin: 'top left',
-              opacity: isProcessingSvg ? 0.3 : 1,
+              opacity: isProcessingSvg ? 0 : 1,
               transition: 'opacity 0.3s ease'
             }}>
               <SvgDoorCircuit1

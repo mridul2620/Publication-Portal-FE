@@ -5,6 +5,7 @@ import './circuitPage.css';
 import { useSearchParams } from 'next/navigation';
 import SvgDoorCircuit2 from './circuitSVG2'; 
 import Modal from './Modal';
+import RelatedDtcModal from './RelatedDtcModal';
 import SvgDoorCircuit1 from './circuitSVG1';
 
 export interface Connector {
@@ -102,6 +103,13 @@ const CircuitPageContent: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
   const [highlightedText, setHighlightedText] = useState<string | null>(null);
   const [isProcessingSvg, setIsProcessingSvg] = useState(false);
+  const [showRelatedDtcsModal, setShowRelatedDtcsModal] = useState(false);
+  const [relatedDtcsConnectorName, setRelatedDtcsConnectorName] = useState('');
+
+  const openRelatedDtcs = (connectorName: string) => {
+    setRelatedDtcsConnectorName(connectorName);
+    setShowRelatedDtcsModal(true);
+  };
   
   // Refs to access SVG elements
   const svg1Ref = useRef<SVGSVGElement>(null);
@@ -123,7 +131,7 @@ const CircuitPageContent: React.FC = () => {
 
   // Effect to remove borders after SVG renders
   useEffect(() => {
-    if (selectedSchematic) {
+    if (selectedSchematic && activeTab === 'schematics') {
       setIsProcessingSvg(true);
       
       const timer = setTimeout(() => {
@@ -133,11 +141,11 @@ const CircuitPageContent: React.FC = () => {
           removeSvgBorders(svg2Ref.current);
         }
         setIsProcessingSvg(false);
-      }, 200); // Small delay to ensure SVG is fully rendered
+      }, 100); // Small delay to ensure SVG is fully rendered
 
       return () => clearTimeout(timer);
     }
-  }, [selectedSchematic]);
+  }, [selectedSchematic, activeTab]);
 
   const searchParams = useSearchParams();
   const brand = searchParams.get('brand');
@@ -298,7 +306,7 @@ const CircuitPageContent: React.FC = () => {
               <div style={{ 
                 transform: `scale(${zoomLevel / 100})`, 
                 transformOrigin: 'top left',
-                opacity: isProcessingSvg ? 0.3 : 1,
+                opacity: isProcessingSvg ? 0 : 1,
                 transition: 'opacity 0.3s ease'
               }}>
                 <SvgDoorCircuit1
@@ -318,7 +326,8 @@ const CircuitPageContent: React.FC = () => {
           <Modal 
             show={showModal} 
             onClose={closeModal} 
-            connector={selectedConnector} 
+            connector={selectedConnector}
+            onOpenRelatedDtcs={openRelatedDtcs}
           />
           
           {/* Schematic Image */}
@@ -376,6 +385,7 @@ const CircuitPageContent: React.FC = () => {
             show={showModal} 
             onClose={closeModal} 
             connector={selectedConnector} 
+            onOpenRelatedDtcs={openRelatedDtcs}
           />
           
           {/* Connector Details */}
@@ -394,10 +404,28 @@ const CircuitPageContent: React.FC = () => {
               <p><strong>Color:</strong> {selectedConnector.color}</p>
               <p><strong>Number of Pins:</strong> {selectedConnector.numberOfPins}</p>
               <p><strong>Power Supply:</strong> {selectedConnector.powerSupply}</p>
+
+              <div className="mt-6 border-t border-gray-200 pt-4 flex justify-start">
+                <button
+                  onClick={() => openRelatedDtcs(selectedConnector.connectorName)}
+                  className="inline-flex bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg shadow-sm transition-colors duration-200 items-center justify-center gap-2 text-sm"
+                >
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  Related DTCs
+                </button>
+              </div>
             </div>
           )}
         </div>
       </div>
+      
+      <RelatedDtcModal 
+        show={showRelatedDtcsModal}
+        onClose={() => setShowRelatedDtcsModal(false)}
+        connectorName={relatedDtcsConnectorName}
+      />
       
       {/* CSS for spinner animation */}
       <style jsx>{`

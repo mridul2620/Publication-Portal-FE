@@ -15,9 +15,10 @@ interface ModalProps {
   location: string
     imageUrl: string;
   } | null;
+  onOpenRelatedDtcs?: (connectorName: string) => void;
 }
 
-const Modal: React.FC<ModalProps> = ({ show, onClose, connector }) => {
+const Modal: React.FC<ModalProps> = ({ show, onClose, connector, onOpenRelatedDtcs }) => {
   if (!show || !connector) return null;
 
   return (
@@ -36,6 +37,23 @@ const Modal: React.FC<ModalProps> = ({ show, onClose, connector }) => {
         <p><strong>Color:</strong> {connector.color}</p>
         <p><strong>Number of Pins:</strong> {connector.numberOfPins}</p>
         <p><strong>Power Supply:</strong> {connector.powerSupply}</p>
+        
+        {onOpenRelatedDtcs && (
+          <div className="mt-6 border-t border-gray-200 pt-4 flex justify-start">
+            <button
+              onClick={() => {
+                onClose();
+                onOpenRelatedDtcs(connector.connectorName);
+              }}
+              className="inline-flex bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg shadow-sm transition-colors duration-200 items-center justify-center gap-2 text-sm"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Related DTCs
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
