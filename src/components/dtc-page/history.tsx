@@ -182,7 +182,7 @@ const DTCHistory: React.FC = () => {
                       </td>
                       <td className="px-6 py-5 border-r border-slate-300">
                         <div className="space-y-2">
-                          {dtc.possible_causes.map((cause, idx) => (
+                          {dtc.possible_causes?.map((cause, idx) => (
                             <div key={idx} className="flex items-start gap-2 group">
                               <span className="text-sm text-slate-700 leading-relaxed">{cause}</span>
                             </div>
@@ -191,7 +191,7 @@ const DTCHistory: React.FC = () => {
                       </td>
                       <td className="px-6 py-5">
                         <div className="space-y-2">
-                          {dtc.action.map((act, idx) => (
+                          {dtc.action?.map((act, idx) => (
                             <div key={idx} className="flex items-start gap-2 group">
                               <span className="text-sm text-slate-700 leading-relaxed">{act}</span>
                             </div>
